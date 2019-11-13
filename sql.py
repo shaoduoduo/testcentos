@@ -6,7 +6,7 @@ def connect_to_mysql():
     global mydb
     global mycursor
     try:
-        mydb = mysql.connector.connect(host="localhost",user="user_server",passwd="P@ssw0rd",database="inss_mes")
+        mydb = mysql.connector.connect(host="localhost",user="user_server",passwd="P@ssword",database="inss_mes")
     except Exception as error:
         print(error)
         return False

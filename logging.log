@@ -1,4 +1,118 @@
-2019-11-14 14:05:37,975:WARNING:start
-2019-11-14 14:05:37,979:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fd0d1953e10>
-2019-11-14 14:05:37,981:WARNING:start thread:mq-thread
-2019-11-14 14:05:38,014:WARNING:custmer wait for mes
+2019-11-14 15:32:11,555:WARNING:start
+2019-11-14 15:32:11,560:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fabb88c4e80>
+2019-11-14 15:32:11,562:WARNING:start thread:mq-thread
+2019-11-14 15:32:11,595:WARNING:custmer wait for mes
+2019-11-14 15:35:48,196:WARNING:start
+2019-11-14 15:35:48,202:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7ff23e4beef0>
+2019-11-14 15:35:48,204:WARNING:start thread:mq-thread
+2019-11-14 15:35:48,239:WARNING:custmer wait for mes
+2019-11-14 15:38:00,624:WARNING:start
+2019-11-14 15:38:00,629:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fb7b019ee80>
+2019-11-14 15:38:00,630:WARNING:start thread:mq-thread
+2019-11-14 15:38:00,661:WARNING:custmer wait for mes
+2019-11-14 15:42:20,888:WARNING:start
+2019-11-14 15:42:20,894:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7efd2dcdfeb8>
+2019-11-14 15:42:20,896:WARNING:start thread:mq-thread
+2019-11-14 15:42:20,932:WARNING:custmer wait for mes
+2019-11-14 15:49:23,862:WARNING:start
+2019-11-14 15:49:23,867:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f8cfa535e80>
+2019-11-14 15:49:23,868:WARNING:start thread:mq-thread
+2019-11-14 15:49:23,899:WARNING:custmer wait for mes
+2019-11-14 15:56:21,402:WARNING:start
+2019-11-14 15:56:21,410:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f909afb8eb8>
+2019-11-14 15:56:21,411:WARNING:start thread:mq-thread
+2019-11-14 15:56:21,446:WARNING:custmer wait for mes
+2019-11-14 15:56:54,556:WARNING:start
+2019-11-14 15:56:54,566:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fe5ead25eb8>
+2019-11-14 15:56:54,568:WARNING:start thread:mq-thread
+2019-11-14 15:56:54,596:WARNING:custmer wait for mes
+2019-11-14 15:57:25,764:WARNING:start
+2019-11-14 15:57:25,770:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f3f37424eb8>
+2019-11-14 15:57:25,771:WARNING:start thread:mq-thread
+2019-11-14 15:57:25,804:WARNING:custmer wait for mes
+2019-11-14 16:02:04,151:WARNING:start
+2019-11-14 16:02:04,157:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f8cccd44eb8>
+2019-11-14 16:02:04,158:WARNING:start thread:mq-thread
+2019-11-14 16:02:04,191:WARNING:custmer wait for mes
+2019-11-14 16:03:04,643:WARNING:start
+2019-11-14 16:03:04,649:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fc438863dd8>
+2019-11-14 16:03:04,650:WARNING:start thread:mq-thread
+2019-11-14 16:03:04,685:WARNING:custmer wait for mes
+2019-11-14 16:18:21,279:WARNING:start
+2019-11-14 16:18:21,284:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fc7f9bcdeb8>
+2019-11-14 16:18:21,285:WARNING:start thread:mq-thread
+2019-11-14 16:18:21,317:WARNING:custmer wait for mes
+2019-11-14 16:46:48,099:WARNING:start
+2019-11-14 16:46:48,107:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fa7bcb28e80>
+2019-11-14 16:46:48,108:WARNING:start thread:mq-thread
+2019-11-14 16:46:48,143:WARNING:custmer wait for mes
+2019-11-14 16:46:54,539:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:46:54,540:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:46:54,540:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:46:54,540:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:46:54,540:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:46:54,541:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:46:54,541:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:46:54,541:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:46:54,542:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:46:54,542:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:46:54,542:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:46:54,542:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:46:54,543:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:48:22,975:WARNING:start
+2019-11-14 16:48:22,982:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fa6249a3e48>
+2019-11-14 16:48:22,984:WARNING:start thread:mq-thread
+2019-11-14 16:48:23,011:WARNING:custmer wait for mes
+2019-11-14 16:48:30,635:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:48:30,635:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:48:30,636:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:48:30,636:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:48:30,636:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:48:30,636:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:48:30,636:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:48:30,637:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:48:30,637:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:48:30,637:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:48:30,637:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:48:30,637:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:48:30,637:WARNING:Not all parameters were used in the SQL statement
+2019-11-14 16:49:27,669:WARNING:start
+2019-11-14 16:49:27,675:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7efc17ebbe48>
+2019-11-14 16:49:27,677:WARNING:start thread:mq-thread
+2019-11-14 16:49:27,709:WARNING:custmer wait for mes
+2019-11-14 16:49:33,628:WARNING:1366 (HY000): Incorrect decimal value: '' for column 'value' at row 1
+2019-11-14 16:49:33,628:WARNING:1366 (HY000): Incorrect decimal value: '' for column 'value' at row 1
+2019-11-14 16:49:33,629:WARNING:1366 (HY000): Incorrect decimal value: '' for column 'value' at row 1
+2019-11-14 16:49:33,630:WARNING:1366 (HY000): Incorrect decimal value: '' for column 'value' at row 1
+2019-11-14 16:49:33,630:WARNING:1366 (HY000): Incorrect decimal value: '' for column 'value' at row 1
+2019-11-14 16:49:33,631:WARNING:1366 (HY000): Incorrect decimal value: '' for column 'value' at row 1
+2019-11-14 16:49:33,632:WARNING:1366 (HY000): Incorrect decimal value: '' for column 'value' at row 1
+2019-11-14 16:49:33,632:WARNING:1366 (HY000): Incorrect decimal value: '' for column 'value' at row 1
+2019-11-14 16:51:38,474:WARNING:start
+2019-11-14 16:51:38,480:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f5d02837e48>
+2019-11-14 16:51:38,481:WARNING:start thread:mq-thread
+2019-11-14 16:51:38,517:WARNING:custmer wait for mes
+2019-11-14 16:52:15,362:WARNING:start
+2019-11-14 16:52:15,369:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f8f8e52be10>
+2019-11-14 16:52:15,371:WARNING:start thread:mq-thread
+2019-11-14 16:52:15,406:WARNING:custmer wait for mes
+2019-11-14 16:52:44,182:WARNING:start
+2019-11-14 16:52:44,188:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fd952bc8e10>
+2019-11-14 16:52:44,191:WARNING:start thread:mq-thread
+2019-11-14 16:52:44,226:WARNING:custmer wait for mes
+2019-11-14 16:53:08,547:WARNING:start
+2019-11-14 16:53:08,553:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f21645c1e48>
+2019-11-14 16:53:08,554:WARNING:start thread:mq-thread
+2019-11-14 16:53:08,580:WARNING:custmer wait for mes
+2019-11-14 16:53:39,105:WARNING:start
+2019-11-14 16:53:39,111:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fa85b9f5dd8>
+2019-11-14 16:53:39,113:WARNING:start thread:mq-thread
+2019-11-14 16:53:39,144:WARNING:custmer wait for mes
+2019-11-14 16:54:05,033:WARNING:start
+2019-11-14 16:54:05,042:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f45698d2e48>
+2019-11-14 16:54:05,043:WARNING:start thread:mq-thread
+2019-11-14 16:54:05,077:WARNING:custmer wait for mes
+2019-11-14 17:01:07,365:WARNING:start
+2019-11-14 17:01:07,374:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f3f33b26e48>
+2019-11-14 17:01:07,376:WARNING:start thread:mq-thread
+2019-11-14 17:01:07,410:WARNING:custmer wait for mes

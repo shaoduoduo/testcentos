@@ -26,7 +26,7 @@ class mqthread(threading.Thread):
         dictdata = json.loads(body)
 
         # print(dictdata['location'])
-        sql.inser_to_mysql(dictdata)
+        sql.insert_to_mysql(dictdata)
         # print("thread name",self.getName())
     def mq_init(self):
         username = readconfig.readcon('rabbitmq','username')

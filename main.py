@@ -3,7 +3,7 @@ import mq_c
 import time
 import thread
 import logdebug
-
+import filewatch
 import threading
 # from concurrent.futures import ThreadPoolExecutor
 #
@@ -12,11 +12,11 @@ import threading
 def main():
     logdebug.configlog()
     logdebug.logdeb("start")
-
+    filewatch.file_Watch_init()
     sql.connect_to_mysql()
     # mq_c.mq_init()
     mq_thread=mq_c.mqthread(1,"mq-thread")
-    test_thread = thread.mythread(2,"my-thread")
+    # test_thread = thread.mythread(2,"my-thread")
     mq_thread.start()
     # test_thread.start()
     while True:

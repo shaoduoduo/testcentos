@@ -1,16 +1,23 @@
 import mysql.connector
-
+import logdebug
+import readconfig
 global mydb
 global mycursor
 def connect_to_mysql():
     global mydb
     global mycursor
+
+    host = readconfig.readcon('mysql','host')
+    user = readconfig.readcon('mysql','user')
+    passwd = readconfig.readcon('mysql','passwd')
+    database = readconfig.readcon('mysql','database')
+
     try:
-        mydb = mysql.connector.connect(host="localhost",user="user_server",passwd="P@ssword",database="inss_mes")
+        mydb = mysql.connector.connect(host=host,user=user,passwd=passwd,database=database)
     except Exception as error:
-        print(error)
+        logdebug.logdeb(error)
         return False
-    print(mydb)
+    logdebug.logdeb(mydb)
     mycursor = mydb.cursor()
     mycursor.execute("SHOW DATABASES")
 
@@ -29,13 +36,13 @@ def inser_to_mysql(paralist):
     try:
         val = (paralist["location"],paralist["dt"],paralist["tm"],paralist["value"],paralist["dt_tm"],paralist["create_dt"])
     except Exception as err:
-        print(err)
+        logdebug.logdeb(err)
         return
-
+    print(type(val))
     try:
         mycursor.execute(sql,val)
     except Exception as error:
-        print(error)
+        logdebug.logdeb(error)
         return
 
     mydb.commit()

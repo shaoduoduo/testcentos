@@ -5,8 +5,44 @@ import readxls
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
+import time
 WATCH_PATH = readconfig.readcon("pc_mount","path") # 监控目录
 
+class FileScan():
+    def __init__(self,history):
+        self.history = history
+        self.fp = open(self.history,"a+")
+        self.fp.seek(0,0)
+
+    def recordfile(self,filename):
+        #record the file
+        self.fp.write(filename+time.strftime(" ---->>>>%Y-%m-%d %H:%M:%S \n",time.localtime()))
+
+    def scanfile(self,filename):
+        line = True
+        res = False
+
+
+        while line:
+            line =self.fp.readline()
+            print("read line", line)
+
+            isExist = filename in line
+
+            print(isExist)
+            if isExist==True:
+                logdebug.logdeb(filename,"has been read at",line)
+                res = True
+                break
+        self.fp.seek(0,0)#return to the first line
+        if res == False:
+            self.recordfile(filename)
+            print("record this file ")
+        return res
+
+
+    def __del__(self):
+        self.fp.close()
 
 class FileMonitorHandler(FileSystemEventHandler):
     def __init__(self, **kwargs):
@@ -19,8 +55,12 @@ class FileMonitorHandler(FileSystemEventHandler):
         if not event.is_directory:  # 文件改变都会触发文件夹变化
             file_path = event.src_path
             print("文件改变: %s " % file_path)
-            readexcel = readxls.readexcel(file_path)
-            readexcel.init()
+
+            filescan = FileScan("./write1.txt")
+            if filescan.scanfile(file_path) == False:#do not have save this file
+                readexcel = readxls.readexcel(file_path)
+                readexcel.init()#read and save file
+            filescan.__del__()
 
     # def on_created(self, event):
     #     print('创建了文件夹', event.src_path)

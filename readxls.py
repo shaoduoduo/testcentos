@@ -26,10 +26,12 @@ class readexcel():
             dt_tm = xlrd.xldate.xldate_as_datetime(self.worksheet.row_values(i)[0],0).__str__()
             # print(dt_tm)
             value = self.worksheet.row_values(i)[4]
+            if value == '':
+                value = 0
             # print(type(value))
             # print("arc is ",value)
             location = "0.1um"
-            paralist = {'location':location,'dt_tm':dt_tm,'value':-1.13245}
+            paralist = {'location':location,'dt_tm':dt_tm,'value':value}
             # print(val)
             sql.insert_pc_to_mysql(paralist)
 

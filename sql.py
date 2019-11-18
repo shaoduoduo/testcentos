@@ -8,7 +8,7 @@ global threadLock
 def connect_to_mysql():
     global mydb
     global mycursor
-
+    global threadLock
     threadLock = threading.Lock()
 
     host = readconfig.readcon('mysql','host')
@@ -30,7 +30,7 @@ def connect_to_mysql():
 
 def insert_to_mysql(paralist):  #rabbitmq
 #     paralist must have 6 items
-
+    global threadLock
     global mydb
     global mycursor
     # print(len(paralist))
@@ -42,20 +42,29 @@ def insert_to_mysql(paralist):  #rabbitmq
     except Exception as err:
         logdebug.logdeb(err)
         return
-    print(type(val))
+    # print(type(val))
     try:
-        
+        threadLock.acquire()
         mycursor.execute(sql,val)
     except Exception as error:
         logdebug.logdeb(error)
-        return
+    finally:
+        threadLock.release()
 
-    mydb.commit()
-    print("insert db ")
 
-def insert_pc_to_mysql(paralist):
+    try:
+        threadLock.acquire()
+        mydb.commit()
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+
+    # print("insert db ")
+
+def insert_pc_to_mysql(paralist):#pc  input
 #     paralist must have 6 items
-
+    global threadLock
     global mydb
     global mycursor
     # print(len(paralist))
@@ -69,10 +78,19 @@ def insert_pc_to_mysql(paralist):
         return
     # print(type(val))
     try:
+        threadLock.acquire()
         mycursor.execute(sql,val)
     except Exception as error:
         logdebug.logdeb(error)
-        return
+    finally:
+        threadLock.release()
 
-    mydb.commit()
-    print("insert db ")
+
+    try:
+        threadLock.acquire()
+        mydb.commit()
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+

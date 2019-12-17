@@ -369,3 +369,268 @@
 2019-11-18 09:25:40,901:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f0e80b63fd0>
 2019-11-18 09:25:40,904:WARNING:start thread:mq-thread
 2019-11-18 09:25:40,935:WARNING:custmer wait for mes
+2019-11-18 09:59:49,247:WARNING:start
+2019-11-18 09:59:49,253:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7ff056229f60>
+2019-11-18 09:59:49,256:WARNING:start thread:mq-thread
+2019-11-18 09:59:49,292:WARNING:custmer wait for mes
+2019-11-18 10:03:24,791:WARNING:start
+2019-11-18 10:03:24,796:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fd0d99f5f60>
+2019-11-18 10:03:24,798:WARNING:start thread:mq-thread
+2019-11-18 10:03:24,826:WARNING:custmer wait for mes
+2019-11-18 10:03:41,469:WARNING:start
+2019-11-18 10:03:41,476:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f09b0b5af60>
+2019-11-18 10:03:41,479:WARNING:start thread:mq-thread
+2019-11-18 10:03:41,512:WARNING:custmer wait for mes
+2019-11-18 10:03:48,073:WARNING:has been read at
+2019-11-18 10:04:14,857:WARNING:has been read at
+2019-11-18 10:04:47,114:WARNING:has been read at
+2019-11-18 10:05:09,345:WARNING:has been read at
+2019-11-18 10:05:41,962:WARNING:has been read at
+2019-11-18 10:06:01,450:WARNING:has been read at
+2019-11-18 10:13:06,333:WARNING:start
+2019-11-18 10:13:06,340:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f8a3ed2dfd0>
+2019-11-18 10:13:06,342:WARNING:start thread:mq-thread
+2019-11-18 10:13:06,373:WARNING:custmer wait for mes
+2019-11-18 10:13:29,634:WARNING:has been read at
+2019-11-18 10:13:47,082:WARNING:has been read at
+2019-11-18 10:14:26,994:WARNING:has been read at
+2019-11-18 10:16:15,882:WARNING:has been read at
+2019-11-18 10:16:23,266:WARNING:has been read at
+2019-11-18 10:16:34,655:WARNING:start
+2019-11-18 10:16:34,661:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fcc68fd7fd0>
+2019-11-18 10:16:34,663:WARNING:start thread:mq-thread
+2019-11-18 10:16:34,697:WARNING:custmer wait for mes
+2019-11-18 10:16:39,778:WARNING:has been read at
+2019-11-18 10:19:09,279:WARNING:start
+2019-11-18 10:19:09,284:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7ff79faeafd0>
+2019-11-18 10:19:09,287:WARNING:start thread:mq-thread
+2019-11-18 10:19:09,325:WARNING:custmer wait for mes
+2019-11-18 10:19:14,610:WARNING:/home/dba/Downloads/path/11.25.xlshas been read at
+2019-11-18 10:19:30,027:WARNING:start
+2019-11-18 10:19:30,033:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f6b5df76fd0>
+2019-11-18 10:19:30,035:WARNING:start thread:mq-thread
+2019-11-18 10:19:30,061:WARNING:custmer wait for mes
+2019-11-18 10:19:33,978:WARNING:/home/dba/Downloads/path/11.25.xlshas been read at/home/dba/Downloads/path/11.25.xls ---->>>>2019-11-18 10:13:58 
+
+2019-11-18 15:17:44,917:WARNING:start
+2019-11-18 15:17:44,929:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f10dcf3dfd0>
+2019-11-18 15:17:44,931:WARNING:start thread:mq-thread
+2019-11-18 15:17:44,965:WARNING:custmer wait for mes
+2019-11-18 15:18:30,787:WARNING:start
+2019-11-18 15:18:30,800:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f474c974fd0>
+2019-11-18 15:18:30,801:WARNING:start thread:mq-thread
+2019-11-18 15:18:30,838:WARNING:custmer wait for mes
+2019-11-18 15:21:36,363:WARNING:start
+2019-11-18 15:21:36,375:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fb631f1efd0>
+2019-11-18 15:21:36,378:WARNING:start thread:mq-thread
+2019-11-18 15:21:36,412:WARNING:custmer wait for mes
+2019-11-18 16:06:45,738:WARNING:/mnt/share/11.17has been read at/mnt/share/11.17 ---->>>>2019-11-18 16:06:31 
+
+2019-11-18 16:08:18,018:WARNING:/mnt/share/11.18has been read at/mnt/share/11.18 ---->>>>2019-11-18 16:08:00 
+
+2019-11-19 11:50:02,575:WARNING:start
+2019-11-19 11:50:02,591:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f36733dd5c0>
+2019-11-19 11:50:02,594:WARNING:start thread:mq-thread
+2019-11-19 11:50:02,628:WARNING:custmer wait for mes
+2019-11-19 14:04:54,755:WARNING:start
+2019-11-19 14:04:54,766:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f5ee19706a0>
+2019-11-19 14:04:54,769:WARNING:start thread:mq-thread
+2019-11-19 14:04:54,801:WARNING:custmer wait for mes
+2019-11-19 14:32:09,428:WARNING:start
+2019-11-19 14:32:09,440:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f046643f668>
+2019-11-19 14:32:09,442:WARNING:start thread:mq-thread
+2019-11-19 14:32:09,475:WARNING:custmer wait for mes
+2019-11-19 14:32:50,547:WARNING:start
+2019-11-19 14:32:50,560:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f964b172630>
+2019-11-19 14:32:50,562:WARNING:start thread:mq-thread
+2019-11-19 14:32:50,591:WARNING:custmer wait for mes
+2019-11-19 14:33:20,026:WARNING:start
+2019-11-19 14:33:20,035:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f57d13c2668>
+2019-11-19 14:33:20,037:WARNING:start thread:mq-thread
+2019-11-19 14:33:20,072:WARNING:custmer wait for mes
+2019-11-19 14:37:12,865:WARNING:start
+2019-11-19 14:37:12,877:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f8b40d68668>
+2019-11-19 14:37:12,879:WARNING:start thread:mq-thread
+2019-11-19 14:37:12,905:WARNING:custmer wait for mes
+2019-11-19 14:41:06,131:WARNING:start
+2019-11-19 14:41:06,141:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f7df80e4630>
+2019-11-19 14:41:06,143:WARNING:start thread:mq-thread
+2019-11-19 14:41:06,180:WARNING:custmer wait for mes
+2019-11-19 14:42:18,605:WARNING:start
+2019-11-19 14:42:18,613:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fd5f9423668>
+2019-11-19 14:42:18,614:WARNING:start thread:mq-thread
+2019-11-19 14:42:18,652:WARNING:custmer wait for mes
+2019-11-19 14:43:09,855:WARNING:[Errno 2] No such file or directory: '/mnt/share/11.20.xls'
+2019-11-19 14:43:09,857:WARNING:[Errno 2] No such file or directory: '/mnt/share/11.21.xls'
+2019-11-19 14:43:09,858:WARNING:[Errno 2] No such file or directory: '/mnt/share/11.23.xls'
+2019-11-19 14:43:09,859:WARNING:[Errno 2] No such file or directory: '/mnt/share/11.16 - 副本.xls'
+2019-11-19 14:43:09,861:WARNING:[Errno 2] No such file or directory: '/mnt/share/11.16.xls'
+2019-11-19 14:43:09,862:WARNING:[Errno 2] No such file or directory: '/mnt/share/11.22.xls'
+2019-11-19 14:43:09,862:WARNING:/mnt/share/11.17has been read at/mnt/share/11.17 ---->>>>2019-11-18 16:06:31 
+
+2019-11-19 14:43:37,983:WARNING:[Errno 2] No such file or directory: '/mnt/share/11.16 - 副本 (2).xls'
+2019-11-19 14:44:29,166:WARNING:start
+2019-11-19 14:44:29,175:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fa906b4d6d8>
+2019-11-19 14:44:29,176:WARNING:start thread:mq-thread
+2019-11-19 14:44:29,202:WARNING:custmer wait for mes
+2019-11-19 14:44:45,238:WARNING:/mnt/share/11.23.xlshas been read at/mnt/share/11.23.xls ---->>>>2019-11-19 14:43:09 
+
+2019-11-19 14:45:12,361:WARNING:[Errno 21] Is a directory: '/mnt/share/新建文件夹'
+2019-11-19 14:46:24,787:WARNING:/mnt/share/新建文件夹has been read at/mnt/share/新建文件夹 ---->>>>2019-11-19 14:45:12 
+
+2019-11-19 14:46:46,891:WARNING:/mnt/share/新建文件夹has been read at/mnt/share/新建文件夹 ---->>>>2019-11-19 14:45:12 
+
+2019-11-19 14:47:17,068:WARNING:/mnt/share/新建文件夹has been read at/mnt/share/新建文件夹 ---->>>>2019-11-19 14:45:12 
+
+2019-11-19 14:49:22,123:WARNING:start
+2019-11-19 14:49:22,139:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f0c8af696d8>
+2019-11-19 14:49:22,141:WARNING:start thread:mq-thread
+2019-11-19 14:49:22,165:WARNING:custmer wait for mes
+2019-11-19 14:54:39,630:WARNING:start
+2019-11-19 14:54:39,645:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f9f7f3546d8>
+2019-11-19 14:54:39,646:WARNING:start thread:mq-thread
+2019-11-19 14:54:39,678:WARNING:custmer wait for mes
+2019-11-19 14:57:06,459:WARNING:/mnt/share/11.24.xlshas been read at/mnt/share/11.24.xls ---->>>>2019-11-19 14:45:03 
+
+2019-11-19 14:57:31,601:WARNING:/mnt/share/11.24.xlshas been read at/mnt/share/11.24.xls ---->>>>2019-11-19 14:45:03 
+
+2019-11-19 14:57:46,689:WARNING:[Errno 2] No such file or directory: '/mnt/share/648C00B6.tmp'
+2019-11-19 14:58:14,851:WARNING:/mnt/share/11.24.xlshas been read at/mnt/share/11.24.xls ---->>>>2019-11-19 14:45:03 
+
+2019-11-19 14:59:34,676:WARNING:start
+2019-11-19 14:59:34,687:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fa327e066d8>
+2019-11-19 14:59:34,689:WARNING:start thread:mq-thread
+2019-11-19 14:59:34,722:WARNING:custmer wait for mes
+2019-11-19 14:59:46,751:WARNING:/mnt/share/11.24.xlshas been read at/mnt/share/11.24.xls ---->>>>2019-11-19 14:45:03 
+
+2019-11-19 15:00:18,939:WARNING:/mnt/share/11.24 - 副本.xlshas been read at/mnt/share/11.24 - 副本.xls ---->>>>2019-11-19 14:49:34 
+
+2019-11-19 15:00:23,968:WARNING:/mnt/share/11.24 - 副本 (2).xlshas been read at/mnt/share/11.24 - 副本 (2).xls ---->>>>2019-11-19 14:49:40 
+
+2019-11-19 15:00:26,986:WARNING:/mnt/share/11.24 - 副本 (3).xlshas been read at/mnt/share/11.24 - 副本 (3).xls ---->>>>2019-11-19 14:54:54 
+
+2019-11-19 15:01:06,796:WARNING:start
+2019-11-19 15:01:06,806:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f43df380630>
+2019-11-19 15:01:06,807:WARNING:start thread:mq-thread
+2019-11-19 15:01:06,843:WARNING:custmer wait for mes
+2019-11-19 15:01:21,894:WARNING:/mnt/share/11.24 - 副本 (2).xlshas been read at/mnt/share/11.24 - 副本 (2).xls ---->>>>2019-11-19 14:49:40 
+
+2019-11-19 15:01:26,925:WARNING:/mnt/share/11.24 - 副本 (3).xlshas been read at/mnt/share/11.24 - 副本 (3).xls ---->>>>2019-11-19 14:54:54 
+
+2019-11-19 15:02:00,123:WARNING:/mnt/share/11.24 - 副本 (3).xlshas been read at/mnt/share/11.24 - 副本 (3).xls ---->>>>2019-11-19 14:54:54 
+
+2019-11-19 15:02:04,146:WARNING:/mnt/share/11.24 - 副本 (3).xlshas been read at/mnt/share/11.24 - 副本 (3).xls ---->>>>2019-11-19 14:54:54 
+
+2019-11-20 09:21:55,083:WARNING:start
+2019-11-20 09:21:55,095:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f066a4426a0>
+2019-11-20 09:21:55,097:WARNING:start thread:mq-thread
+2019-11-20 09:21:55,123:WARNING:custmer wait for mes
+2019-12-17 09:07:53,481:WARNING:start
+2019-12-17 09:07:53,500:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f04395fe710>
+2019-12-17 09:07:53,504:WARNING:start thread:mq-thread
+2019-12-17 09:07:53,508:ERROR:Socket failed to connect: <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.10.245', 55452)>; error=111 (Connection refused)
+2019-12-17 09:07:53,509:ERROR:TCP Connection attempt failed: ConnectionRefusedError(111, 'Connection refused'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.10.245', 5672))
+2019-12-17 09:07:53,509:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused')
+2019-12-17 09:07:53,509:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None.
+2019-12-17 09:07:53,509:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None
+2019-12-17 09:07:53,510:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None
+2019-12-17 09:07:53,510:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2019-12-17 09:08:08,490:WARNING:start
+2019-12-17 09:08:08,508:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f8e6362e710>
+2019-12-17 09:08:08,510:WARNING:start thread:mq-thread
+2019-12-17 09:08:08,515:ERROR:Socket failed to connect: <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.10.245', 55458)>; error=111 (Connection refused)
+2019-12-17 09:08:08,515:ERROR:TCP Connection attempt failed: ConnectionRefusedError(111, 'Connection refused'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.10.245', 5672))
+2019-12-17 09:08:08,516:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused')
+2019-12-17 09:08:08,516:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None.
+2019-12-17 09:08:08,516:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None
+2019-12-17 09:08:08,516:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused'); first exception - None
+2019-12-17 09:08:08,516:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2019-12-17 09:15:59,919:WARNING:start
+2019-12-17 09:15:59,934:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f47d26f0710>
+2019-12-17 09:15:59,937:WARNING:start thread:mq-thread
+2019-12-17 09:16:09,948:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: timeout("TCP connection attempt timed out: '10.10.10.78'/(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.10.78', 5672))",)
+2019-12-17 09:16:09,949:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: timeout("TCP connection attempt timed out: '10.10.10.78'/(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.10.78', 5672))",); first exception - None.
+2019-12-17 09:16:09,949:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: timeout("TCP connection attempt timed out: '10.10.10.78'/(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.10.78', 5672))",); first exception - None
+2019-12-17 09:16:09,950:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: timeout("TCP connection attempt timed out: '10.10.10.78'/(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.10.78', 5672))",); first exception - None
+2019-12-17 09:16:09,950:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2019-12-17 09:22:08,503:WARNING:start
+2019-12-17 09:22:08,517:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7faf2db9a6a0>
+2019-12-17 09:22:08,520:WARNING:start thread:mq-thread
+2019-12-17 09:22:17,091:WARNING:start
+2019-12-17 09:22:17,103:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f839919d710>
+2019-12-17 09:22:17,105:WARNING:start thread:mq-thread
+2019-12-17 09:22:27,112:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: timeout("TCP connection attempt timed out: '10.10.10.78'/(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.10.78', 5672))",)
+2019-12-17 09:22:27,113:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: timeout("TCP connection attempt timed out: '10.10.10.78'/(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.10.78', 5672))",); first exception - None.
+2019-12-17 09:22:27,113:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: timeout("TCP connection attempt timed out: '10.10.10.78'/(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.10.78', 5672))",); first exception - None
+2019-12-17 09:22:27,114:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: timeout("TCP connection attempt timed out: '10.10.10.78'/(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.10.78', 5672))",); first exception - None
+2019-12-17 09:22:27,114:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2019-12-17 09:23:25,981:WARNING:start
+2019-12-17 09:23:25,993:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7ff0ad72c710>
+2019-12-17 09:23:25,995:WARNING:start thread:mq-thread
+2019-12-17 09:24:01,852:WARNING:start
+2019-12-17 09:24:01,869:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fb004693710>
+2019-12-17 09:24:01,871:WARNING:start thread:mq-thread
+2019-12-17 09:24:01,907:ERROR:Connection closed while tuning the connection indicating a probable permission error when accessing a virtual host
+2019-12-17 09:24:01,908:ERROR:AMQPConnector - reporting failure: AMQPConnectorAMQPHandshakeError: ProbableAccessDeniedError: Client was disconnected at a connection stage indicating a probable denial of access to the specified virtual host: ('ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost \'/\' refused for user \'python_c\'"',)
+2019-12-17 09:24:01,909:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAccessDeniedError: Client was disconnected at a connection stage indicating a probable denial of access to the specified virtual host: ('ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost \'/\' refused for user \'python_c\'"',); first exception - None.
+2019-12-17 09:24:01,909:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAccessDeniedError: Client was disconnected at a connection stage indicating a probable denial of access to the specified virtual host: ('ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost \'/\' refused for user \'python_c\'"',); first exception - None
+2019-12-17 09:24:01,909:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAccessDeniedError: Client was disconnected at a connection stage indicating a probable denial of access to the specified virtual host: ('ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost \'/\' refused for user \'python_c\'"',); first exception - None
+2019-12-17 09:24:01,910:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.ProbableAccessDeniedError: ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost '/' refused for user 'python_c'"
+2019-12-17 09:24:14,956:WARNING:start
+2019-12-17 09:24:14,975:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f6bf8103710>
+2019-12-17 09:24:14,976:WARNING:start thread:mq-thread
+2019-12-17 09:24:15,016:ERROR:Connection closed while tuning the connection indicating a probable permission error when accessing a virtual host
+2019-12-17 09:24:15,016:ERROR:AMQPConnector - reporting failure: AMQPConnectorAMQPHandshakeError: ProbableAccessDeniedError: Client was disconnected at a connection stage indicating a probable denial of access to the specified virtual host: ('ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost \'/\' refused for user \'python_c\'"',)
+2019-12-17 09:24:15,017:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAccessDeniedError: Client was disconnected at a connection stage indicating a probable denial of access to the specified virtual host: ('ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost \'/\' refused for user \'python_c\'"',); first exception - None.
+2019-12-17 09:24:15,018:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAccessDeniedError: Client was disconnected at a connection stage indicating a probable denial of access to the specified virtual host: ('ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost \'/\' refused for user \'python_c\'"',); first exception - None
+2019-12-17 09:24:15,018:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAccessDeniedError: Client was disconnected at a connection stage indicating a probable denial of access to the specified virtual host: ('ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost \'/\' refused for user \'python_c\'"',); first exception - None
+2019-12-17 09:24:15,018:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.ProbableAccessDeniedError: ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost '/' refused for user 'python_c'"
+2019-12-17 09:26:16,027:WARNING:start
+2019-12-17 09:26:16,044:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f0779b80940>
+2019-12-17 09:26:16,046:WARNING:start thread:mq-thread
+2019-12-17 09:26:16,100:ERROR:Connection closed while tuning the connection indicating a probable permission error when accessing a virtual host
+2019-12-17 09:26:16,100:ERROR:AMQPConnector - reporting failure: AMQPConnectorAMQPHandshakeError: ProbableAccessDeniedError: Client was disconnected at a connection stage indicating a probable denial of access to the specified virtual host: ('ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost \'/\' refused for user \'123\'"',)
+2019-12-17 09:26:16,101:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAccessDeniedError: Client was disconnected at a connection stage indicating a probable denial of access to the specified virtual host: ('ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost \'/\' refused for user \'123\'"',); first exception - None.
+2019-12-17 09:26:16,102:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAccessDeniedError: Client was disconnected at a connection stage indicating a probable denial of access to the specified virtual host: ('ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost \'/\' refused for user \'123\'"',); first exception - None
+2019-12-17 09:26:16,102:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ProbableAccessDeniedError: Client was disconnected at a connection stage indicating a probable denial of access to the specified virtual host: ('ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost \'/\' refused for user \'123\'"',); first exception - None
+2019-12-17 09:26:16,102:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.ProbableAccessDeniedError: ConnectionClosedByBroker: (530) "NOT_ALLOWED - access to vhost '/' refused for user '123'"
+2019-12-17 09:27:02,755:WARNING:start
+2019-12-17 09:27:02,768:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fefc3648710>
+2019-12-17 09:27:02,769:WARNING:start thread:mq-thread
+2019-12-17 09:27:02,813:WARNING:Received remote Channel.Close (404): "NOT_FOUND - no queue '111' in vhost '/'" on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fefc36312b0> params=<ConnectionParameters host=10.10.10.78 port=5672 virtual_host=/ ssl=False>>>
+2019-12-17 09:27:08,627:WARNING:start
+2019-12-17 09:27:08,639:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f6306d98710>
+2019-12-17 09:27:08,640:WARNING:start thread:mq-thread
+2019-12-17 09:27:08,698:WARNING:Received remote Channel.Close (404): "NOT_FOUND - no queue '111' in vhost '/'" on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6306d812b0> params=<ConnectionParameters host=10.10.10.78 port=5672 virtual_host=/ ssl=False>>>
+2019-12-17 09:27:28,705:WARNING:start
+2019-12-17 09:27:28,717:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fe5f85296a0>
+2019-12-17 09:27:28,718:WARNING:start thread:mq-thread
+2019-12-17 09:27:28,774:WARNING:custmer wait for mes

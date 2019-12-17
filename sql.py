@@ -1,5 +1,7 @@
+# import mysql.connector
 import mysql.connector
 import logdebug
+
 import readconfig
 import threading
 global mydb
@@ -27,6 +29,8 @@ def connect_to_mysql():
 
     for x in mycursor:
         print(x)
+def exc(para):
+    sql = para
 
 def insert_to_mysql(paralist):  #rabbitmq
 #     paralist must have 6 items

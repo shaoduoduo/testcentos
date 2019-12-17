@@ -29,6 +29,7 @@ def main():
 
     mq_thread=mq_c.mqthread(1,"mq-thread")
     # test_thread = thread.mythread(2,"my-thread")
+    mq_thread.setDaemon(True)
     mq_thread.start()
     # test_thread.start()
 

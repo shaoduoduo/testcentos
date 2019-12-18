@@ -1,4 +1,6 @@
 *.txt
-
-/__pycache__/
-/.idea/
+*.log
+/__pycache__
+/.idea
+/dist
+/build

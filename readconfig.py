@@ -9,8 +9,8 @@ def readcon(section,key):
             key = cf.get(section,key)
             return key
         except Exception as err:
-            logdebug.logdebug(err)
+            logdebug.logdeb(err)
             return None
     except  Exception as err:
-        logdebug.logdebug(err)
+        logdebug.logdeb(err)
         return None

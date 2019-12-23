@@ -55,6 +55,7 @@ def insert_to_mysql(paralist):  #rabbitmq  opc data
     try:
         threadLock.acquire()
         mycursor.execute(sql,val)
+        mycursor.execute("CALL sp_tb_elec_update_inc_val()")#function to incvlue
     except Exception as error:
         logdebug.logdeb(error)
         print(float(paralist["value"]))
@@ -69,8 +70,11 @@ def insert_to_mysql(paralist):  #rabbitmq  opc data
         logdebug.logdeb(error)
     finally:
         if(paralist["location"] == 'PW400030'):
-            logdebug.logdeb('insert opc  data',datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+            str = 'insert opc  data'+datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            logdebug.logdeb(str)
         threadLock.release()
+
+
 
     # print("insert db ")
 
@@ -79,7 +83,7 @@ def insert_pc_to_mysql(paralist):#pc  input
     global threadLock
     global mydb
     global mycursor
-    # print(len(paralist))
+    # print(len(paralist))"sp_tb_elec_update_inc_val()"
 
     sql = "INSERT INTO TB_PC_INPUT (location,dt_tm,value,create_dt_tm) VALUES(%s,%s,%s,CURRENT_TIMESTAMP())"
 
@@ -116,7 +120,7 @@ def insert_particles_to_mysql(paralist):#pc  input  every 60 times report once
     if 'Q5' in paralist["location"][1]:
         part_count =part_count + 1
         if part_count %10 ==0:
-            logdebug.logdeb("receive particles",datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),'value is --->',paralist["value"],'part_count is',part_count)
+            print("receive particles",datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),'value is --->',str(paralist["value"]),part_count)
 
     if float(paralist["value"]) == 0:
         return

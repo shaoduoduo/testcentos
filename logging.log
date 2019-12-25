@@ -22396,3 +22396,455 @@ pika.exceptions.ProbableAuthenticationError: ConnectionClosedByBroker: (403) 'AC
 2019-12-23 13:57:30,076:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f4dfe19d400>
 2019-12-23 13:57:30,081:WARNING:start thread:mq-thread
 2019-12-23 13:57:30,120:WARNING:custmer wait for mes
+2019-12-23 14:06:04,683:WARNING:start
+2019-12-23 14:06:04,689:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fa9c87e5390>
+2019-12-23 14:06:04,695:WARNING:start thread:mq-thread
+2019-12-23 14:06:04,938:WARNING:custmer wait for mes
+2019-12-23 14:07:40,866:WARNING:start
+2019-12-23 14:07:40,870:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fd927d7f390>
+2019-12-23 14:07:40,877:WARNING:start thread:mq-thread
+2019-12-23 14:07:41,036:WARNING:custmer wait for mes
+2019-12-23 14:07:54,616:WARNING:start
+2019-12-23 14:07:54,621:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f657ed1f400>
+2019-12-23 14:07:54,626:WARNING:start thread:mq-thread
+2019-12-23 14:07:54,665:WARNING:custmer wait for mes
+2019-12-23 14:11:54,836:WARNING:start
+2019-12-23 14:11:54,841:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f4afdf64400>
+2019-12-23 14:11:54,848:WARNING:start thread:mq-thread
+2019-12-23 14:11:54,880:WARNING:custmer wait for mes
+2019-12-23 14:22:42,092:WARNING:start
+2019-12-23 14:22:42,104:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f47f78ce400>
+2019-12-23 14:22:42,108:WARNING:start thread:mq-thread
+2019-12-23 14:22:42,168:WARNING:custmer wait for mes
+2019-12-23 14:23:19,872:WARNING:start
+2019-12-23 14:23:19,877:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fdb12dc5390>
+2019-12-23 14:23:19,883:WARNING:start thread:mq-thread
+2019-12-23 14:23:19,941:WARNING:custmer wait for mes
+2019-12-23 14:23:36,716:WARNING:start
+2019-12-23 14:23:36,721:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f951c8fe400>
+2019-12-23 14:23:36,727:WARNING:start thread:mq-thread
+2019-12-23 14:23:36,759:WARNING:custmer wait for mes
+2019-12-23 14:25:51,895:WARNING:start
+2019-12-23 14:25:51,901:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f1660396400>
+2019-12-23 14:25:51,904:WARNING:start thread:mq-thread
+2019-12-23 14:25:51,948:WARNING:custmer wait for mes
+2019-12-23 14:26:28,152:WARNING:start
+2019-12-23 14:26:28,155:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f5efd066390>
+2019-12-23 14:26:28,159:WARNING:start thread:mq-thread
+2019-12-23 14:26:28,206:WARNING:custmer wait for mes
+2019-12-23 14:28:32,309:WARNING:start
+2019-12-23 14:28:32,314:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7faee780d390>
+2019-12-23 14:28:32,321:WARNING:start thread:mq-thread
+2019-12-23 14:28:32,374:WARNING:custmer wait for mes
+2019-12-23 14:29:07,103:WARNING:start
+2019-12-23 14:29:07,108:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f098eeae400>
+2019-12-23 14:29:07,113:WARNING:start thread:mq-thread
+2019-12-23 14:29:07,149:WARNING:custmer wait for mes
+2019-12-23 14:29:33,498:WARNING:start
+2019-12-23 14:29:33,504:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7ff77a5ea390>
+2019-12-23 14:29:33,509:WARNING:start thread:mq-thread
+2019-12-23 14:29:33,541:WARNING:custmer wait for mes
+2019-12-23 14:29:33,566:WARNING:'dt_tm'
+2019-12-23 14:29:33,569:WARNING:'dt_tm'
+2019-12-23 14:29:33,574:WARNING:'dt_tm'
+2019-12-23 14:30:21,913:WARNING:start
+2019-12-23 14:30:21,918:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f47f06ca390>
+2019-12-23 14:30:21,923:WARNING:start thread:mq-thread
+2019-12-23 14:30:21,956:WARNING:'dt_tm'
+2019-12-23 14:30:21,958:WARNING:'dt_tm'
+2019-12-23 14:30:21,960:WARNING:'dt_tm'
+2019-12-23 14:30:21,962:WARNING:'dt_tm'
+2019-12-23 14:30:21,964:WARNING:'dt_tm'
+2019-12-23 14:30:21,967:WARNING:'dt_tm'
+2019-12-23 14:30:21,973:WARNING:'dt_tm'
+2019-12-23 14:30:21,975:WARNING:'dt_tm'
+2019-12-23 14:30:21,978:WARNING:'dt_tm'
+2019-12-23 14:30:21,980:WARNING:'dt_tm'
+2019-12-23 14:30:21,981:WARNING:'dt_tm'
+2019-12-23 14:30:21,983:WARNING:'dt_tm'
+2019-12-23 14:30:21,985:WARNING:'dt_tm'
+2019-12-23 14:30:21,991:WARNING:'dt_tm'
+2019-12-23 14:30:21,993:WARNING:'dt_tm'
+2019-12-23 14:30:21,995:WARNING:'dt_tm'
+2019-12-23 14:30:21,997:WARNING:'dt_tm'
+2019-12-23 14:30:21,998:WARNING:'dt_tm'
+2019-12-23 14:30:22,000:WARNING:'dt_tm'
+2019-12-23 14:30:22,002:WARNING:'dt_tm'
+2019-12-23 14:30:22,005:WARNING:'dt_tm'
+2019-12-23 14:30:22,007:WARNING:'dt_tm'
+2019-12-23 14:30:22,009:WARNING:'dt_tm'
+2019-12-23 14:30:22,011:WARNING:'dt_tm'
+2019-12-23 14:30:22,013:WARNING:'dt_tm'
+2019-12-23 14:30:22,015:WARNING:'dt_tm'
+2019-12-23 14:30:22,017:WARNING:'dt_tm'
+2019-12-23 14:30:22,019:WARNING:'dt_tm'
+2019-12-23 14:30:22,021:WARNING:'dt_tm'
+2019-12-23 14:30:22,022:WARNING:'dt_tm'
+2019-12-23 14:30:22,024:WARNING:'dt_tm'
+2019-12-23 14:30:22,026:WARNING:'dt_tm'
+2019-12-23 14:30:22,033:WARNING:'dt_tm'
+2019-12-23 14:30:22,035:WARNING:'dt_tm'
+2019-12-23 14:30:22,037:WARNING:'dt_tm'
+2019-12-23 14:30:22,039:WARNING:'dt_tm'
+2019-12-23 14:30:22,041:WARNING:'dt_tm'
+2019-12-23 14:30:22,044:WARNING:'dt_tm'
+2019-12-23 14:30:22,046:WARNING:'dt_tm'
+2019-12-23 14:30:22,047:WARNING:'dt_tm'
+2019-12-23 14:30:22,049:WARNING:'dt_tm'
+2019-12-23 14:30:22,051:WARNING:'dt_tm'
+2019-12-23 14:30:22,054:WARNING:'dt_tm'
+2019-12-23 14:30:22,056:WARNING:'dt_tm'
+2019-12-23 14:30:22,058:WARNING:'dt_tm'
+2019-12-23 14:30:22,060:WARNING:'dt_tm'
+2019-12-23 14:30:22,062:WARNING:'dt_tm'
+2019-12-23 14:30:22,066:WARNING:'dt_tm'
+2019-12-23 14:30:22,068:WARNING:'dt_tm'
+2019-12-23 14:30:22,070:WARNING:'dt_tm'
+2019-12-23 14:30:22,072:WARNING:'dt_tm'
+2019-12-23 14:30:22,073:WARNING:'dt_tm'
+2019-12-23 14:30:22,075:WARNING:'dt_tm'
+2019-12-23 14:30:22,077:WARNING:'dt_tm'
+2019-12-23 14:30:22,079:WARNING:'dt_tm'
+2019-12-23 14:30:22,080:WARNING:'dt_tm'
+2019-12-23 14:30:22,098:WARNING:custmer wait for mes
+2019-12-23 14:31:33,003:WARNING:start
+2019-12-23 14:31:33,008:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f084f565400>
+2019-12-23 14:31:33,014:WARNING:start thread:mq-thread
+2019-12-23 14:31:33,186:WARNING:'dt_tm'
+2019-12-23 14:31:33,188:WARNING:'dt_tm'
+2019-12-23 14:31:33,190:WARNING:'dt_tm'
+2019-12-23 14:31:33,191:WARNING:'dt_tm'
+2019-12-23 14:31:33,196:WARNING:'dt_tm'
+2019-12-23 14:31:33,198:WARNING:'dt_tm'
+2019-12-23 14:31:33,207:WARNING:'dt_tm'
+2019-12-23 14:31:33,209:WARNING:'dt_tm'
+2019-12-23 14:31:33,213:WARNING:'dt_tm'
+2019-12-23 14:31:33,215:WARNING:'dt_tm'
+2019-12-23 14:31:33,217:WARNING:'dt_tm'
+2019-12-23 14:31:33,219:WARNING:'dt_tm'
+2019-12-23 14:31:33,223:WARNING:'dt_tm'
+2019-12-23 14:31:33,231:WARNING:'dt_tm'
+2019-12-23 14:31:33,233:WARNING:'dt_tm'
+2019-12-23 14:31:33,235:WARNING:'dt_tm'
+2019-12-23 14:31:33,237:WARNING:'dt_tm'
+2019-12-23 14:31:33,240:WARNING:'dt_tm'
+2019-12-23 14:31:33,244:WARNING:'dt_tm'
+2019-12-23 14:31:33,246:WARNING:'dt_tm'
+2019-12-23 14:31:33,250:WARNING:'dt_tm'
+2019-12-23 14:31:33,252:WARNING:'dt_tm'
+2019-12-23 14:31:33,256:WARNING:'dt_tm'
+2019-12-23 14:31:33,258:WARNING:'dt_tm'
+2019-12-23 14:31:33,260:WARNING:'dt_tm'
+2019-12-23 14:31:33,262:WARNING:'dt_tm'
+2019-12-23 14:31:33,265:WARNING:'dt_tm'
+2019-12-23 14:31:33,267:WARNING:'dt_tm'
+2019-12-23 14:31:33,269:WARNING:'dt_tm'
+2019-12-23 14:31:33,271:WARNING:'dt_tm'
+2019-12-23 14:31:33,273:WARNING:'dt_tm'
+2019-12-23 14:31:33,275:WARNING:'dt_tm'
+2019-12-23 14:31:33,284:WARNING:'dt_tm'
+2019-12-23 14:31:33,286:WARNING:'dt_tm'
+2019-12-23 14:31:33,288:WARNING:'dt_tm'
+2019-12-23 14:31:33,290:WARNING:'dt_tm'
+2019-12-23 14:31:33,292:WARNING:'dt_tm'
+2019-12-23 14:31:33,296:WARNING:'dt_tm'
+2019-12-23 14:31:33,298:WARNING:'dt_tm'
+2019-12-23 14:31:33,300:WARNING:'dt_tm'
+2019-12-23 14:31:33,302:WARNING:'dt_tm'
+2019-12-23 14:31:33,306:WARNING:'dt_tm'
+2019-12-23 14:31:33,309:WARNING:'dt_tm'
+2019-12-23 14:31:33,311:WARNING:'dt_tm'
+2019-12-23 14:31:33,315:WARNING:'dt_tm'
+2019-12-23 14:31:33,317:WARNING:'dt_tm'
+2019-12-23 14:31:33,321:WARNING:'dt_tm'
+2019-12-23 14:31:33,325:WARNING:'dt_tm'
+2019-12-23 14:31:33,329:WARNING:'dt_tm'
+2019-12-23 14:31:33,331:WARNING:'dt_tm'
+2019-12-23 14:31:33,333:WARNING:'dt_tm'
+2019-12-23 14:31:33,335:WARNING:'dt_tm'
+2019-12-23 14:31:33,344:WARNING:'dt_tm'
+2019-12-23 14:31:33,351:WARNING:'dt_tm'
+2019-12-23 14:31:33,362:WARNING:'dt_tm'
+2019-12-23 14:31:33,374:WARNING:'dt_tm'
+2019-12-23 14:31:33,420:WARNING:custmer wait for mes
+2019-12-23 14:32:46,432:WARNING:start
+2019-12-23 14:32:46,437:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f9520ad0400>
+2019-12-23 14:32:46,443:WARNING:start thread:mq-thread
+2019-12-23 14:32:46,480:WARNING:custmer wait for mes
+2019-12-23 14:32:46,500:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,502:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,508:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,512:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,515:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,518:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,526:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,527:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,531:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,532:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,534:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,536:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,538:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,545:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,547:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,549:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,551:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,553:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,555:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,557:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,561:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,563:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,565:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,567:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,568:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,570:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,572:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,574:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,576:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,578:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,580:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,582:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,589:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,591:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,593:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,595:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,602:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,608:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,612:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,613:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,615:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,617:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,621:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,622:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,624:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,626:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,628:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,632:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,634:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,636:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,638:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,640:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,642:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,644:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,646:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:32:46,648:WARNING:Failed processing format-parameters; Python 'navigablestring' cannot be converted to a MySQL type
+2019-12-23 14:33:21,005:WARNING:start
+2019-12-23 14:33:21,009:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f873db05390>
+2019-12-23 14:33:21,015:WARNING:start thread:mq-thread
+2019-12-23 14:33:21,071:WARNING:custmer wait for mes
+2019-12-23 14:35:44,188:WARNING:start
+2019-12-23 14:35:44,192:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f8281213390>
+2019-12-23 14:35:44,199:WARNING:start thread:mq-thread
+2019-12-23 14:35:44,255:WARNING:custmer wait for mes
+2019-12-23 14:37:07,511:WARNING:start
+2019-12-23 14:37:07,516:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f387ad03390>
+2019-12-23 14:37:07,521:WARNING:start thread:mq-thread
+2019-12-23 14:37:07,559:WARNING:custmer wait for mes
+2019-12-23 14:40:08,443:WARNING:start
+2019-12-23 14:40:08,449:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f2787bd6c18>
+2019-12-23 14:40:08,455:WARNING:start thread:mq-thread
+2019-12-23 14:40:08,547:WARNING:custmer wait for mes
+2019-12-23 14:45:45,678:WARNING:start
+2019-12-23 14:45:45,683:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fae22914390>
+2019-12-23 14:45:45,689:WARNING:start thread:mq-thread
+2019-12-23 14:45:45,745:WARNING:custmer wait for mes
+2019-12-23 14:47:35,349:WARNING:start
+2019-12-23 14:47:35,354:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fa3297f3400>
+2019-12-23 14:47:35,360:WARNING:start thread:mq-thread
+2019-12-23 14:47:35,400:WARNING:custmer wait for mes
+2019-12-23 14:50:59,861:WARNING:start
+2019-12-23 14:50:59,867:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f9b2caf6c50>
+2019-12-23 14:50:59,874:WARNING:start thread:mq-thread
+2019-12-23 14:50:59,935:WARNING:custmer wait for mes
+2019-12-23 14:53:52,285:WARNING:start
+2019-12-23 14:53:52,289:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f09b2bd0c50>
+2019-12-23 14:53:52,296:WARNING:start thread:mq-thread
+2019-12-23 14:53:52,351:WARNING:custmer wait for mes
+2019-12-23 15:00:56,987:WARNING:insert opc  data2019-12-23 15:00:56
+2019-12-23 15:34:59,769:WARNING:start
+2019-12-23 15:34:59,775:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f53106c1c50>
+2019-12-23 15:34:59,781:WARNING:start thread:mq-thread
+2019-12-23 15:34:59,853:WARNING:custmer wait for mes
+2019-12-23 15:35:01,043:WARNING:insert opc  data2019-12-23 15:35:01
+2019-12-23 15:35:54,731:WARNING:start
+2019-12-23 15:35:54,736:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f1882a96c50>
+2019-12-23 15:35:54,742:WARNING:start thread:mq-thread
+2019-12-23 15:35:54,792:WARNING:custmer wait for mes
+2019-12-23 15:39:55,864:WARNING:1366 (HY000): Incorrect string value: '\xE6\x8C\x87\xE5\xAE\x9A...' for column 'value' at row 1
+2019-12-23 15:43:13,471:WARNING:1366 (HY000): Incorrect string value: '\xE7\x9B\x96\xE5\x86\xB7...' for column 'value' at row 1
+2019-12-23 15:43:13,477:WARNING:1366 (HY000): Incorrect string value: '\xE7\xB4\xA7\xE6\x80\xA5...' for column 'value' at row 1
+2019-12-23 15:43:13,551:WARNING:1366 (HY000): Incorrect string value: '\xE8\xBD\xAE\xE5\xBB\x93...' for column 'value' at row 1
+2019-12-23 15:44:02,650:WARNING:start
+2019-12-23 15:44:02,655:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fcdc4a5cbe0>
+2019-12-23 15:44:02,661:WARNING:start thread:mq-thread
+2019-12-23 15:44:02,711:WARNING:custmer wait for mes
+2019-12-23 15:47:57,131:WARNING:start
+2019-12-23 15:47:57,136:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fc1f840d4a8>
+2019-12-23 15:47:57,142:WARNING:start thread:mq-thread
+2019-12-23 15:47:57,198:WARNING:custmer wait for mes
+2019-12-23 15:57:47,144:WARNING:start
+2019-12-23 15:57:47,192:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f48e8219c50>
+2019-12-23 15:57:47,202:WARNING:start thread:mq-thread
+2019-12-23 15:57:47,266:WARNING:custmer wait for mes
+2019-12-23 15:58:02,826:WARNING:start
+2019-12-23 15:58:02,831:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f1b5a07f470>
+2019-12-23 15:58:02,836:WARNING:start thread:mq-thread
+2019-12-23 15:58:02,880:WARNING:custmer wait for mes
+2019-12-23 15:58:44,116:WARNING:start
+2019-12-23 15:58:44,121:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f81a4676470>
+2019-12-23 15:58:44,128:WARNING:start thread:mq-thread
+2019-12-23 15:58:44,166:WARNING:custmer wait for mes
+2019-12-23 16:00:59,747:WARNING:insert opc  data2019-12-23 16:00:59
+2019-12-23 16:07:55,687:WARNING:start
+2019-12-23 16:07:55,690:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fa549203be0>
+2019-12-23 16:07:55,693:WARNING:start thread:mq-thread
+2019-12-23 16:07:55,759:WARNING:custmer wait for mes
+2019-12-23 16:42:08,056:WARNING:start
+2019-12-23 16:42:08,061:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fc4596eec50>
+2019-12-23 16:42:08,067:WARNING:start thread:mq-thread
+2019-12-23 16:42:08,187:WARNING:custmer wait for mes
+2019-12-23 16:42:09,092:WARNING:insert opc  data2019-12-23 16:42:09
+2019-12-23 16:44:11,956:WARNING:start
+2019-12-23 16:44:11,960:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f8e2fae34a8>
+2019-12-23 16:44:11,967:WARNING:start thread:mq-thread
+2019-12-23 16:44:12,009:WARNING:custmer wait for mes
+2019-12-23 16:44:53,166:WARNING:start
+2019-12-23 16:44:53,171:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f7bff97c470>
+2019-12-23 16:44:53,177:WARNING:start thread:mq-thread
+2019-12-23 16:44:53,209:WARNING:custmer wait for mes
+2019-12-23 17:01:02,443:WARNING:insert opc  data2019-12-23 17:01:02
+2019-12-23 17:28:13,337:ERROR:Unexpected connection close detected: AMQPHeartbeatTimeout: ('No activity or too many missed heartbeats in the last 60 seconds',)
+2019-12-23 17:28:18,372:WARNING:custmer wait for mes
+2019-12-23 17:31:03,753:WARNING:insert opc  data2019-12-23 17:31:03
+2019-12-23 18:01:05,083:WARNING:insert opc  data2019-12-23 18:01:05
+2019-12-23 18:31:06,559:WARNING:insert opc  data2019-12-23 18:31:06
+2019-12-23 19:01:07,865:WARNING:insert opc  data2019-12-23 19:01:07
+2019-12-23 19:31:09,213:WARNING:insert opc  data2019-12-23 19:31:09
+2019-12-23 20:01:10,701:WARNING:insert opc  data2019-12-23 20:01:10
+2019-12-23 20:31:12,055:WARNING:insert opc  data2019-12-23 20:31:12
+2019-12-23 21:01:13,357:WARNING:insert opc  data2019-12-23 21:01:13
+2019-12-23 21:31:14,711:WARNING:insert opc  data2019-12-23 21:31:14
+2019-12-23 22:01:16,158:WARNING:insert opc  data2019-12-23 22:01:16
+2019-12-23 22:31:17,602:WARNING:insert opc  data2019-12-23 22:31:17
+2019-12-23 23:01:18,963:WARNING:insert opc  data2019-12-23 23:01:18
+2019-12-23 23:31:20,333:WARNING:insert opc  data2019-12-23 23:31:20
+2019-12-24 00:01:21,785:WARNING:insert opc  data2019-12-24 00:01:21
+2019-12-24 00:31:23,084:WARNING:insert opc  data2019-12-24 00:31:23
+2019-12-24 01:01:24,483:WARNING:insert opc  data2019-12-24 01:01:24
+2019-12-24 01:26:05,030:ERROR:Unexpected connection close detected: AMQPHeartbeatTimeout: ('No activity or too many missed heartbeats in the last 60 seconds',)
+2019-12-24 01:26:10,069:WARNING:custmer wait for mes
+2019-12-24 01:31:25,971:WARNING:insert opc  data2019-12-24 01:31:25
+2019-12-24 02:01:27,483:WARNING:insert opc  data2019-12-24 02:01:27
+2019-12-24 02:31:28,807:WARNING:insert opc  data2019-12-24 02:31:28
+2019-12-24 03:01:30,325:WARNING:insert opc  data2019-12-24 03:01:30
+2019-12-24 03:31:31,686:WARNING:insert opc  data2019-12-24 03:31:31
+2019-12-24 04:01:32,910:WARNING:insert opc  data2019-12-24 04:01:32
+2019-12-24 04:31:34,485:WARNING:insert opc  data2019-12-24 04:31:34
+2019-12-24 05:01:35,685:WARNING:insert opc  data2019-12-24 05:01:35
+2019-12-24 05:31:37,144:WARNING:insert opc  data2019-12-24 05:31:37
+2019-12-24 06:01:38,690:WARNING:insert opc  data2019-12-24 06:01:38
+2019-12-24 06:31:39,957:WARNING:insert opc  data2019-12-24 06:31:39
+2019-12-24 07:01:41,313:WARNING:insert opc  data2019-12-24 07:01:41
+2019-12-24 07:31:42,653:WARNING:insert opc  data2019-12-24 07:31:42
+2019-12-24 08:01:44,014:WARNING:insert opc  data2019-12-24 08:01:44
+2019-12-24 08:31:45,525:WARNING:insert opc  data2019-12-24 08:31:45
+2019-12-24 08:53:46,161:WARNING:start
+2019-12-24 08:53:46,165:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f703c351c50>
+2019-12-24 08:53:46,172:WARNING:start thread:mq-thread
+2019-12-24 08:53:46,218:WARNING:custmer wait for mes
+2019-12-24 08:54:27,517:WARNING:start
+2019-12-24 08:54:27,522:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f8558028da0>
+2019-12-24 08:54:27,526:WARNING:start thread:mq-thread
+2019-12-24 08:54:27,564:WARNING:custmer wait for mes
+2019-12-24 08:57:19,630:WARNING:start
+2019-12-24 08:57:19,635:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f9c4880bc50>
+2019-12-24 08:57:19,641:WARNING:start thread:mq-thread
+2019-12-24 08:57:19,680:WARNING:custmer wait for mes
+2019-12-24 09:14:02,191:WARNING:start
+2019-12-24 09:14:02,196:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f443478e470>
+2019-12-24 09:14:02,204:WARNING:start thread:mq-thread
+2019-12-24 09:14:02,316:WARNING:custmer wait for mes
+2019-12-24 09:14:03,177:WARNING:insert opc  data2019-12-24 09:14:03
+2019-12-24 09:20:18,227:WARNING:start
+2019-12-24 09:20:18,233:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f958c4dc4a8>
+2019-12-24 09:20:18,238:WARNING:start thread:mq-thread
+2019-12-24 09:20:18,290:WARNING:custmer wait for mes
+2019-12-24 10:47:26,956:WARNING:start
+2019-12-24 10:47:26,962:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fed64b924a8>
+2019-12-24 10:47:26,968:WARNING:start thread:mq-thread
+2019-12-24 10:47:27,225:WARNING:custmer wait for mes
+2019-12-24 10:47:28,174:WARNING:insert opc  data2019-12-24 10:47:28
+2019-12-24 10:53:50,135:WARNING:start
+2019-12-24 10:53:50,139:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f3741f164a8>
+2019-12-24 10:53:50,143:WARNING:start thread:mq-thread
+2019-12-24 10:53:50,392:WARNING:custmer wait for mes
+2019-12-24 10:53:51,079:WARNING:insert opc  data2019-12-24 10:53:51
+2019-12-24 10:54:03,110:WARNING:start
+2019-12-24 10:54:03,115:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7ff3c27c1438>
+2019-12-24 10:54:03,120:WARNING:start thread:mq-thread
+2019-12-24 10:54:03,157:WARNING:custmer wait for mes
+2019-12-24 10:54:57,107:WARNING:start
+2019-12-24 10:54:57,112:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f2f105834a8>
+2019-12-24 10:54:57,118:WARNING:start thread:mq-thread
+2019-12-24 10:54:57,320:WARNING:custmer wait for mes
+2019-12-24 13:16:38,118:WARNING:start
+2019-12-24 13:16:38,123:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7fdf04377c50>
+2019-12-24 13:16:38,129:WARNING:start thread:mq-thread
+2019-12-24 13:16:38,455:WARNING:custmer wait for mes
+2019-12-24 13:16:40,275:WARNING:insert opc  data2019-12-24 13:16:40
+2019-12-24 13:16:41,928:WARNING:insert opc  data2019-12-24 13:16:41
+2019-12-24 13:16:43,709:WARNING:insert opc  data2019-12-24 13:16:43
+2019-12-24 13:16:45,046:WARNING:insert opc  data2019-12-24 13:16:45
+2019-12-24 13:16:45,914:WARNING:insert opc  data2019-12-24 13:16:45
+2019-12-24 13:17:10,468:WARNING:start
+2019-12-24 13:17:10,474:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f7cb37b14a8>
+2019-12-24 13:17:10,477:WARNING:start thread:mq-thread
+2019-12-24 13:17:10,512:WARNING:custmer wait for mes
+2019-12-24 13:17:43,623:WARNING:start
+2019-12-24 13:17:43,628:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f8945bcdbe0>
+2019-12-24 13:17:43,634:WARNING:start thread:mq-thread
+2019-12-24 13:17:43,675:WARNING:custmer wait for mes
+2019-12-24 13:31:59,233:WARNING:insert opc  data2019-12-24 13:31:59
+2019-12-24 13:43:03,615:WARNING:insert opc  data2019-12-24 13:43:03
+2019-12-24 14:12:05,164:WARNING:insert opc  data2019-12-24 14:12:05
+2019-12-24 14:42:06,372:WARNING:insert opc  data2019-12-24 14:42:06
+2019-12-24 15:12:07,703:WARNING:insert opc  data2019-12-24 15:12:07
+2019-12-24 15:42:08,906:WARNING:insert opc  data2019-12-24 15:42:08
+2019-12-24 16:12:10,269:WARNING:insert opc  data2019-12-24 16:12:10
+2019-12-24 16:42:11,770:WARNING:insert opc  data2019-12-24 16:42:11
+2019-12-24 17:12:13,223:WARNING:insert opc  data2019-12-24 17:12:13
+2019-12-24 17:42:14,742:WARNING:insert opc  data2019-12-24 17:42:14
+2019-12-24 18:12:16,032:WARNING:insert opc  data2019-12-24 18:12:16
+2019-12-24 18:42:17,257:WARNING:insert opc  data2019-12-24 18:42:17
+2019-12-24 19:12:18,541:WARNING:insert opc  data2019-12-24 19:12:18
+2019-12-24 19:42:19,953:WARNING:insert opc  data2019-12-24 19:42:19
+2019-12-24 20:12:21,415:WARNING:insert opc  data2019-12-24 20:12:21
+2019-12-24 20:42:22,712:WARNING:insert opc  data2019-12-24 20:42:22
+2019-12-24 21:12:24,079:WARNING:insert opc  data2019-12-24 21:12:24
+2019-12-24 21:42:25,834:WARNING:insert opc  data2019-12-24 21:42:25
+2019-12-24 22:12:26,921:WARNING:insert opc  data2019-12-24 22:12:26
+2019-12-24 22:42:28,177:WARNING:insert opc  data2019-12-24 22:42:28
+2019-12-24 23:12:29,642:WARNING:insert opc  data2019-12-24 23:12:29
+2019-12-24 23:42:30,981:WARNING:insert opc  data2019-12-24 23:42:30
+2019-12-25 00:12:32,561:WARNING:insert opc  data2019-12-25 00:12:32
+2019-12-25 00:42:33,604:WARNING:insert opc  data2019-12-25 00:42:33
+2019-12-25 01:12:35,151:WARNING:insert opc  data2019-12-25 01:12:35
+2019-12-25 01:42:36,459:WARNING:insert opc  data2019-12-25 01:42:36
+2019-12-25 02:12:37,782:WARNING:insert opc  data2019-12-25 02:12:37
+2019-12-25 02:42:39,095:WARNING:insert opc  data2019-12-25 02:42:39
+2019-12-25 03:12:40,474:WARNING:insert opc  data2019-12-25 03:12:40
+2019-12-25 03:42:41,755:WARNING:insert opc  data2019-12-25 03:42:41
+2019-12-25 04:12:43,133:WARNING:insert opc  data2019-12-25 04:12:43
+2019-12-25 04:42:44,488:WARNING:insert opc  data2019-12-25 04:42:44
+2019-12-25 05:12:46,405:WARNING:insert opc  data2019-12-25 05:12:46
+2019-12-25 05:42:47,292:WARNING:insert opc  data2019-12-25 05:42:47
+2019-12-25 06:12:48,651:WARNING:insert opc  data2019-12-25 06:12:48
+2019-12-25 06:42:49,983:WARNING:insert opc  data2019-12-25 06:42:49
+2019-12-25 07:12:51,322:WARNING:insert opc  data2019-12-25 07:12:51
+2019-12-25 07:42:52,749:WARNING:insert opc  data2019-12-25 07:42:52
+2019-12-25 08:12:54,225:WARNING:insert opc  data2019-12-25 08:12:54
+2019-12-25 08:42:55,510:WARNING:insert opc  data2019-12-25 08:42:55
+2019-12-25 09:16:39,788:WARNING:start
+2019-12-25 09:16:39,794:WARNING:<mysql.connector.connection.MySQLConnection object at 0x7f7632d73828>
+2019-12-25 09:16:39,802:WARNING:start thread:mq-thread
+2019-12-25 09:16:39,930:WARNING:custmer wait for mes
+2019-12-25 09:16:40,869:WARNING:insert opc  data2019-12-25 09:16:40

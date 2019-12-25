@@ -5,6 +5,7 @@ import requests
 import re
 import bs4
 from datetime import datetime,timedelta
+import sql
 
 language = {'servo': ''}
 
@@ -116,6 +117,7 @@ class readMtThread(threading.Thread):
         self.name = name
         self.url = url
         self.No = No
+        self.cnt = 0
         self.dataitemidlist = ['servo', 'spndl', 'atime', 'ctime', 'tcltime', 'yltime', 'estop', 'pltnum', 'ccond', 'logic',
                           'system', 'concentration', 'cooltemp', 'coolhealth', 'avail', 'd1_asset_chg', 'd1_asset_rem',
                           'functionalmode', 'door', 'electric', 'hydhealth', 'lube', 'pf', 'Sovr', 'exec',
@@ -132,13 +134,15 @@ class readMtThread(threading.Thread):
         while True:
             try:
                 self.getMtconnect()
-
+                self.cnt +=1
+                if self.cnt % 10 == 0:
+                    print(self.name,"getMtconnect -----> ", self.cnt)
             except Exception as err:
-                print(err)
+                # print(err)
+                print(self.name,'--->关机状态，无法创建连接')
             finally:
-                time.sleep(5)
+                time.sleep(10)
 
-        pass
     def getMtconnect(self):
         rec = requests.get(self.url)
         soup = bs4.BeautifulSoup(rec.text, "lxml")
@@ -148,10 +152,10 @@ class readMtThread(threading.Thread):
         regexp = r'creationtime="(.*?)Z"'
         timelist = re.findall(regexp, str(ss[0]))
         # print(timelist)
-        stime = timelist[0].replace("T", " ");
+        stime = timelist[0].replace("T", " ")
         # print('stime ->>',stime)
-        currenttime = stime
-
+        # currenttime = stime
+        currenttime = self.changTimeFormat(stime)
         # print(gloltime)
         # res=soup.prettify() #处理好缩进，结构化显示
 
@@ -177,19 +181,28 @@ class readMtThread(threading.Thread):
             stime = re.findall(regexp, str(timestr[0]))
 
             timestamp = ' '.join(stime[0])
+            timestamp_8 = self.changTimeFormat(timestamp)
+            dt = timestamp_8.split(' ')[0]
+            tm = timestamp_8.split(' ')[1]
 
-            # stime = time.strptime(timestr[0], '%Y/%m/%d %H:%M:%S')
-            # print(ss[0].name,'\t', x,'\t', ss[0].string,'\t',stime)
-            # list = ss[0].name+x+ss[0].string+stime
+
+
             dict = {}
 
             # dict['chinese'] = language[self.dataitemidlist[i]]  # 添加信息
             dict['itemid'] = self.dataitemidlist[i]  # 更新
-            dict['timestamp'] = self.changTimeFormat(timestamp)  # 添加信息
-            dict['value'] = ss[0].string  # 更新
+
+            dict['value'] = (ss[0].string ) # 更新
+            # if dict['value']==None:
+            #     dict['value'] =0
             dict['machine_num'] = self.No #mazak1050
-            dict['currenttime'] = self.changTimeFormat(currenttime)
-            print(dict)
+            dict['dt'] =dt
+            dict['tm'] =tm
+            dict['dt_tm']= timestamp_8
+            # dict['create_dt_tm'] =currenttime
+            dict['machine_dt_tm']=  currenttime
+            # print(dict)
+            sql.insert_Mtconnect_to_mysql(dict)
 
     def changTimeFormat(self,timeStr):
 

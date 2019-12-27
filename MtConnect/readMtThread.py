@@ -136,12 +136,13 @@ class readMtThread(threading.Thread):
                 self.getMtconnect()
                 self.cnt +=1
                 if self.cnt % 10 == 0:
-                    print(self.name,"getMtconnect -----> ", self.cnt)
+                    # print(self.name,"getMtconnect -----> ", self.cnt)
+                    pass
             except Exception as err:
                 # print(err)
                 print(self.name,'--->关机状态，无法创建连接')
             finally:
-                time.sleep(10)
+                time.sleep(30)
 
     def getMtconnect(self):
         rec = requests.get(self.url)

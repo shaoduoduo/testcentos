@@ -75,5 +75,5 @@ class mqthread(threading.Thread):
         chan.basic_consume(queue_particles,self.callback_particles,True)
 
 
-        logdebug.logdeb("custmer wait for mes")
+        logdebug.logdeb("custmer wait for mes"+'---->>opc')
         chan.start_consuming()

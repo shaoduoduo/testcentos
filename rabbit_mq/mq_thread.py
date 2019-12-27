@@ -34,9 +34,9 @@ class mqthread(threading.Thread):
         dictdata = json.loads(body)
 
         # print(dictdata['location'])
-        if self.location == 'PC_LPC':
-            # sql.insert_to_mysql(dictdata)
-            print(dictdata)
+        if self.location == 'rabbitmq_LPC':
+            sql.insert_lpc_to_mysql(dictdata)
+            # print(dictdata)
 
         # print("thread name",self.getName())
     def mq_init(self):
@@ -44,7 +44,7 @@ class mqthread(threading.Thread):
         pwd = readconfig.readcon(self.location,'pwd')
         host = readconfig.readcon(self.location,'host')
         virtual_host = readconfig.readcon(self.location,'virtual_host')
-        queue = readconfig.readcon(self.location,'queue_opc')
+        queue = readconfig.readcon(self.location,'queue')
 
         useer_pwd = pika.PlainCredentials(username,pwd)
 
@@ -60,5 +60,5 @@ class mqthread(threading.Thread):
         # chan.basic_consume(queue_particles,self.callback_particles,True)
 
 
-        logdebug.logdeb("custmer wait for mes---->>>",self.location)
+        logdebug.logdeb("custmer wait for mes---->>>"+self.location)
         chan.start_consuming()

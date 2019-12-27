@@ -27,7 +27,7 @@ def connect_to_mysql():
     except Exception as error:
         logdebug.logdeb(error)
         return False
-    logdebug.logdeb(mydb)
+    # logdebug.logdeb(mydb)
     mycursor = mydb.cursor()
     mycursor.execute("SHOW DATABASES")
 
@@ -167,7 +167,7 @@ def insert_particles_to_mysql(paralist):#pc  input  every 60 times report once
     if float(paralist["value"]) == 0:
         return
 
-    sql = "INSERT INTO TB_PARTICLES (location,dt,tm,value,dt_tm,create_dt) VALUES(%s,%s,%s,%s,%s,%s)"
+    sql = "INSERT INTO TB_PARTICLES (location,dt,tm,value,dt_tm,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s)"
 
     locatlist = paralist["location"]
     list = locatlist[1:]
@@ -178,7 +178,7 @@ def insert_particles_to_mysql(paralist):#pc  input  every 60 times report once
     pass
     try:
 
-        val = (lcoationstr,paralist["dt"],paralist["tm"],float(paralist["value"]),paralist["dt_tm"],paralist["create_dt"])
+        val = (lcoationstr,paralist["dt"],paralist["tm"],float(paralist["value"]),paralist["dt_tm"],paralist["create_dt_tm"])
     except Exception as err:
         logdebug.logdeb(err)
         return
@@ -201,3 +201,47 @@ def insert_particles_to_mysql(paralist):#pc  input  every 60 times report once
         threadLock.release()
         if(paralist["location"] == 'TS2_2'):
             print('insert PARTICLES',datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+
+def insert_lpc_to_mysql(paralist):#pc  input  every 60 times report once
+#     paralist must have 6 items
+    global threadLock
+    global mycursor
+    global part_count
+    # print(len(paralist))
+
+    if float(paralist["value"]) == 0:
+        return
+
+    sql = "INSERT INTO TB_PARTICLES (location,dt,tm,value,dt_tm,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s)"
+
+    lcoationstr= paralist["location"]
+
+    if( lcoationstr != '0.1um/LPC' )and (lcoationstr != '0.3um/LPC'):
+        return
+    # lcoation='lpc/0.'+lcoationstr
+    try:
+
+        val = (lcoationstr,paralist["dt"],paralist["tm"],float(paralist["value"]),paralist["dt_tm"],paralist["create_dt_tm"])
+    except Exception as err:
+        logdebug.logdeb(err)
+        return
+    # print(type(val))
+    try:
+        threadLock.acquire()
+        mycursor.execute(sql,val)
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+
+
+    try:
+        threadLock.acquire()
+        mydb.commit()
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+        if(paralist["location"] == 'TS2_2'):
+            print('insert PARTICLES',datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+

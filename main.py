@@ -49,12 +49,12 @@ def main():
     mazak530_1.setDaemon(True)
 
 
-
-    Mazak1050.start()
-    mq_thread.start()
-    mazak530_0.start()
-    mazak530_1.start()
-    mq_pc_lpc.start()
+    #
+    # Mazak1050.start()
+    # mq_thread.start()
+    # mazak530_0.start()
+    # mazak530_1.start()
+    # mq_pc_lpc.start()
 
 
 
@@ -62,7 +62,7 @@ def main():
 
         print("main loop",threading.activeCount())
         # print(threading.enumerate())
-        time.sleep(10)
+        time.sleep(30)
 
 
 if __name__ == '__main__':

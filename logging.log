@@ -361,3 +361,228 @@ Traceback (most recent call last):
   File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
     raise self._reap_last_connection_workflow_error(error)
 pika.exceptions.AMQPConnectionError
+2020-01-03 11:36:23,776:WARNING:start thread:mq-thread
+2020-01-03 11:36:23,782:WARNING:start thread:pc_lpc
+2020-01-03 11:36:23,828:WARNING:custmer wait for mes---->>opc
+2020-01-03 11:36:26,819:ERROR:Socket failed to connect: <socket.socket fd=14, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 38548)>; error=113 (No route to host)
+2020-01-03 11:36:26,819:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 11:36:26,820:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 11:36:26,821:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 11:36:26,821:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:36:26,822:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:36:26,822:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 11:36:34,843:ERROR:Socket failed to connect: <socket.socket fd=13, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 38552)>; error=113 (No route to host)
+2020-01-03 11:36:34,844:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 11:36:34,844:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 11:36:34,844:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 11:36:34,844:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:36:34,844:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:36:34,844:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 11:36:42,865:ERROR:Socket failed to connect: <socket.socket fd=14, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 38556)>; error=113 (No route to host)
+2020-01-03 11:36:42,866:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 11:36:42,866:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 11:36:42,866:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 11:36:42,866:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:36:42,866:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:36:42,867:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 11:46:36,112:WARNING:start thread:mq-thread
+2020-01-03 11:46:36,114:WARNING:start thread:pc_lpc
+2020-01-03 11:46:36,159:WARNING:custmer wait for mes---->>opc
+2020-01-03 11:46:39,151:ERROR:Socket failed to connect: <socket.socket fd=13, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39064)>; error=113 (No route to host)
+2020-01-03 11:46:39,151:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 11:46:39,152:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 11:46:39,153:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 11:46:39,154:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:46:39,154:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:46:39,154:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 12:56:08,290:WARNING:start thread:mq-thread
+2020-01-03 12:56:08,293:WARNING:start thread:pc_lpc
+2020-01-03 12:56:08,354:WARNING:custmer wait for mes---->>opc
+2020-01-03 12:56:52,152:WARNING:start thread:mq-thread
+2020-01-03 12:56:52,172:WARNING:start thread:pc_lpc
+2020-01-03 12:56:52,247:WARNING:custmer wait for mes---->>opc
+2020-01-03 13:00:56,597:WARNING:start thread:mq-thread
+2020-01-03 13:00:56,601:WARNING:start thread:pc_lpc
+2020-01-03 13:00:56,656:WARNING:custmer wait for mes---->>opc
+2020-01-03 13:01:55,879:WARNING:start thread:mq-thread
+2020-01-03 13:01:55,883:WARNING:start thread:pc_lpc
+2020-01-03 13:01:55,933:WARNING:custmer wait for mes---->>opc
+2020-01-03 13:01:58,915:ERROR:Socket failed to connect: <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39714)>; error=113 (No route to host)
+2020-01-03 13:01:58,915:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 13:01:58,916:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 13:01:58,917:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 13:01:58,918:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 13:01:58,918:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 13:01:58,918:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 13:02:06,941:ERROR:Socket failed to connect: <socket.socket fd=10, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39722)>; error=113 (No route to host)
+2020-01-03 13:02:06,942:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 13:02:06,942:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 13:02:06,942:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 13:02:06,942:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 13:02:06,942:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 13:02:06,943:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 13:02:14,963:ERROR:Socket failed to connect: <socket.socket fd=10, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39726)>; error=113 (No route to host)
+2020-01-03 13:02:14,964:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 13:02:14,964:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 13:02:14,964:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 13:02:14,964:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 13:02:14,964:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 13:02:14,965:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 14:13:21,019:WARNING:start thread:mq-thread
+2020-01-03 14:13:21,027:WARNING:start thread:pc_lpc
+2020-01-03 14:13:21,069:WARNING:custmer wait for mes---->>opc
+2020-01-03 14:13:24,055:ERROR:Socket failed to connect: <socket.socket fd=6, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39840)>; error=113 (No route to host)
+2020-01-03 14:13:24,055:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 14:13:24,056:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 14:13:24,057:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 14:13:24,058:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:13:24,058:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:13:24,058:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 14:13:32,081:ERROR:Socket failed to connect: <socket.socket fd=11, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39848)>; error=113 (No route to host)
+2020-01-03 14:13:32,081:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 14:13:32,082:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 14:13:32,082:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 14:13:32,082:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:13:32,082:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:13:32,082:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 14:13:40,103:ERROR:Socket failed to connect: <socket.socket fd=8, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39852)>; error=113 (No route to host)
+2020-01-03 14:13:40,104:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 14:13:40,104:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 14:13:40,104:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 14:13:40,104:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:13:40,104:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:13:40,105:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 14:13:48,123:ERROR:Socket failed to connect: <socket.socket fd=11, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39856)>; error=113 (No route to host)
+2020-01-03 14:13:48,124:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 14:13:48,124:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 14:13:48,124:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 14:13:48,124:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:13:48,124:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:13:48,125:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 14:13:56,145:ERROR:Socket failed to connect: <socket.socket fd=11, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39866)>; error=113 (No route to host)
+2020-01-03 14:13:56,146:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 14:13:56,146:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 14:13:56,146:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 14:13:56,146:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:13:56,146:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:13:56,147:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 14:14:04,165:ERROR:Socket failed to connect: <socket.socket fd=11, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39870)>; error=113 (No route to host)
+2020-01-03 14:14:04,166:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 14:14:04,166:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 14:14:04,166:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 14:14:04,166:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:14:04,166:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:14:04,166:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 14:14:12,187:ERROR:Socket failed to connect: <socket.socket fd=11, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39874)>; error=113 (No route to host)
+2020-01-03 14:14:12,188:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 14:14:12,188:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 14:14:12,188:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 14:14:12,188:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:14:12,188:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:14:12,189:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 14:14:20,209:ERROR:Socket failed to connect: <socket.socket fd=11, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39880)>; error=113 (No route to host)
+2020-01-03 14:14:20,210:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 14:14:20,210:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 14:14:20,210:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 14:14:20,210:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:14:20,210:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:14:20,210:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 14:14:28,231:ERROR:Socket failed to connect: <socket.socket fd=11, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39890)>; error=113 (No route to host)
+2020-01-03 14:14:28,232:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 14:14:28,232:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 14:14:28,232:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 14:14:28,232:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:14:28,232:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:14:28,233:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 14:14:29,354:WARNING:/mnt/share/123456.xlsxhas been read at/mnt/share/123456.xlsx ---->>>>2020-01-03 10:54:43 
+
+2020-01-03 14:14:36,255:ERROR:Socket failed to connect: <socket.socket fd=11, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39894)>; error=113 (No route to host)
+2020-01-03 14:14:36,256:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 14:14:36,256:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 14:14:36,256:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 14:14:36,256:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:14:36,256:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:14:36,257:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 14:14:44,277:ERROR:Socket failed to connect: <socket.socket fd=11, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 39898)>; error=113 (No route to host)
+2020-01-03 14:14:44,278:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 14:14:44,278:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 14:14:44,278:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 14:14:44,278:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:14:44,278:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 14:14:44,279:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 14:15:26,224:WARNING:/mnt/share/123456.xlsxhas been read at/mnt/share/123456.xlsx ---->>>>2020-01-03 10:54:43 
+
+2020-01-03 15:06:38,204:WARNING:/mnt/share/1 - 副本.xlsxhas been read at/mnt/share/1 - 副本.xlsx ---->>>>2020-01-03 14:59:58 
+

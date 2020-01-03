@@ -1,7 +1,7 @@
 import watchdog
 import logdebug
 import readconfig
-import readxls
+
 from watchdog.events import FileSystemEventHandler
 # from watchdog.observers import Observer
 
@@ -92,22 +92,29 @@ class LoggingEventHandler(FileSystemEventHandler):
             if filescan.scanfile(event.src_path) == False:  # did not have save this file before
 
                 # res = read_pc_Titration(event.src_path)
+                time.sleep(3)
+
                 try:
                     res = read_pc_Titration(event.src_path)
                     # print(res[0])
+                    if (res.__len__() != 42):  # last judge  and check
+                        print('lines is wrong',res.__len__())
+                        # print(res)
+                        return
+
                     if res[0]['location'] != 'NC-DEP1-HKOH-1':
-                        print('not right file',event.src_path)
+                        print('not right file location is wrong',event.src_path,res[0]['location'])
                         return
                 except Exception as  e:
                     # print(e)
-                    print('not right file',event.src_path)
+                    print('not right file  Exception',event.src_path,e)
                     return
 
-                if(res.__len__()==40):#last judge  and check
-                    for x in res:
-                        sql.insert_pc_to_mysql(x)
-                    print('record file ',event.src_path)
-                    filescan.recordfile(event.src_path)
+
+                for x in res:
+                    sql.insert_pc_to_mysql(x)
+                print('record file ',event.src_path)
+                filescan.recordfile(event.src_path)
             filescan.__del__()
 
 

@@ -85,10 +85,17 @@ def insert_pc_to_mysql(paralist):#pc  input
     global mycursor
     # print(len(paralist))"sp_tb_elec_update_inc_val()"
 
-    sql = "INSERT INTO TB_PC_INPUT (location,dt_tm,value,create_dt_tm) VALUES(%s,%s,%s,CURRENT_TIMESTAMP())"
+
+    if  paralist['date1'] ==0 or paralist['date2']==0:
+        return
+
+
+    sql = "INSERT INTO TB_PC_INPUT (location,chemical1_result1,chemical2_result1,date1," \
+          "chemical1_result2,chemical2_result2,date2,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
 
     try:
-        val = (paralist["location"],paralist["dt_tm"],paralist["value"])
+        val = (paralist["location"],paralist["Chem1_result1"],paralist["Chem2_result1"],paralist["date1"],
+               paralist["Chem1_result2"],paralist["Chem2_result2"],paralist["date2"])
     except Exception as err:
         logdebug.logdeb(err)
         return

@@ -25,7 +25,7 @@ class mqthread(threading.Thread):
                 self.mq_init()
                 break
             except Exception as err:
-                print('mq_init err :',err)
+                print('mq_init err :',err,self.name)
             time.sleep(5)
 
     def callback(self,ch,method,properties,body):

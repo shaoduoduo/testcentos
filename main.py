@@ -7,6 +7,8 @@ import logdebug
 import filewatch
 import threading
 import readconfig
+import pc_file.pc_filewatcher as pc_f
+
 from MtConnect.readMtThread import  *
 # from concurrent.futures import ThreadPoolExecutor
 #
@@ -14,16 +16,18 @@ from MtConnect.readMtThread import  *
 
 def main():
 
+    sql.connect_to_mysql()
+
     logdebug.configlog()
+
     print("start")
+
     try:
-        filewatch.file_Watch_init()
+        pc_f.file_Watch_init()
     except Exception as err:
         logdebug.logdeb(err)
         logdebug.logdeb('filewatch fail  !!!!!!!!!!!1')
 
-
-    sql.connect_to_mysql()
 
     mazak1050url = readconfig.readcon("MtConnect","mazak1050url")
     mazak530_0url = readconfig.readcon("MtConnect", "mazak530_0url")
@@ -53,13 +57,12 @@ def main():
     mq_pc_lpc.start()
 
 
-    # test_thread.start()
 
     while True:
 
         print("main loop",threading.activeCount())
         # print(threading.enumerate())
-        time.sleep(60)
+        time.sleep(10)
 
 
 if __name__ == '__main__':

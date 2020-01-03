@@ -3,3 +3,361 @@
 2019-12-27 08:53:33,094:WARNING:custmer wait for mes---->>opc
 2019-12-27 08:53:33,095:WARNING:custmer wait for mes---->>>rabbitmq_LPC
 2019-12-27 08:53:34,480:WARNING:insert opc  data2019-12-27 08:53:34
+2019-12-27 09:11:51,769:WARNING:insert opc  data2019-12-27 09:11:51
+2019-12-27 09:41:57,119:WARNING:insert opc  data2019-12-27 09:41:57
+2019-12-27 10:11:39,173:WARNING:start thread:mq-thread
+2019-12-27 10:11:39,175:WARNING:start thread:pc_lpc
+2019-12-27 10:11:39,224:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:11:39,228:WARNING:custmer wait for mes---->>opc
+2019-12-27 10:11:49,100:WARNING:start thread:mq-thread
+2019-12-27 10:11:49,107:WARNING:start thread:pc_lpc
+2019-12-27 10:11:49,227:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:11:49,242:WARNING:custmer wait for mes---->>opc
+2019-12-27 10:12:01,844:WARNING:insert opc  data2019-12-27 10:12:01
+2019-12-27 10:29:23,527:WARNING:start thread:mq-thread
+2019-12-27 10:29:23,549:WARNING:start thread:pc_lpc
+2019-12-27 10:29:23,630:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:29:23,673:WARNING:custmer wait for mes---->>opc
+2019-12-27 10:35:11,642:WARNING:start thread:mq-thread
+2019-12-27 10:35:11,652:WARNING:start thread:pc_lpc
+2019-12-27 10:35:11,757:WARNING:custmer wait for mes---->>opc
+2019-12-27 10:35:11,765:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:37:51,096:WARNING:start thread:mq-thread
+2019-12-27 10:37:51,101:WARNING:start thread:pc_lpc
+2019-12-27 10:37:51,213:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:37:51,234:WARNING:custmer wait for mes---->>opc
+2019-12-27 10:38:32,462:WARNING:start thread:mq-thread
+2019-12-27 10:38:32,470:WARNING:start thread:pc_lpc
+2019-12-27 10:38:32,592:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:38:32,617:WARNING:custmer wait for mes---->>opc
+2019-12-27 10:38:58,047:WARNING:start thread:mq-thread
+2019-12-27 10:38:58,053:WARNING:start thread:pc_lpc
+2019-12-27 10:38:58,197:WARNING:custmer wait for mes---->>opc
+2019-12-27 10:38:58,215:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:39:07,264:WARNING:start thread:mq-thread
+2019-12-27 10:39:07,269:WARNING:start thread:pc_lpc
+2019-12-27 10:39:07,396:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:39:07,423:WARNING:custmer wait for mes---->>opc
+2019-12-27 10:39:44,045:WARNING:start thread:mq-thread
+2019-12-27 10:39:44,050:WARNING:start thread:pc_lpc
+2019-12-27 10:39:44,154:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:39:44,200:WARNING:custmer wait for mes---->>opc
+2019-12-27 10:40:33,887:WARNING:start thread:pc_lpc
+2019-12-27 10:40:33,866:WARNING:start thread:mq-thread
+2019-12-27 10:40:33,987:WARNING:custmer wait for mes---->>opc
+2019-12-27 10:40:34,002:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:41:36,766:WARNING:start thread:pc_lpc
+2019-12-27 10:41:36,760:WARNING:start thread:mq-thread
+2019-12-27 10:41:36,861:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:41:36,919:WARNING:custmer wait for mes---->>opc
+2019-12-27 10:41:42,911:WARNING:start thread:mq-thread
+2019-12-27 10:41:42,917:WARNING:start thread:pc_lpc
+2019-12-27 10:41:43,028:WARNING:custmer wait for mes---->>opc
+2019-12-27 10:41:43,089:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:42:06,853:WARNING:insert opc  data2019-12-27 10:42:06
+2019-12-27 10:43:23,853:WARNING:start thread:mq-thread
+2019-12-27 10:43:23,859:WARNING:start thread:pc_lpc
+2019-12-27 10:43:23,990:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:43:24,000:WARNING:custmer wait for mes---->>opc
+2019-12-27 10:46:16,601:WARNING:start thread:mq-thread
+2019-12-27 10:46:16,609:WARNING:start thread:pc_lpc
+2019-12-27 10:46:16,764:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:46:16,768:WARNING:custmer wait for mes---->>opc
+2019-12-27 10:48:14,924:WARNING:start thread:mq-thread
+2019-12-27 10:48:14,930:WARNING:start thread:pc_lpc
+2019-12-27 10:48:15,041:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 10:48:15,060:WARNING:custmer wait for mes---->>opc
+2019-12-27 11:05:23,941:WARNING:start thread:mq-thread
+2019-12-27 11:05:23,948:WARNING:start thread:pc_lpc
+2019-12-27 11:05:24,065:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 11:05:24,082:WARNING:custmer wait for mes---->>opc
+2019-12-27 11:06:20,689:WARNING:start thread:mq-thread
+2019-12-27 11:06:20,726:WARNING:start thread:pc_lpc
+2019-12-27 11:06:20,801:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 11:06:20,835:WARNING:custmer wait for mes---->>opc
+2019-12-27 11:10:37,772:WARNING:start thread:pc_lpc
+2019-12-27 11:10:37,750:WARNING:start thread:mq-thread
+2019-12-27 11:10:37,883:WARNING:custmer wait for mes---->>opc
+2019-12-27 11:10:37,895:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 11:12:13,413:WARNING:insert opc  data2019-12-27 11:12:13
+2019-12-27 11:42:17,097:WARNING:insert opc  data2019-12-27 11:42:17
+2019-12-27 12:12:21,932:WARNING:insert opc  data2019-12-27 12:12:21
+2019-12-27 12:42:26,922:WARNING:insert opc  data2019-12-27 12:42:26
+2019-12-27 13:12:32,311:WARNING:insert opc  data2019-12-27 13:12:32
+2019-12-27 13:42:37,166:WARNING:insert opc  data2019-12-27 13:42:37
+2019-12-27 14:12:42,183:WARNING:insert opc  data2019-12-27 14:12:42
+2019-12-27 14:42:47,314:WARNING:insert opc  data2019-12-27 14:42:47
+2019-12-27 15:04:54,741:WARNING:1264 (22003): Out of range value for column 'value' at row 1
+2019-12-27 15:12:52,283:WARNING:insert opc  data2019-12-27 15:12:52
+2019-12-27 15:42:57,238:WARNING:insert opc  data2019-12-27 15:42:57
+2019-12-27 16:13:02,183:WARNING:insert opc  data2019-12-27 16:13:02
+2019-12-27 16:33:13,960:WARNING:start thread:mq-thread
+2019-12-27 16:33:13,967:WARNING:start thread:pc_lpc
+2019-12-27 16:33:14,018:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2019-12-27 16:33:14,025:WARNING:custmer wait for mes---->>opc
+2019-12-27 16:43:06,707:WARNING:insert opc  data2019-12-27 16:43:06
+2019-12-27 17:13:11,646:WARNING:insert opc  data2019-12-27 17:13:11
+2019-12-27 17:43:16,760:WARNING:insert opc  data2019-12-27 17:43:16
+2019-12-27 18:13:21,526:WARNING:insert opc  data2019-12-27 18:13:21
+2019-12-27 18:43:26,436:WARNING:insert opc  data2019-12-27 18:43:26
+2019-12-27 19:13:31,538:WARNING:insert opc  data2019-12-27 19:13:31
+2019-12-27 19:43:36,330:WARNING:insert opc  data2019-12-27 19:43:36
+2019-12-27 20:13:41,310:WARNING:insert opc  data2019-12-27 20:13:41
+2019-12-27 20:43:46,289:WARNING:insert opc  data2019-12-27 20:43:46
+2019-12-27 21:13:51,368:WARNING:insert opc  data2019-12-27 21:13:51
+2019-12-27 21:43:56,602:WARNING:insert opc  data2019-12-27 21:43:56
+2019-12-27 22:14:01,391:WARNING:insert opc  data2019-12-27 22:14:01
+2019-12-27 22:44:06,187:WARNING:insert opc  data2019-12-27 22:44:06
+2019-12-27 23:14:11,142:WARNING:insert opc  data2019-12-27 23:14:11
+2019-12-27 23:44:16,179:WARNING:insert opc  data2019-12-27 23:44:16
+2019-12-28 00:14:20,938:WARNING:insert opc  data2019-12-28 00:14:20
+2019-12-28 00:44:26,184:WARNING:insert opc  data2019-12-28 00:44:26
+2019-12-28 01:14:31,127:WARNING:insert opc  data2019-12-28 01:14:31
+2019-12-28 01:44:35,934:WARNING:insert opc  data2019-12-28 01:44:35
+2019-12-28 02:14:40,506:WARNING:insert opc  data2019-12-28 02:14:40
+2019-12-28 02:44:45,288:WARNING:insert opc  data2019-12-28 02:44:45
+2019-12-28 03:14:50,297:WARNING:insert opc  data2019-12-28 03:14:50
+2019-12-28 03:44:55,229:WARNING:insert opc  data2019-12-28 03:44:55
+2019-12-28 04:15:00,346:WARNING:insert opc  data2019-12-28 04:15:00
+2019-12-28 04:45:05,233:WARNING:insert opc  data2019-12-28 04:45:05
+2019-12-28 05:15:10,016:WARNING:insert opc  data2019-12-28 05:15:10
+2019-12-28 05:45:14,984:WARNING:insert opc  data2019-12-28 05:45:14
+2019-12-28 06:15:20,123:WARNING:insert opc  data2019-12-28 06:15:20
+2019-12-28 06:45:25,043:WARNING:insert opc  data2019-12-28 06:45:25
+2019-12-28 07:15:29,858:WARNING:insert opc  data2019-12-28 07:15:29
+2019-12-28 07:45:34,550:WARNING:insert opc  data2019-12-28 07:45:34
+2019-12-28 08:15:39,731:WARNING:insert opc  data2019-12-28 08:15:39
+2019-12-28 08:45:44,728:WARNING:insert opc  data2019-12-28 08:45:44
+2019-12-28 09:15:49,660:WARNING:insert opc  data2019-12-28 09:15:49
+2019-12-28 09:45:54,615:WARNING:insert opc  data2019-12-28 09:45:54
+2019-12-28 10:15:59,485:WARNING:insert opc  data2019-12-28 10:15:59
+2019-12-28 10:46:04,414:WARNING:insert opc  data2019-12-28 10:46:04
+2019-12-28 11:16:09,290:WARNING:insert opc  data2019-12-28 11:16:09
+2019-12-28 11:46:14,223:WARNING:insert opc  data2019-12-28 11:46:14
+2019-12-28 12:16:19,762:WARNING:insert opc  data2019-12-28 12:16:19
+2019-12-28 12:46:24,313:WARNING:insert opc  data2019-12-28 12:46:24
+2019-12-28 13:16:29,162:WARNING:insert opc  data2019-12-28 13:16:29
+2019-12-28 13:46:33,922:WARNING:insert opc  data2019-12-28 13:46:33
+2019-12-28 14:16:38,742:WARNING:insert opc  data2019-12-28 14:16:38
+2019-12-28 14:46:43,663:WARNING:insert opc  data2019-12-28 14:46:43
+2019-12-28 15:16:48,872:WARNING:insert opc  data2019-12-28 15:16:48
+2019-12-28 15:46:53,909:WARNING:insert opc  data2019-12-28 15:46:53
+2019-12-28 16:16:58,662:WARNING:insert opc  data2019-12-28 16:16:58
+2019-12-28 16:47:03,388:WARNING:insert opc  data2019-12-28 16:47:03
+2019-12-28 17:17:08,434:WARNING:insert opc  data2019-12-28 17:17:08
+2019-12-28 17:47:13,477:WARNING:insert opc  data2019-12-28 17:47:13
+2019-12-28 18:17:18,296:WARNING:insert opc  data2019-12-28 18:17:18
+2019-12-28 18:47:23,077:WARNING:insert opc  data2019-12-28 18:47:23
+2019-12-28 19:17:27,939:WARNING:insert opc  data2019-12-28 19:17:27
+2019-12-28 19:47:32,903:WARNING:insert opc  data2019-12-28 19:47:32
+2019-12-28 20:17:37,840:WARNING:insert opc  data2019-12-28 20:17:37
+2019-12-28 20:47:42,737:WARNING:insert opc  data2019-12-28 20:47:42
+2019-12-28 21:17:47,677:WARNING:insert opc  data2019-12-28 21:17:47
+2019-12-28 21:47:52,691:WARNING:insert opc  data2019-12-28 21:47:52
+2019-12-28 22:17:57,658:WARNING:insert opc  data2019-12-28 22:17:57
+2019-12-28 22:48:02,417:WARNING:insert opc  data2019-12-28 22:48:02
+2019-12-28 23:18:07,252:WARNING:insert opc  data2019-12-28 23:18:07
+2019-12-28 23:48:12,375:WARNING:insert opc  data2019-12-28 23:48:12
+2019-12-29 00:18:17,449:WARNING:insert opc  data2019-12-29 00:18:17
+2019-12-29 00:48:22,552:WARNING:insert opc  data2019-12-29 00:48:22
+2019-12-29 01:18:27,421:WARNING:insert opc  data2019-12-29 01:18:27
+2019-12-29 01:48:32,608:WARNING:insert opc  data2019-12-29 01:48:32
+2019-12-29 02:18:37,452:WARNING:insert opc  data2019-12-29 02:18:37
+2019-12-29 02:48:42,407:WARNING:insert opc  data2019-12-29 02:48:42
+2019-12-29 03:18:47,324:WARNING:insert opc  data2019-12-29 03:18:47
+2019-12-29 03:48:52,305:WARNING:insert opc  data2019-12-29 03:48:52
+2019-12-29 04:18:57,124:WARNING:insert opc  data2019-12-29 04:18:57
+2019-12-29 04:49:02,106:WARNING:insert opc  data2019-12-29 04:49:02
+2019-12-29 05:19:06,916:WARNING:insert opc  data2019-12-29 05:19:06
+2019-12-29 05:49:11,679:WARNING:insert opc  data2019-12-29 05:49:11
+2019-12-29 06:19:16,784:WARNING:insert opc  data2019-12-29 06:19:16
+2019-12-29 06:49:21,934:WARNING:insert opc  data2019-12-29 06:49:21
+2019-12-29 07:19:26,940:WARNING:insert opc  data2019-12-29 07:19:26
+2019-12-29 07:49:31,778:WARNING:insert opc  data2019-12-29 07:49:31
+2019-12-29 08:19:36,836:WARNING:insert opc  data2019-12-29 08:19:36
+2019-12-29 08:49:41,675:WARNING:insert opc  data2019-12-29 08:49:41
+2019-12-29 09:19:46,639:WARNING:insert opc  data2019-12-29 09:19:46
+2019-12-29 09:49:51,487:WARNING:insert opc  data2019-12-29 09:49:51
+2019-12-29 10:19:56,665:WARNING:insert opc  data2019-12-29 10:19:56
+2019-12-29 10:50:01,540:WARNING:insert opc  data2019-12-29 10:50:01
+2019-12-29 11:20:06,071:WARNING:insert opc  data2019-12-29 11:20:06
+2019-12-29 11:50:11,080:WARNING:insert opc  data2019-12-29 11:50:11
+2019-12-29 12:20:15,964:WARNING:insert opc  data2019-12-29 12:20:15
+2019-12-29 12:50:21,005:WARNING:insert opc  data2019-12-29 12:50:21
+2019-12-29 13:20:25,747:WARNING:insert opc  data2019-12-29 13:20:25
+2019-12-29 13:50:30,689:WARNING:insert opc  data2019-12-29 13:50:30
+2019-12-29 14:20:35,961:WARNING:insert opc  data2019-12-29 14:20:35
+2019-12-29 14:50:41,741:WARNING:insert opc  data2019-12-29 14:50:41
+2019-12-29 15:20:45,748:WARNING:insert opc  data2019-12-29 15:20:45
+2019-12-29 15:50:50,427:WARNING:insert opc  data2019-12-29 15:50:50
+2019-12-29 16:20:55,480:WARNING:insert opc  data2019-12-29 16:20:55
+2019-12-29 16:51:00,467:WARNING:insert opc  data2019-12-29 16:51:00
+2019-12-29 17:21:05,387:WARNING:insert opc  data2019-12-29 17:21:05
+2019-12-29 17:51:10,441:WARNING:insert opc  data2019-12-29 17:51:10
+2019-12-29 18:21:15,401:WARNING:insert opc  data2019-12-29 18:21:15
+2019-12-29 18:51:20,269:WARNING:insert opc  data2019-12-29 18:51:20
+2019-12-29 19:21:25,209:WARNING:insert opc  data2019-12-29 19:21:25
+2019-12-29 19:51:29,847:WARNING:insert opc  data2019-12-29 19:51:29
+2019-12-29 20:21:35,040:WARNING:insert opc  data2019-12-29 20:21:35
+2019-12-29 20:51:39,893:WARNING:insert opc  data2019-12-29 20:51:39
+2019-12-29 21:21:44,701:WARNING:insert opc  data2019-12-29 21:21:44
+2019-12-29 21:51:49,627:WARNING:insert opc  data2019-12-29 21:51:49
+2019-12-29 22:21:54,612:WARNING:insert opc  data2019-12-29 22:21:54
+2019-12-29 22:51:59,583:WARNING:insert opc  data2019-12-29 22:51:59
+2019-12-29 23:22:04,479:WARNING:insert opc  data2019-12-29 23:22:04
+2019-12-29 23:52:09,196:WARNING:insert opc  data2019-12-29 23:52:09
+2019-12-30 00:22:13,927:WARNING:insert opc  data2019-12-30 00:22:13
+2019-12-30 00:52:18,656:WARNING:insert opc  data2019-12-30 00:52:18
+2019-12-30 01:22:23,647:WARNING:insert opc  data2019-12-30 01:22:23
+2019-12-30 01:52:28,384:WARNING:insert opc  data2019-12-30 01:52:28
+2019-12-30 02:22:33,060:WARNING:insert opc  data2019-12-30 02:22:33
+2019-12-30 02:52:37,900:WARNING:insert opc  data2019-12-30 02:52:37
+2019-12-30 03:22:42,924:WARNING:insert opc  data2019-12-30 03:22:42
+2019-12-30 03:52:48,182:WARNING:insert opc  data2019-12-30 03:52:48
+2019-12-30 04:22:53,207:WARNING:insert opc  data2019-12-30 04:22:53
+2019-12-30 04:52:58,073:WARNING:insert opc  data2019-12-30 04:52:58
+2019-12-30 05:23:02,876:WARNING:insert opc  data2019-12-30 05:23:02
+2019-12-30 05:53:07,803:WARNING:insert opc  data2019-12-30 05:53:07
+2019-12-30 06:23:12,700:WARNING:insert opc  data2019-12-30 06:23:12
+2019-12-30 06:53:17,744:WARNING:insert opc  data2019-12-30 06:53:17
+2019-12-30 07:23:22,807:WARNING:insert opc  data2019-12-30 07:23:22
+2019-12-30 07:53:27,599:WARNING:insert opc  data2019-12-30 07:53:27
+2019-12-30 08:23:32,666:WARNING:insert opc  data2019-12-30 08:23:32
+2019-12-30 08:53:37,685:WARNING:insert opc  data2019-12-30 08:53:37
+2019-12-30 09:23:42,606:WARNING:insert opc  data2019-12-30 09:23:42
+2019-12-30 09:53:47,845:WARNING:insert opc  data2019-12-30 09:53:47
+2019-12-30 10:23:52,919:WARNING:insert opc  data2019-12-30 10:23:52
+2019-12-30 10:53:58,151:WARNING:insert opc  data2019-12-30 10:53:58
+2019-12-30 11:24:03,306:WARNING:insert opc  data2019-12-30 11:24:03
+2019-12-30 11:54:08,146:WARNING:insert opc  data2019-12-30 11:54:08
+2019-12-30 12:24:13,157:WARNING:insert opc  data2019-12-30 12:24:13
+2019-12-30 12:54:18,112:WARNING:insert opc  data2019-12-30 12:54:18
+2019-12-30 13:24:23,217:WARNING:insert opc  data2019-12-30 13:24:23
+2019-12-30 13:54:28,455:WARNING:insert opc  data2019-12-30 13:54:28
+2019-12-30 14:24:33,212:WARNING:insert opc  data2019-12-30 14:24:33
+2019-12-30 14:54:38,538:WARNING:insert opc  data2019-12-30 14:54:38
+2019-12-30 15:24:43,603:WARNING:insert opc  data2019-12-30 15:24:43
+2019-12-30 15:54:48,908:WARNING:insert opc  data2019-12-30 15:54:48
+2020-01-02 16:30:23,973:WARNING:/mnt/share/新建 Microsoft Excel 工作表.xlsxhas been read at/mnt/share/新建 Microsoft Excel 工作表.xlsx~RF4e7cfa6d.TMP ---->>>>2020-01-02 16:30:23 
+
+2020-01-03 11:02:14,108:WARNING:start thread:mq-thread
+2020-01-03 11:02:14,110:WARNING:start thread:pc_lpc
+2020-01-03 11:03:17,429:WARNING:start thread:mq-thread
+2020-01-03 11:03:17,446:WARNING:start thread:pc_lpc
+2020-01-03 11:03:17,472:WARNING:custmer wait for mes---->>opc
+2020-01-03 11:03:20,471:ERROR:Socket failed to connect: <socket.socket fd=14, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 38410)>; error=113 (No route to host)
+2020-01-03 11:03:20,471:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 11:03:20,472:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 11:03:20,473:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 11:03:20,474:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:03:20,474:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:03:20,474:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 11:03:28,495:ERROR:Socket failed to connect: <socket.socket fd=13, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 38414)>; error=113 (No route to host)
+2020-01-03 11:03:28,496:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 11:03:28,496:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 11:03:28,496:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 11:03:28,496:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:03:28,496:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:03:28,496:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 11:03:36,519:ERROR:Socket failed to connect: <socket.socket fd=13, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 38418)>; error=113 (No route to host)
+2020-01-03 11:03:36,520:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 11:03:36,520:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 11:03:36,520:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 11:03:36,520:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:03:36,520:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:03:36,521:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 11:06:38,885:WARNING:start thread:mq-thread
+2020-01-03 11:06:38,888:WARNING:start thread:pc_lpc
+2020-01-03 11:06:38,944:WARNING:custmer wait for mes---->>opc
+2020-01-03 11:06:41,927:ERROR:Socket failed to connect: <socket.socket fd=15, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 38432)>; error=113 (No route to host)
+2020-01-03 11:06:41,927:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 11:06:41,928:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 11:06:41,929:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 11:06:41,930:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:06:41,930:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:06:41,930:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 11:06:49,951:ERROR:Socket failed to connect: <socket.socket fd=13, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 38438)>; error=113 (No route to host)
+2020-01-03 11:06:49,951:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 11:06:49,952:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 11:06:49,952:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 11:06:49,952:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:06:49,952:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:06:49,952:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 11:06:57,973:ERROR:Socket failed to connect: <socket.socket fd=13, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 38442)>; error=113 (No route to host)
+2020-01-03 11:06:57,973:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 11:06:57,974:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 11:06:57,974:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 11:06:57,974:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:06:57,974:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:06:57,974:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 11:10:37,194:WARNING:start thread:mq-thread
+2020-01-03 11:10:37,195:WARNING:start thread:pc_lpc
+2020-01-03 11:10:37,265:WARNING:custmer wait for mes---->>opc
+2020-01-03 11:10:40,239:ERROR:Socket failed to connect: <socket.socket fd=11, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 38458)>; error=113 (No route to host)
+2020-01-03 11:10:40,239:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 11:10:40,240:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 11:10:40,241:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 11:10:40,242:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:10:40,242:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:10:40,242:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 11:10:48,263:ERROR:Socket failed to connect: <socket.socket fd=10, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 38478)>; error=113 (No route to host)
+2020-01-03 11:10:48,263:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 11:10:48,264:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 11:10:48,264:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 11:10:48,264:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:10:48,264:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:10:48,264:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 11:10:56,285:ERROR:Socket failed to connect: <socket.socket fd=10, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 38484)>; error=113 (No route to host)
+2020-01-03 11:10:56,285:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 11:10:56,286:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 11:10:56,286:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 11:10:56,286:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:10:56,286:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:10:56,286:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-01-03 11:11:04,307:ERROR:Socket failed to connect: <socket.socket fd=10, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.172', 38488)>; error=113 (No route to host)
+2020-01-03 11:11:04,308:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.239', 5672))
+2020-01-03 11:11:04,308:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-01-03 11:11:04,308:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-01-03 11:11:04,308:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:11:04,308:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-01-03 11:11:04,309:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError

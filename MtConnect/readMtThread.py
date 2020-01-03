@@ -126,10 +126,18 @@ class readMtThread(threading.Thread):
                           'xf', 'xl', 'xpm', 'xpw', 'xaxisstate', 'xt', 'yf', 'yl', 'ypm', 'ypw', 'yaxisstate', 'yt',
                           'zf', 'zl', 'zpm', 'zpw', 'zaxisstate', 'zt', 'cf', 'cl', 'cposm', 'cposw', 'cs', 'ctemp',
                           'sl', 'caxisstate', 'rf', 'ct', 'spc', 'tmp']
-
+        self.save_dict = {'':0}
     def Mtconnect_init(self):
 
         pass
+    def check_repeat_data(self,location,sequence):
+        if location in self.save_dict:
+            if self.save_dict[location] == sequence:
+                return False
+        self.save_dict[location]=sequence
+        print('first time happen ',location,sequence,self.name)
+        return True
+
     def run(self):
         while True:
             try:
@@ -186,6 +194,26 @@ class readMtThread(threading.Thread):
             dt = timestamp_8.split(' ')[0]
             tm = timestamp_8.split(' ')[1]
 
+            #get sequeue
+            regexp = r'sequence="(\d+)"'
+            sequence = re.findall(regexp, str(ss[0]))
+            if sequence.__len__()==0:
+                continue
+            sequence = int(sequence[0])
+
+            regexp = r'nativecode="\d+"'
+            nativeCode = re.findall(regexp, str(ss[0]))
+            if nativeCode.__len__()==0:
+                nativeCode = 0
+
+
+            regexp = r'nativeseverity="\d+"'
+            nativeSeverity = re.findall(regexp, str(ss[0]))
+            if nativeSeverity.__len__()==0:
+                nativeSeverity = 0
+
+
+            # if nativeCode.__len__() != 0:
 
 
             dict = {}
@@ -202,8 +230,13 @@ class readMtThread(threading.Thread):
             dict['dt_tm']= timestamp_8
             # dict['create_dt_tm'] =currenttime
             dict['machine_dt_tm']=  currenttime
+
+            dict['sequence']=sequence
+            dict['nativeCode']=nativeCode
+            dict['nativeSeverity']=nativeSeverity
             # print(dict)
-            sql.insert_Mtconnect_to_mysql(dict)
+            if self.check_repeat_data(dict['itemid'],dict['sequence']):
+                sql.insert_Mtconnect_to_mysql(dict)
 
     def changTimeFormat(self,timeStr):
 

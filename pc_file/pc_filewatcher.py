@@ -1,7 +1,7 @@
 import watchdog
 import logdebug
 import readconfig
-
+from f_email.sendemail import *
 from watchdog.events import FileSystemEventHandler
 # from watchdog.observers import Observer
 
@@ -14,7 +14,7 @@ import sql
 
 WATCH_PATH = readconfig.readcon("pc_manual","path") # 监控目录
 HISTORY_FILE = readconfig.readcon("pc_manual","filelog") # 监控目录
-
+EMAILADDR = readconfig.readcon("pc_manual","emailaddr") #
 
 class FileScan():
     def __init__(self,history):
@@ -114,6 +114,9 @@ class LoggingEventHandler(FileSystemEventHandler):
                 for x in res:
                     sql.insert_pc_to_mysql(x)
                 print('record file ',event.src_path)
+                res = email(EMAILADDR,event.src_path+'    is recording')
+                if res!=0:
+                    print(res)
                 filescan.recordfile(event.src_path)
             filescan.__del__()
 

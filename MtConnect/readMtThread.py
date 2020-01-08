@@ -157,12 +157,21 @@ class readMtThread(threading.Thread):
         rec = requests.get(self.url)
         soup = bs4.BeautifulSoup(rec.text, "lxml")
 
+
+        # creationtime = "2020-01-08T07:10:45Z"
+
+
         # 拿到当前时间
         ss = bs4.BeautifulSoup.find_all(soup, firstsequence="1")
+
+        # Header creationTime = "2020-01-08T07:09:41Z"
         regexp = r'creationtime="(.*?)Z"'
-        timelist = re.findall(regexp, str(ss[0]))
+        # timelist = re.findall(regexp, str(ss[0]))
+        timelist = re.findall(regexp, str(soup.contents))
+        timestamp = soup.contents[1].contents[0].contents[0].contents[1].attrs['creationtime']
         # print(timelist)
-        stime = timelist[0].replace("T", " ")
+        stime = timestamp.replace("T", " ")
+        stime = stime.replace("Z", "")
         # print('stime ->>',stime)
         # currenttime = stime
         currenttime = self.changTimeFormat(stime)

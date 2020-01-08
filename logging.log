@@ -590,3 +590,44 @@ pika.exceptions.AMQPConnectionError
 
 2020-01-08 15:11:57,976:WARNING:Failed processing format-parameters; Python 'timestamp' cannot be converted to a MySQL type
 2020-01-08 15:20:52,725:WARNING:1366 (HY000): Incorrect string value: '\xE6\x9D\xA5\xE6\x96\x99...' for column 'filepath' at row 1
+2020-01-08 15:35:22,971:WARNING:start thread:mq-thread
+2020-01-08 15:35:22,975:WARNING:start thread:pc_lpc
+2020-01-08 15:35:23,027:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2020-01-08 15:35:23,032:WARNING:custmer wait for mes---->>opc
+2020-01-08 15:39:01,524:WARNING:start thread:mq-thread
+2020-01-08 15:39:01,529:WARNING:start thread:pc_lpc
+2020-01-08 15:39:01,573:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2020-01-08 15:39:01,580:WARNING:custmer wait for mes---->>opc
+2020-01-08 16:08:58,374:WARNING:start thread:mq-thread
+2020-01-08 16:08:58,397:WARNING:start thread:pc_lpc
+2020-01-08 16:08:58,509:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2020-01-08 16:08:58,530:WARNING:custmer wait for mes---->>opc
+2020-01-08 16:13:58,229:WARNING:start thread:mq-thread
+2020-01-08 16:13:58,240:WARNING:start thread:pc_lpc
+2020-01-08 16:13:58,328:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2020-01-08 16:13:58,338:WARNING:custmer wait for mes---->>opc
+2020-01-08 16:27:06,043:WARNING:insert opc  data2020-01-08 16:27:06
+2020-01-08 16:28:40,522:WARNING:start thread:mq-thread
+2020-01-08 16:28:40,533:WARNING:start thread:pc_lpc
+2020-01-08 16:28:40,633:WARNING:custmer wait for mes---->>opc
+2020-01-08 16:28:40,654:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2020-01-08 16:28:47,302:WARNING:start thread:mq-thread
+2020-01-08 16:28:47,307:WARNING:start thread:pc_lpc
+2020-01-08 16:28:47,402:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2020-01-08 16:28:47,420:WARNING:custmer wait for mes---->>opc
+2020-01-08 16:28:57,387:WARNING:start thread:mq-thread
+2020-01-08 16:28:57,396:WARNING:start thread:pc_lpc
+2020-01-08 16:28:57,491:WARNING:custmer wait for mes---->>opc
+2020-01-08 16:28:57,510:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2020-01-08 16:33:45,288:WARNING:start thread:mq-thread
+2020-01-08 16:33:45,296:WARNING:start thread:pc_lpc
+2020-01-08 16:33:45,426:WARNING:custmer wait for mes---->>opc
+2020-01-08 16:33:45,429:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2020-01-08 16:34:09,384:WARNING:start thread:mq-thread
+2020-01-08 16:34:09,390:WARNING:start thread:pc_lpc
+2020-01-08 16:34:09,512:WARNING:custmer wait for mes---->>opc
+2020-01-08 16:34:09,520:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2020-01-08 16:35:55,878:WARNING:start thread:mq-thread
+2020-01-08 16:35:55,911:WARNING:start thread:pc_lpc
+2020-01-08 16:35:56,001:WARNING:custmer wait for mes---->>>rabbitmq_LPC
+2020-01-08 16:35:56,031:WARNING:custmer wait for mes---->>opc

@@ -1,4 +1,0 @@
-
-from MtConnect.readMtThread import  *
-
-

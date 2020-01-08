@@ -20,19 +20,19 @@ def main():
     logdebug.configlog()
     print("start")
 
-    # try:
-    #     pc_f.file_Watch_init()
-    # except Exception as err:
-    #     logdebug.logdeb(err)
-    #     logdebug.logdeb('pc  filewatch fail  !!!!!!!!!!!1')
-    #
-
     try:
-        qa_f.file_Watch_init()
+        pc_f.file_Watch_init()
     except Exception as err:
         logdebug.logdeb(err)
-        logdebug.logdeb('qa  filewatch fail  !!!!!!!!!!!1')
+        logdebug.logdeb('pc  filewatch fail  !!!!!!!!!!!1')
 
+
+    # try:
+    #     qa_f.file_Watch_init()
+    # except Exception as err:
+    #     logdebug.logdeb(err)
+    #     logdebug.logdeb('qa  filewatch fail  !!!!!!!!!!!1')
+    #
 
     mazak1050url = readconfig.readcon("MtConnect","mazak1050url")
     mazak530_0url = readconfig.readcon("MtConnect", "mazak530_0url")
@@ -54,11 +54,11 @@ def main():
     mazak530_1.setDaemon(True)
 
 
-    #
-    # Mazak1050.start()
+
+    Mazak1050.start()
     # mq_thread.start()
-    # mazak530_0.start()
-    # mazak530_1.start()
+    mazak530_0.start()
+    mazak530_1.start()
     # mq_pc_lpc.start()
 
 

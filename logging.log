@@ -586,3 +586,7 @@ pika.exceptions.AMQPConnectionError
 
 2020-01-03 15:06:38,204:WARNING:/mnt/share/1 - 副本.xlsxhas been read at/mnt/share/1 - 副本.xlsx ---->>>>2020-01-03 14:59:58 
 
+2020-01-08 15:09:43,635:WARNING:/mnt/share/来料翻新.xlsxhas been read at/mnt/share/来料翻新.xlsx ---->>>>2020-01-08 15:05:07 
+
+2020-01-08 15:11:57,976:WARNING:Failed processing format-parameters; Python 'timestamp' cannot be converted to a MySQL type
+2020-01-08 15:20:52,725:WARNING:1366 (HY000): Incorrect string value: '\xE6\x9D\xA5\xE6\x96\x99...' for column 'filepath' at row 1

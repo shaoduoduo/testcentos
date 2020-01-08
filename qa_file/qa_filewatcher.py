@@ -1,16 +1,23 @@
 import watchdog
 import logdebug
 import readconfig
-import readxls
+from f_email.sendemail import *
 from watchdog.events import FileSystemEventHandler
 # from watchdog.observers import Observer
+from qa_file.qa_incoming import *
+
 
 from watchdog.observers.polling import PollingObserver
 # from watchdog.events import LoggingEventHandler
 
 import time
-WATCH_PATH = readconfig.readcon("pc_manual","path") # 监控目录
-HISTORY_FILE = readconfig.readcon("pc_manual","filelog") # 监控目录
+from pc_file.pc_titration import *
+import sql
+
+WATCH_PATH = readconfig.readcon("qa_manual","path") # 监控目录
+HISTORY_FILE = readconfig.readcon("qa_manual","filelog") # 监控目录
+EMAILADDR = readconfig.readcon("qa_manual","emailaddr") #
+
 class FileScan():
     def __init__(self,history):
         self.history = history
@@ -46,39 +53,6 @@ class FileScan():
 
     def __del__(self):
         self.fp.close()
-#
-# class FileMonitorHandler(FileSystemEventHandler):
-#     def __init__(self, **kwargs):
-#         super(FileMonitorHandler, self).__init__(**kwargs)
-#         # 监控目录 目录下面以device_id为目录存放各自的图片
-#         self._watch_path = WATCH_PATH
-#
-#     # 重写文件改变函数，文件改变都会触发文件夹变化
-#     def on_modified(self, event):
-#         if not event.is_directory:  # 文件改变都会触发文件夹变化
-#             file_path = event.src_path
-#             print("文件改变: %s " % file_path)
-#
-#             filescan = FileScan(HISTORY_FILE)
-#             if filescan.scanfile(file_path) == False:#do not have save this file
-#                 readexcel = readxls.readexcel(file_path)
-#                 readexcel.init()#read and save file (insert into mysql)
-#                 filescan.recordfile(file_path)
-#             filescan.__del__()
-#
-#     # def on_created(self, event):
-#     #     print('创建了文件夹', event.src_path)
-#
-#
-#     # def on_moved(self, event):
-#     #     print("移动了文件", event.src_path)
-#
-#     def on_deleted(self, event):
-#         print("删除了文件", event.src_path)
-#
-#     def on_any_event(self, event):
-#         print("都会触发")
-
 
 class LoggingEventHandler(FileSystemEventHandler):
     def __init__(self, **kwargs):
@@ -86,31 +60,60 @@ class LoggingEventHandler(FileSystemEventHandler):
         # 监控目录 目录下面以device_id为目录存放各自的图片
         self._watch_path = WATCH_PATH
 
+
+    def deal_newcreatedfile(self,src_path):
+        try:
+            res = read_qa_incomming(src_path)
+        except Exception as  e:
+            # print(e)
+            print('not right file  Exception', src_path, e)
+            return
+        sql.insert_qa_to_mysql(res)
+        print('record  qa  file ', src_path)
+        # res = email(EMAILADDR, src_path + '    is recording')
+        # if res != 0:
+        #     print(res)
+
     # 重写文件改变函数，文件改变都会触发文件夹变化
     def on_modified(self, event):
+        if(".tmp" in event.src_path) or '~$' in event.src_path or ".TMP" in event.src_path:
+            return
+
         if not event.is_directory:  # 文件改变都会触发文件夹变化
             file_path = event.src_path
             print("文件改变: %s " % file_path)
 
-            # filescan = FileScan(HISTORY_FILE)
-            # if filescan.scanfile(file_path) == False:#do not have save this file
-            #     readexcel = readxls.readexcel(file_path)
-            #     readexcel.init()#read and save file (insert into mysql)
-            #     filescan.recordfile(file_path)
-            # filescan.__del__()
+        # if(".xlsx" in event.src_path ):
+        #     print("is an xlsx file")
+        #     filescan = FileScan(HISTORY_FILE)
+        #     if filescan.scanfile(event.src_path) == False:  # did not have save this file before
+        #
+        #         res = read_pc_Titration(event.src_path)
+        #         for x in res:
+        #             sql.insert_pc_to_mysql(x)
+        #
+        #         filescan.recordfile(event.src_path)
+        #     filescan.__del__()
+
+
 
     def on_created(self, event):
-        print('创建了文件夹', event.src_path)
-        if(".tmp" in event.src_path):
+        if(".tmp" in event.src_path) or '~$' in event.src_path or ".TMP" in event.src_path:
             return
-        if(".xls" in event.src_path ):
-            print("is an excel file")
+        print('创建了文件', event.src_path)
+
+        if(".xlsx" in event.src_path ):
+            print("is an xlsx file")
             filescan = FileScan(HISTORY_FILE)
-            if filescan.scanfile(event.src_path) == False:  # do not have save this file
-                readexcel = readxls.readexcel(event.src_path)
-                readexcel.init()  # read and save file (insert into mysql)
+            if filescan.scanfile(event.src_path) == False:  # do not have save this file before
+
+                # res = read_pc_Titration(event.src_path)
+                time.sleep(3)
+
+                self.deal_newcreatedfile(event.src_path)
                 filescan.recordfile(event.src_path)
             filescan.__del__()
+
 
     # def on_moved(self, event):
     #     print("移动了文件", event.src_path)

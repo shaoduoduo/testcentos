@@ -252,3 +252,39 @@ def insert_lpc_to_mysql(paralist):#pc  input  every 60 times report once
         if(paralist["location"] == 'TS2_2'):
             print('insert PARTICLES',datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 
+def insert_qa_to_mysql(paralist):#pc  input
+#     paralist must have 6 items
+    global threadLock
+    global mydb
+    global mycursor
+    # print(len(paralist))"sp_tb_elec_update_inc_val()"
+
+
+
+    sql = "INSERT INTO TB_QA_INCOMMING (part_no,sequence,client,material,part_name,production_order,indate," \
+          "filepath,value_50um,value_200um,create_dt_tm) " \
+          "VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+
+    try:
+        val = (paralist["part_no"],paralist["sequence"],paralist["client"],paralist["material"],paralist["part_name"],paralist["production_order"],
+               paralist["indate"],paralist["filepath"],paralist["value_50um"],paralist["value_200um"])
+    except Exception as err:
+        logdebug.logdeb(err)
+        return
+    # print(type(val))
+    try:
+        threadLock.acquire()
+        mycursor.execute(sql,val)
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+
+
+    try:
+        threadLock.acquire()
+        mydb.commit()
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()

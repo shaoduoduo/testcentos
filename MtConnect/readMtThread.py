@@ -135,7 +135,7 @@ class readMtThread(threading.Thread):
             if self.save_dict[location] == sequence:
                 return False
         self.save_dict[location]=sequence
-        print('first time happen ',location,sequence,self.name)
+        # print('first time happen ',location,sequence,self.name)
         return True
 
     def run(self):
@@ -149,8 +149,9 @@ class readMtThread(threading.Thread):
             except Exception as err:
                 # print(err)
                 print(self.name,'--->关机状态，无法创建连接')
+                time.sleep(60)
             finally:
-                time.sleep(30)
+                time.sleep(5)
 
     def getMtconnect(self):
         rec = requests.get(self.url)

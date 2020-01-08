@@ -8,7 +8,7 @@ import filewatch
 import threading
 import readconfig
 import pc_file.pc_filewatcher as pc_f
-
+import qa_file.qa_filewatcher as qa_f
 from MtConnect.readMtThread import  *
 # from concurrent.futures import ThreadPoolExecutor
 #
@@ -17,16 +17,21 @@ from MtConnect.readMtThread import  *
 def main():
 
     sql.connect_to_mysql()
-
     logdebug.configlog()
-
     print("start")
 
+    # try:
+    #     pc_f.file_Watch_init()
+    # except Exception as err:
+    #     logdebug.logdeb(err)
+    #     logdebug.logdeb('pc  filewatch fail  !!!!!!!!!!!1')
+    #
+
     try:
-        pc_f.file_Watch_init()
+        qa_f.file_Watch_init()
     except Exception as err:
         logdebug.logdeb(err)
-        logdebug.logdeb('filewatch fail  !!!!!!!!!!!1')
+        logdebug.logdeb('qa  filewatch fail  !!!!!!!!!!!1')
 
 
     mazak1050url = readconfig.readcon("MtConnect","mazak1050url")
@@ -62,7 +67,7 @@ def main():
 
         print("main loop",threading.activeCount())
         # print(threading.enumerate())
-        time.sleep(30)
+        time.sleep(60*5)
 
 
 if __name__ == '__main__':

@@ -147,8 +147,8 @@ class readMtThread(threading.Thread):
                     # print(self.name,"getMtconnect -----> ", self.cnt)
                     pass
             except Exception as err:
-                # print(err)
-                print(self.name,'--->关机状态，无法创建连接')
+                print(err)
+                print(self.name,'--->关机状态，无法创建连接',datetime.now())
                 time.sleep(60)
             finally:
                 time.sleep(5)
@@ -252,6 +252,9 @@ class readMtThread(threading.Thread):
 
         try:
             res = datetime.strptime(timeStr,'%Y-%m-%d %H:%M:%S')+timedelta(hours=8)
+            # res = datetime.strptime(timeStr, '%Y-%m-%d %H:%M:%S')
+            # '2020-01-09 00:01:27'
+            # res = timeStr+ timedelta(hours=8)
         except Exception as err:
             return None
 

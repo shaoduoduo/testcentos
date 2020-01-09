@@ -4,6 +4,7 @@ import rabbit_mq.mq_thread
 import time
 import thread_in
 import logdebug
+import datetime
 import filewatch
 import threading
 import readconfig
@@ -65,7 +66,7 @@ def main():
 
     while True:
 
-        print("main loop",threading.activeCount())
+        print("main loop",threading.activeCount(),datetime.now())
         # print(threading.enumerate())
         time.sleep(60*5)
 

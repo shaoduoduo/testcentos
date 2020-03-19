@@ -631,3 +631,8 @@ pika.exceptions.AMQPConnectionError
 2020-01-08 16:35:55,911:WARNING:start thread:pc_lpc
 2020-01-08 16:35:56,001:WARNING:custmer wait for mes---->>>rabbitmq_LPC
 2020-01-08 16:35:56,031:WARNING:custmer wait for mes---->>opc
+2020-03-19 11:13:36,155:WARNING:Unread result found
+2020-03-19 11:13:53,256:WARNING:Unread result found
+2020-03-19 11:14:09,516:WARNING:Unread result found
+2020-03-19 11:16:22,681:WARNING:Unread result found
+2020-03-19 11:16:22,681:WARNING:Unread result found

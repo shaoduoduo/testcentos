@@ -11,6 +11,7 @@ import readconfig
 import pc_file.pc_filewatcher as pc_f
 import qa_file.qa_filewatcher as qa_f
 from MtConnect.readMtThread import  *
+from send_mail_elec import *
 # from concurrent.futures import ThreadPoolExecutor
 #
 # pool = ThreadPoolExecutor(max_workers=10)
@@ -56,19 +57,30 @@ def main():
 
 
 
-    Mazak1050.start()
-    # mq_thread.start()
-    mazak530_0.start()
-    mazak530_1.start()
-    # mq_pc_lpc.start()
+    #Mazak1050.start()
+    # mq_thread.start()//opc
+    #mazak530_0.start()
+    #mazak530_1.start()
+    #mq_pc_lpc.start()#lpc
 
 
-
+    static_cnt = 0
     while True:
 
         print("main loop",threading.activeCount(),datetime.now())
         # print(threading.enumerate())
-        time.sleep(60*5)
+
+
+        elec_mail()
+        time.sleep(60 * 5)
+        #send mail to fc
+        static_cnt +=1
+        if static_cnt == 12*24:
+            try :
+                elec_mail()
+            except Exception as err:
+                logdebug.logdeb('send mail error'+err)
+
 
 
 if __name__ == '__main__':

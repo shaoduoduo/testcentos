@@ -1,7 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.utils import formataddr
-
+from email.header  import Header
 my_sender = '3527058060@qq.com'
 my_pass = 'brokujtptimpdbai'
 # brokujtptimpdbai
@@ -16,16 +16,28 @@ my_chengname = 'server monitor'
 def email(my_user,my_context):
     ret = 0
     try:
+        # msg = MIMEText(my_context, 'plain', 'utf-8')
+        # # msg['From'] = formataddr([my_chengname, my_sender])
+        # msg['From'] = my_sender
+        # # msg['To'] = formataddr(["ÊÕ¼þÈËêÇ³Æ", my_user])
+        # msg['To'] = my_user
+        # msg['Subject'] = my_title
+        #
+        # server = smtplib.SMTP_SSL("smtp.qq.com", 465)
+        # server.login(my_sender, my_pass)
+        # server.sendmail(my_sender, [my_user, ], msg.as_string())
+        # server.quit()
+        my_user = my_user.split(',')
         msg = MIMEText(my_context, 'plain', 'utf-8')
         # msg['From'] = formataddr([my_chengname, my_sender])
         msg['From'] = my_sender
         # msg['To'] = formataddr(["ÊÕ¼þÈËêÇ³Æ", my_user])
-        msg['To'] = my_user
+        msg['To'] = Header(",".join(my_user))
         msg['Subject'] = my_title
 
         server = smtplib.SMTP_SSL("smtp.qq.com", 465)
         server.login(my_sender, my_pass)
-        server.sendmail(my_sender, [my_user, ], msg.as_string())
+        server.sendmail(my_sender, my_user, msg.as_string())
         server.quit()
     except Exception as e:
         ret = e

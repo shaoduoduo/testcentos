@@ -4,7 +4,7 @@ import logdebug
 import datetime
 import readconfig
 import threading
-
+import time
 global mydb
 global mycursor
 global threadLock
@@ -223,7 +223,11 @@ def insert_lpc_to_mysql(paralist):#pc  input  every 60 times report once
 
     lcoationstr= paralist["location"]
 
-    if( lcoationstr != '0.1um/LPC' )and (lcoationstr != '0.3um/LPC'):
+    if ( '7017C' in  lcoationstr )and ('0.3um' in lcoationstr):
+        lcoationstr= paralist["location"] = '0.3um/LPC'
+    elif ( '7017C' in  lcoationstr )and ('0.1um' in lcoationstr):
+        lcoationstr = paralist["location"] = '0.1um/LPC'
+    else:
         return
     # lcoation='lpc/0.'+lcoationstr
     try:
@@ -288,3 +292,51 @@ def insert_qa_to_mysql(paralist):#pc  input
         logdebug.logdeb(error)
     finally:
         threadLock.release()
+
+
+def select_elec_from_mysql():
+    #     paralist must have 6 items
+    global threadLock
+    global mydb
+    global mycursor
+    # print(len(paralist))"sp_tb_elec_update_inc_val()"
+
+    sql = "SELECT DISTINCT	location,dt_tm,value  FROM  TB_ELEC	WHERE location REGEXP '[1-9]YG$' AND  HOUR(tm) =8 AND dt = CURRENT_DATE() AND MINUTE (tm) > 30 ORDER BY  location DESC;"
+    #sql = "SELECT 	*  FROM  TB_ELEC	WHERE  dt = CURRENT_DATE();"
+
+    mycursor.execute(sql)
+
+
+    # print(type(val))
+    #
+    # try:
+    #     threadLock.acquire()
+    #     mycursor.execute(sql)
+    # except Exception as error:
+    #     logdebug.logdeb(error)
+    # finally:
+    #     threadLock.release()
+    #
+    # try:
+    #     threadLock.acquire()
+    #     mydb.commit()
+    # except Exception as error:
+    #     logdebug.logdeb(error)
+    # finally:
+    #     threadLock.release()
+
+    myresult = mycursor.fetchall()
+    returnstr = ""
+
+    for x in myresult:
+        # returnstr =returnstr +''.join(list(x))
+
+        # print((x))
+        x1= x[0]
+        y1 = x[1]
+        # y = time.strftime("%Y-%m-%d %H:%M:%S",x[1])
+
+        z1 = x[2]
+        returnstr = returnstr+"/"+x1+","+str(y1)+","+str(z1)+"/"
+        # print(type(x1),type(y1),type(z1))
+    return  (returnstr)

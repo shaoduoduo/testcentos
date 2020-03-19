@@ -26,8 +26,10 @@ class mqthread(threading.Thread):
                 self.mq_init()
                 break
             except Exception as err:
-                print('mq_init err :',err,self.name)
-            time.sleep(5)
+                print('pc  --> lpc err :',err,self.name)
+                time.sleep(60*10)
+            finally:
+                time.sleep(5)
 
     def callback(self,ch,method,properties,body):
         # print("[custmer] receive",body)

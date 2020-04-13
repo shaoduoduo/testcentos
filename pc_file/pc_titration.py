@@ -97,11 +97,63 @@ def read_pc_Titration(fdir):
     #             x[i] = 0
     # return linelist
 
+def read_pc_manual_input(fdir):
+
+    try:
+        df = pandas.read_excel(fdir,header=None)
+    except Exception as e:
+        print(e)
+        return None
+        # print(err)
+    # data = df.loc[1].values
+    data = df.shape[0]
+    # data=df.loc[1].values        #0表示第一行 这里读取数据并不包含表头，要注意哦！
+    print("读取指定行的数据：\n{0}".format(data))
+    # print(df)
+    #
+    linelist = []
+    for x in range(1,df.shape[0]):
+        # if pandas.isna(df.loc[x].values[0]):
+        #     continue
+        # if '-' in str(df.loc[x].values[0]):
+
+        linedict = {}
+        linedict['index'] = df.loc[x].values[0]
+        linedict['time'] = df.loc[x].values[1]
+        linedict['date'] = df.loc[x].values[2]
+        linedict['add1'] = df.loc[x].values[3]
+        linedict['add2'] = df.loc[x].values[4]
+        linedict['add3'] = df.loc[x].values[5]
+        linedict['add4'] = df.loc[x].values[6]
+        linedict['data0'] = df.loc[x].values[7]
+        linedict['data1'] = df.loc[x].values[8]
+        linedict['data2'] = df.loc[x].values[9]
+        linedict['data3'] = df.loc[x].values[10]
+        linedict['data4'] = df.loc[x].values[11]
+        linedict['data5'] = df.loc[x].values[12]
+        linedict['data6'] = df.loc[x].values[13]
+        linedict['data7'] = df.loc[x].values[14]
+        linedict['data8'] = df.loc[x].values[15]
+        linedict['data9'] = df.loc[x].values[16]
+        linedict['data10'] = df.loc[x].values[17]
+        linedict['data11'] = df.loc[x].values[18]
+        linedict['data12'] = df.loc[x].values[19]
+
+
+        linelist.append(linedict)
+
+    for x in  linelist:
+        for i in x:
+            if pandas.isna(x[i]):
+                x[i] = 0
+    # print(linelist)
+    return linelist
+
 def deal_pc_Titration():
     pass
 
-# res = read_pc_Titration('/mnt/share/Titration MES_12_30.xlsx')
-
+res = read_pc_manual_input('/mnt/share/3.xlsx')
+print(res)
 # try:
 #     res = read_pc_Titration('/mnt/share/111.xlsx')
 #     print(res[0])

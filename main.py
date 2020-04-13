@@ -57,25 +57,23 @@ def main():
 
 
 
-    #Mazak1050.start()
-    # mq_thread.start()//opc
-    #mazak530_0.start()
-    #mazak530_1.start()
+    Mazak1050.start()
+    # mq_thread.start()#opc
+    mazak530_0.start()
+    mazak530_1.start()
     #mq_pc_lpc.start()#lpc
 
 
     static_cnt = 0
     while True:
 
-        print("main loop",threading.activeCount(),datetime.now())
+        #print("main loop",threading.activeCount(),datetime.now())
         # print(threading.enumerate())
-
-
-        elec_mail()
-        time.sleep(60 * 5)
+        time.sleep(60*5)
         #send mail to fc
         static_cnt +=1
-        if static_cnt == 12*24:
+
+        if static_cnt % (12*24) == 0:#24h
             try :
                 elec_mail()
             except Exception as err:

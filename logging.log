@@ -636,3 +636,64 @@ pika.exceptions.AMQPConnectionError
 2020-03-19 11:14:09,516:WARNING:Unread result found
 2020-03-19 11:16:22,681:WARNING:Unread result found
 2020-03-19 11:16:22,681:WARNING:Unread result found
+2020-03-19 15:29:53,010:WARNING:Unread result found
+2020-03-19 15:29:53,010:WARNING:Unread result found
+2020-03-19 15:34:54,933:WARNING:Unread result found
+2020-03-19 15:39:57,803:WARNING:Unread result found
+2020-03-19 15:45:01,644:WARNING:Unread result found
+2020-03-19 15:46:09,426:WARNING:Unread result found
+2020-03-19 15:46:09,426:WARNING:Unread result found
+2020-03-19 15:50:53,315:WARNING:Unread result found
+2020-03-19 15:51:59,664:WARNING:Unread result found
+2020-03-19 15:52:28,283:WARNING:Unread result found
+2020-03-19 15:52:41,784:WARNING:1
+2020-03-19 15:52:59,490:WARNING:Unread result found
+2020-03-19 15:53:14,583:WARNING:2
+2020-03-19 15:56:42,161:WARNING:Unread result found
+2020-03-19 15:56:42,161:WARNING:Unread result found
+2020-03-19 15:56:42,162:WARNING:Unread result found
+2020-03-19 15:56:42,163:WARNING:Unread result found
+2020-03-19 15:56:48,364:WARNING:1
+2020-03-19 15:56:48,713:WARNING:Unread result found
+2020-03-19 15:56:55,398:WARNING:2
+2020-03-19 15:56:55,750:WARNING:Unread result found
+2020-04-10 17:03:36,488:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,513:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,514:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,518:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,519:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,520:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,520:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,521:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,522:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,522:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,523:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,524:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,525:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,526:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,526:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,527:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,528:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,528:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,529:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,530:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,530:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,531:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,531:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,531:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,532:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,532:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,532:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,533:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,533:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,534:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,534:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,534:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,535:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,535:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,535:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,536:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,536:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,537:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,537:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'
+2020-04-10 17:03:36,537:WARNING:1054 (42S22): Unknown column 'nan' in 'field list'

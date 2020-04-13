@@ -301,29 +301,29 @@ def select_elec_from_mysql():
     global mycursor
     # print(len(paralist))"sp_tb_elec_update_inc_val()"
 
-    sql = "SELECT DISTINCT	location,dt_tm,value  FROM  TB_ELEC	WHERE location REGEXP '[1-9]YG$' AND  HOUR(tm) =8 AND dt = CURRENT_DATE() AND MINUTE (tm) > 30 ORDER BY  location DESC;"
+    sql = "SELECT DISTINCT	location,dt_tm,value  FROM  TB_ELEC	WHERE location REGEXP '[1-9][YW]G$' AND  HOUR(tm) =8 AND dt = CURRENT_DATE() AND MINUTE (tm) > 30 ORDER BY  location DESC;"
     #sql = "SELECT 	*  FROM  TB_ELEC	WHERE  dt = CURRENT_DATE();"
 
-    mycursor.execute(sql)
+    # mycursor.execute(sql)
 
 
     # print(type(val))
-    #
-    # try:
-    #     threadLock.acquire()
-    #     mycursor.execute(sql)
-    # except Exception as error:
-    #     logdebug.logdeb(error)
-    # finally:
-    #     threadLock.release()
-    #
-    # try:
-    #     threadLock.acquire()
-    #     mydb.commit()
-    # except Exception as error:
-    #     logdebug.logdeb(error)
-    # finally:
-    #     threadLock.release()
+
+    try:
+        threadLock.acquire()
+        mycursor.execute(sql)
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+
+    try:
+        threadLock.acquire()
+        mydb.commit()
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
 
     myresult = mycursor.fetchall()
     returnstr = ""
@@ -337,6 +337,6 @@ def select_elec_from_mysql():
         # y = time.strftime("%Y-%m-%d %H:%M:%S",x[1])
 
         z1 = x[2]
-        returnstr = returnstr+"/"+x1+","+str(y1)+","+str(z1)+"/"
+        returnstr = returnstr+x1+","+str(y1)+","+str(z1)+"\n"
         # print(type(x1),type(y1),type(z1))
     return  (returnstr)

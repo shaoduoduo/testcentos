@@ -103,7 +103,7 @@ class LoggingEventHandler(FileSystemEventHandler):
                         return
 
                     if res[0]['location'] != 'NC-DEP1-HKOH-1':
-                        print('not right file location is wrong',event.src_path,res[0]['location'])
+                        print('not right file ,location is wrong',event.src_path,res[0]['location'])
                         return
                 except Exception as  e:
                     # print(e)

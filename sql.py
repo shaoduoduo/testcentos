@@ -78,6 +78,54 @@ def insert_to_mysql(paralist):  #rabbitmq  opc data
 
     # print("insert db ")
 
+def insert_pc_manual_to_mysql(paralist):#pc  input
+
+
+#general data collect from pc input 2020/4/15
+    global threadLock
+    global mydb
+    global mycursor
+    # print(len(paralist))"sp_tb_elec_update_inc_val()"
+
+    # print(paralist["index"],paralist["time"],paralist["date"],paralist["add1"],paralist["add2"],paralist["add3"],paralist["add4"],paralist["data0"],paralist["data1"],paralist["data2"],
+    #            paralist["data3"],paralist["data4"],paralist["data5"],paralist["data6"],paralist["data7"],paralist["data8"],paralist["data9"],paralist["data10"])
+    # return
+    sql = "INSERT INTO TB_PC_INPUT_MANUAL (`index`,`time`,`date`,add1,add2,add3,add4,data0,data1,data2,data3,data4,data5,data6,data7,data8,data9,data10,create_dt_tm)" \
+          " VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+
+    try:
+        val = (paralist["index"],paralist["time"],paralist["date"],paralist["add1"],paralist["add2"],paralist["add3"],paralist["add4"],paralist["data0"],paralist["data1"],paralist["data2"],
+               paralist["data3"],paralist["data4"],paralist["data5"],paralist["data6"],paralist["data7"],paralist["data8"],paralist["data9"],paralist["data10"])
+
+
+    # sql = "INSERT INTO TB_PC_INPUT_MANUAL (`index`,`time`,`date`,create_dt_tm)  VALUES(%s,%s,%s,CURRENT_TIMESTAMP())"
+    #
+    # try:
+    #     val = (2,'7:50:00','2020/1/12')
+
+    except Exception as err:
+        logdebug.logdeb(err)
+        return
+    # print(type(val))
+    try:
+        threadLock.acquire()
+        mycursor.execute(sql,val)
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+
+
+    try:
+        threadLock.acquire()
+        mydb.commit()
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+
+
+
 def insert_pc_to_mysql(paralist):#pc  input
 #     paralist must have 6 items
     global threadLock

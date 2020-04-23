@@ -57,10 +57,10 @@ def main():
 
 
 
-    Mazak1050.start()
+    # Mazak1050.start()
     # mq_thread.start()#opc
-    mazak530_0.start()
-    mazak530_1.start()
+    # mazak530_0.start()
+    # mazak530_1.start()
     #mq_pc_lpc.start()#lpc
 
 
@@ -75,7 +75,8 @@ def main():
 
         if static_cnt % (12*24) == 0:#24h
             try :
-                elec_mail()
+                # elec_mail()
+                pass
             except Exception as err:
                 logdebug.logdeb('send mail error'+err)
 

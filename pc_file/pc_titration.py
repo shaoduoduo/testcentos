@@ -149,11 +149,15 @@ def read_pc_manual_input(fdir):
     # print(linelist)
     return linelist
 
-def deal_pc_Titration():
-    pass
 
-res = read_pc_manual_input('/mnt/share/3.xlsx')
-print(res)
+
+if __name__  == "__main__":
+    # sql.connect_to_mysql()
+    res = read_pc_manual_input('/mnt/share/3.xlsx')
+    for x in res:
+        # sql.insert_pc_manual_to_mysql(x)
+        print(x)
+    print(res)
 # try:
 #     res = read_pc_Titration('/mnt/share/111.xlsx')
 #     print(res[0])

@@ -41,6 +41,7 @@ def main():
     mazak530_1url = readconfig.readcon("MtConnect", "mazak530_1url")
 
 
+
     mq_thread=rabbit_mq.mq_c.mqthread(1,"mq-thread")
     mq_thread.setDaemon(True)
     mq_pc_lpc =rabbit_mq.mq_thread.mqthread(5,'pc_lpc','rabbitmq_LPC')    #start pc_lpc data sollect
@@ -61,7 +62,7 @@ def main():
     # mq_thread.start()#opc
     # mazak530_0.start()
     # mazak530_1.start()
-    #mq_pc_lpc.start()#lpc
+    # mq_pc_lpc.start()#lpc
 
 
     static_cnt = 0

@@ -790,3 +790,11 @@ pika.exceptions.AMQPConnectionError
 2020-04-16 11:01:14,671:WARNING:1292 (22007): Incorrect time value: '13点22分' for column 'time' at row 1
 2020-04-16 11:01:14,686:WARNING:1292 (22007): Incorrect time value: '/' for column 'time' at row 1
 2020-04-16 11:01:24,265:WARNING:1292 (22007): Incorrect time value: '/' for column 'time' at row 1
+2020-04-29 11:03:12,509:WARNING:start thread:st_arc
+2020-04-29 11:03:12,574:WARNING:custmer wait for mes---->>>rabbitmq_ARC1
+2020-04-29 11:13:51,563:WARNING:start thread:st_arc2
+2020-04-29 11:13:51,613:WARNING:custmer wait for mes---->>>rabbitmq_ARC2
+2020-04-29 11:14:03,033:WARNING:start thread:st_arc2
+2020-04-29 11:14:03,240:WARNING:custmer wait for mes---->>>rabbitmq_ARC2
+2020-04-29 11:15:42,097:WARNING:start thread:st_arc2
+2020-04-29 11:15:42,151:WARNING:custmer wait for mes---->>>rabbitmq_ARC2

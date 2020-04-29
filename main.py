@@ -1,6 +1,8 @@
 import sql
 import rabbit_mq.mq_c
 import rabbit_mq.mq_thread
+import rabbit_mq.mq_arc1
+import rabbit_mq.mq_arc2
 import time
 import thread_in
 import logdebug
@@ -42,10 +44,11 @@ def main():
 
 
 
-    mq_thread=rabbit_mq.mq_c.mqthread(1,"mq-thread")
-    mq_thread.setDaemon(True)
-    mq_pc_lpc =rabbit_mq.mq_thread.mqthread(5,'pc_lpc','rabbitmq_LPC')    #start pc_lpc data sollect
-    mq_pc_lpc.setDaemon(True)
+    # mq_thread=rabbit_mq.mq_c.mqthread(1,"mq-thread")
+    # mq_thread.setDaemon(True)
+    # mq_pc_lpc =rabbit_mq.mq_thread.mqthread(5,'pc_lpc','rabbitmq_LPC')    #start pc_lpc data sollect
+    # mq_pc_lpc.setDaemon(True)
+
 
 
     Mazak1050 = readMtThread(2,"Mazak1050",url=mazak1050url,No=0)
@@ -56,6 +59,10 @@ def main():
     mazak530_0.setDaemon(True)
     mazak530_1.setDaemon(True)
 
+    # mq_arc1 = rabbit_mq.mq_arc1.mqthread(5,'st_arc1','rabbitmq_ARC1')
+    # mq_arc1.setDaemon(True)
+    mq_arc2 = rabbit_mq.mq_arc1.mqthread(6,'st_arc2','rabbitmq_ARC2')
+    mq_arc2.setDaemon(True)
 
 
     # Mazak1050.start()
@@ -64,6 +71,7 @@ def main():
     # mazak530_1.start()
     # mq_pc_lpc.start()#lpc
 
+    mq_arc2.start()
 
     static_cnt = 0
     while True:

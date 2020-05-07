@@ -798,3 +798,120 @@ pika.exceptions.AMQPConnectionError
 2020-04-29 11:14:03,240:WARNING:custmer wait for mes---->>>rabbitmq_ARC2
 2020-04-29 11:15:42,097:WARNING:start thread:st_arc2
 2020-04-29 11:15:42,151:WARNING:custmer wait for mes---->>>rabbitmq_ARC2
+2020-04-30 13:09:13,756:WARNING:start thread:st_arc1
+2020-04-30 13:09:13,793:WARNING:custmer wait for mes---->>>rabbitmq_ARC1
+2020-04-30 13:12:31,776:WARNING:start thread:st_arc1
+2020-04-30 13:12:31,817:WARNING:custmer wait for mes---->>>rabbitmq_ARC1
+2020-04-30 13:13:56,531:WARNING:start thread:st_arc1
+2020-04-30 13:13:56,566:WARNING:custmer wait for mes---->>>rabbitmq_ARC1
+2020-04-30 13:14:40,710:WARNING:start thread:st_arc1
+2020-04-30 13:14:40,751:WARNING:custmer wait for mes---->>>rabbitmq_ARC1
+2020-04-30 13:14:56,930:WARNING:start thread:st_arc1
+2020-04-30 13:14:56,978:WARNING:custmer wait for mes---->>>rabbitmq_ARC1
+2020-04-30 13:18:45,734:WARNING:start thread:st_arc1
+2020-04-30 13:18:45,777:WARNING:custmer wait for mes---->>>rabbitmq_ARC1
+2020-04-30 13:23:56,407:WARNING:start thread:st_arc1
+2020-04-30 13:23:56,442:WARNING:custmer wait for mes---->>>rabbitmq_ARC1
+2020-04-30 13:23:56,443:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,444:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,444:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,445:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,446:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,446:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,447:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,447:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,448:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,448:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,449:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,449:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,450:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,450:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,450:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,451:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,451:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,451:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,452:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,452:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,453:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,453:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,454:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,454:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,454:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:23:56,881:WARNING:1146 (42S02): Table 'inss_mes.TB_ST_ARC' doesn't exist
+2020-04-30 13:26:39,178:WARNING:start thread:st_arc1
+2020-04-30 13:26:39,215:WARNING:custmer wait for mes---->>>rabbitmq_ARC1
+2020-04-30 13:37:39,862:WARNING:start thread:st_arc1
+2020-04-30 13:37:39,903:WARNING:custmer wait for mes---->>>rabbitmq_ARC1
+2020-05-07 15:08:34,737:WARNING:start thread:st_arc1
+2020-05-07 15:08:37,753:ERROR:Socket failed to connect: <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.166', 48878)>; error=113 (No route to host)
+2020-05-07 15:08:37,753:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.237', 5672))
+2020-05-07 15:08:37,753:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-05-07 15:08:37,755:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-05-07 15:08:37,756:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-05-07 15:08:37,756:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-05-07 15:08:37,756:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-05-07 15:08:56,468:WARNING:start thread:st_arc1
+2020-05-07 15:08:59,485:ERROR:Socket failed to connect: <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.166', 48884)>; error=113 (No route to host)
+2020-05-07 15:08:59,485:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.237', 5672))
+2020-05-07 15:08:59,486:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-05-07 15:08:59,487:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-05-07 15:08:59,488:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-05-07 15:08:59,488:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-05-07 15:08:59,488:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-05-07 15:09:53,081:WARNING:start thread:st_arc1
+2020-05-07 15:09:56,099:ERROR:Socket failed to connect: <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.166', 48890)>; error=113 (No route to host)
+2020-05-07 15:09:56,099:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.237', 5672))
+2020-05-07 15:09:56,099:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-05-07 15:09:56,101:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-05-07 15:09:56,102:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-05-07 15:09:56,102:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-05-07 15:09:56,102:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-05-07 15:15:19,240:WARNING:start thread:st_arc1
+2020-05-07 15:15:19,240:WARNING:start thread:st_arc2
+2020-05-07 15:15:22,265:ERROR:Socket failed to connect: <socket.socket fd=10, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.166', 48898)>; error=113 (No route to host)
+2020-05-07 15:15:22,265:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.237', 5672))
+2020-05-07 15:15:22,265:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-05-07 15:15:22,267:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-05-07 15:15:22,268:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-05-07 15:15:22,268:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-05-07 15:15:22,268:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-05-07 15:22:08,264:WARNING:start thread:st_arc1
+2020-05-07 15:22:08,265:WARNING:start thread:st_arc2
+2020-05-07 15:22:11,291:ERROR:Socket failed to connect: <socket.socket fd=10, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.11.166', 48908)>; error=113 (No route to host)
+2020-05-07 15:22:11,291:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.11.237', 5672))
+2020-05-07 15:22:11,292:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-05-07 15:22:11,293:ERROR:Socket failed to connect: <socket.socket fd=13, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.10.248', 42650)>; error=113 (No route to host)
+2020-05-07 15:22:11,294:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-05-07 15:22:11,295:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.10.54', 5672))
+2020-05-07 15:22:11,295:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-05-07 15:22:11,295:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-05-07 15:22:11,296:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-05-07 15:22:11,296:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-05-07 15:22:11,296:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-05-07 15:22:11,298:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-05-07 15:22:11,299:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-05-07 15:22:11,299:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError

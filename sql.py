@@ -388,3 +388,38 @@ def select_elec_from_mysql():
         returnstr = returnstr+x1+","+str(y1)+","+str(z1)+"\n"
         # print(type(x1),type(y1),type(z1))
     return  (returnstr)
+
+def insert_arc_to_mysql(paralist):#pc  input  every 60 times report once
+#     paralist must have 6 items
+    global threadLock
+    global mycursor
+    global part_count
+    # print(len(paralist))
+
+
+    sql = "INSERT INTO TB_ST_ARC (device,data_date,data_time,data0,data1,data2,data3,data4,data5,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+
+    print(paralist["1"])
+    # lcoation='lpc/0.'+lcoationstr
+    try:
+        val = (paralist["device"],paralist["date"],paralist["time"],paralist["0"],paralist["1"],float(paralist["2"]),paralist["3"],paralist["4"],paralist["5"])
+    except Exception as err:
+        logdebug.logdeb(err)
+        return
+    # print(type(val))
+    try:
+        threadLock.acquire()
+        mycursor.execute(sql,val)
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+
+
+    try:
+        threadLock.acquire()
+        mydb.commit()
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()

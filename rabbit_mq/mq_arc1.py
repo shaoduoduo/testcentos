@@ -26,7 +26,7 @@ class mqthread(threading.Thread):
                 self.mq_init()
                 break
             except Exception as err:
-                print('pc  --> lpc err :',err,self.name)
+                print('mqthread arc1  err :',err,self.name)
                 time.sleep(60*10)
             finally:
                 time.sleep(5)
@@ -37,7 +37,9 @@ class mqthread(threading.Thread):
         print(dictdata)
         # print(dictdata['location'])
         # if self.location == 'rabbitmq_LPC':
-        #     sql.insert_lpc_to_mysql(dictdata)
+        dictdata['device'] = 1
+        sql.insert_arc_to_mysql(dictdata)
+        # sql.insert_lpc_to_mysql(dictdata)
             # print(dictdata)
 
         # print("thread name",self.getName())

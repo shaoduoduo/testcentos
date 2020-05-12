@@ -399,13 +399,72 @@ def insert_arc_to_mysql(paralist):#pc  input  every 60 times report once
 
     sql = "INSERT INTO TB_ST_ARC (device,data_date,data_time,data0,data1,data2,data3,data4,data5,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
 
-    print(paralist["1"])
+    # print(paralist["1"])
     # lcoation='lpc/0.'+lcoationstr
     try:
         val = (paralist["device"],paralist["date"],paralist["time"],paralist["0"],paralist["1"],float(paralist["2"]),paralist["3"],paralist["4"],paralist["5"])
     except Exception as err:
         logdebug.logdeb(err)
         return
+    # print(type(val))
+    try:
+        threadLock.acquire()
+        mycursor.execute(sql,val)
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+
+
+    try:
+        threadLock.acquire()
+        mydb.commit()
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+
+def insert_anodize_to_mysql(paralist):#pc  input  every 60 times report once
+#     paralist must have 6 items
+    global threadLock
+    global mycursor
+    global part_count
+    # print(len(paralist))
+    # anodize_index = 0
+    if 'PRO_INDEX_ANODIZE' in paralist:
+        anodize_index = paralist["PRO_INDEX_ANODIZE"]
+        if anodize_index < 0 and anodize_index > 6:
+            logdebug.logdeb('recieve wrong anodize -->>', anodize_index, paralist)
+            return
+    else:
+        logdebug.logdeb('recieve wrong anodize -->>', paralist)
+        return
+
+    if anodize_index == 0:#alarm
+        sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date,data_time,add1,add2, create_dt_tm) VALUES(%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+        # lcoation='lpc/0.'+lcoationstr
+        try:
+            val = (
+            anodize_index, paralist["data"]["date"], paralist["data"]["time"], paralist["data"]["status"], paralist["data"]["msg"])
+        except Exception as err:
+            logdebug.logdeb(err)
+            return
+
+    elif anodize_index == 1:
+        pass
+    elif anodize_index == 2:
+        pass
+    elif anodize_index == 3:
+        pass
+    elif anodize_index == 4:
+        pass
+    elif anodize_index == 5:
+        pass
+    elif anodize_index == 6:
+        pass
+    else:
+        return
+
     # print(type(val))
     try:
         threadLock.acquire()

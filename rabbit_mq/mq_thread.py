@@ -33,9 +33,13 @@ class mqthread(threading.Thread):
 
     def callback(self,ch,method,properties,body):
         # print("[custmer] receive",body)
-        dictdata = json.loads(body)
+        try:
+            dictdata = json.loads(body)
+        except Exception as er:
+            logdebug.logdeb('recieve illegal lpc data ')
+            return
 
-        # print(dictdata['location'])
+            # print(dictdata['location'])
         if self.location == 'rabbitmq_LPC':
             sql.insert_lpc_to_mysql(dictdata)
             # print(dictdata)

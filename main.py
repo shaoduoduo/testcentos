@@ -14,6 +14,7 @@ import pc_file.pc_filewatcher as pc_f
 import qa_file.qa_filewatcher as qa_f
 from MtConnect.readMtThread import  *
 from send_mail_elec import *
+import rabbit_mq.mq_anodize
 # from concurrent.futures import ThreadPoolExecutor
 #
 # pool = ThreadPoolExecutor(max_workers=10)
@@ -24,11 +25,11 @@ def main():
     logdebug.configlog()
     print("start")
 
-    try:
-        pc_f.file_Watch_init()
-    except Exception as err:
-        logdebug.logdeb(err)
-        logdebug.logdeb('pc  filewatch fail  !!!!!!!!!!!1')
+    # try:
+    #     pc_f.file_Watch_init()
+    # except Exception as err:
+    #     logdebug.logdeb(err)
+    #     logdebug.logdeb('pc  filewatch fail  !!!!!!!!!!!1')
 
 
     # try:
@@ -64,6 +65,9 @@ def main():
     mq_arc2 = rabbit_mq.mq_arc2.mqthread(6,'st_arc2','rabbitmq_ARC2')
     mq_arc2.setDaemon(True)
 
+    mq_anodize = rabbit_mq.mq_anodize.mqthread(7,'anodize','rabbitmq_anodize')
+    mq_anodize.setDaemon(True)
+
 
     # Mazak1050.start()
     # mq_thread.start()#opc
@@ -71,8 +75,10 @@ def main():
     # mazak530_1.start()
     # mq_pc_lpc.start()#lpc
 
-    mq_arc1.start()
-    mq_arc2.start()
+    # mq_arc1.start()
+    # mq_arc2.start()
+    mq_anodize.start()
+
     static_cnt = 0
     while True:
 

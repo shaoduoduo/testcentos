@@ -1,3 +1,5 @@
+#-*-coding:utf-8-*-
+
 import pika
 import json
 import sql
@@ -26,22 +28,22 @@ class mqthread(threading.Thread):
                 self.mq_init()
                 break
             except Exception as err:
-                print('mqthread arc2  err :',err,self.name)
+                print('mqthread  anodize  init err :',err,self.name)
                 time.sleep(60*10)
             finally:
                 time.sleep(5)
 
     def callback(self,ch,method,properties,body):
         # print("[custmer] receive",body)
-        try:
+        try :
             dictdata = json.loads(body)
         except Exception as er:
-            logdebug.logdeb('recieve illegal arc2 data ')
+            logdebug.logdeb('recieve illegal anodize data ')
             return
-            # print(dictdata['location'])
+        # print(dictdata['location'])
         # if self.location == 'rabbitmq_LPC':
-        dictdata['device'] = 2
-        sql.insert_arc_to_mysql(dictdata)
+        # dictdata['device'] = 1
+        sql.insert_anodize_to_mysql(dictdata)
         # sql.insert_lpc_to_mysql(dictdata)
             # print(dictdata)
 

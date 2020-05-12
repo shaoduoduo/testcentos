@@ -939,3 +939,42 @@ Traceback (most recent call last):
   File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
     raise self._reap_last_connection_workflow_error(error)
 pika.exceptions.AMQPConnectionError
+2020-05-12 15:36:52,263:WARNING:start thread:anodize
+2020-05-12 15:36:52,332:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 15:44:54,011:WARNING:start thread:anodize
+2020-05-12 15:44:54,065:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 16:20:17,567:WARNING:start thread:anodize
+2020-05-12 16:20:17,659:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 16:22:03,114:WARNING:start thread:anodize
+2020-05-12 16:22:03,221:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 16:26:09,176:WARNING:start thread:anodize
+2020-05-12 16:26:09,246:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 16:27:41,623:WARNING:start thread:anodize
+2020-05-12 16:27:41,690:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 16:30:03,742:WARNING:start thread:anodize
+2020-05-12 16:30:03,815:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 16:42:56,491:WARNING:start thread:anodize
+2020-05-12 16:42:56,543:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 16:45:48,472:WARNING:start thread:anodize
+2020-05-12 16:45:48,526:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 16:47:15,208:WARNING:'data'
+2020-05-12 16:48:58,267:WARNING:start thread:anodize
+2020-05-12 16:48:58,299:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 16:49:16,889:WARNING:start thread:anodize
+2020-05-12 16:49:16,929:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 16:50:10,311:WARNING:start thread:anodize
+2020-05-12 16:50:10,345:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 16:52:36,735:WARNING:start thread:anodize
+2020-05-12 16:52:36,775:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 16:53:46,851:WARNING:start thread:anodize
+2020-05-12 16:53:46,903:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 17:09:50,670:WARNING:start thread:anodize
+2020-05-12 17:09:50,718:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 17:19:40,985:WARNING:start thread:anodize
+2020-05-12 17:19:41,038:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 17:22:57,821:WARNING:start thread:anodize
+2020-05-12 17:22:57,865:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 17:26:41,979:WARNING:start thread:anodize
+2020-05-12 17:26:42,028:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-12 17:26:56,314:WARNING:recieve illegal anodize data 
+2020-05-12 17:30:11,906:WARNING:recieve illegal anodize data 

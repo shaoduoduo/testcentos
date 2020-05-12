@@ -32,9 +32,13 @@ class mqthread(threading.Thread):
 
     def callback(self,ch,method,properties,body):
         # print("[custmer] receive",body)
-        dictdata = json.loads(body)
+        try:
+            dictdata = json.loads(body)
+        except Exception as er:
+            logdebug.logdeb('recieve illegal opc data ')
+            return
 
-        # print(dictdata['location'])
+            # print(dictdata['location'])
         # sql.insert_to_mysql(dictdata)
         # print("thread name",self.getName())
     def callback_opc(self,ch,method,properties,body):

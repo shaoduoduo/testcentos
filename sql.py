@@ -431,6 +431,7 @@ def insert_anodize_to_mysql(paralist):#pc  input  every 60 times report once
     global part_count
     # print(len(paralist))
     # anodize_index = 0
+
     if 'PRO_INDEX_ANODIZE' in paralist:
         anodize_index = paralist["PRO_INDEX_ANODIZE"]
         if anodize_index < 0 and anodize_index > 6:
@@ -439,6 +440,12 @@ def insert_anodize_to_mysql(paralist):#pc  input  every 60 times report once
     else:
         logdebug.logdeb('recieve wrong anodize -->>', paralist)
         return
+
+
+    for x in paralist["data"]:
+        if paralist["data"][x] == '':
+            paralist["data"][x] = '0'
+
 
     if anodize_index == 0:#alarm
         sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date,data_time,add1,add2, create_dt_tm) VALUES(%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"

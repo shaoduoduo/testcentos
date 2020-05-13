@@ -978,3 +978,180 @@ pika.exceptions.AMQPConnectionError
 2020-05-12 17:26:42,028:WARNING:custmer wait for mes---->>>rabbitmq_anodize
 2020-05-12 17:26:56,314:WARNING:recieve illegal anodize data 
 2020-05-12 17:30:11,906:WARNING:recieve illegal anodize data 
+2020-05-13 08:52:04,305:WARNING:start thread:anodize
+2020-05-13 08:52:04,354:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-13 09:17:18,308:WARNING:start thread:anodize
+2020-05-13 09:17:18,481:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-13 09:17:18,482:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,483:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,483:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,484:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,485:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,485:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,486:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,486:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,487:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,487:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,488:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,488:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,489:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,489:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,490:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,490:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,491:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,491:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,492:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,492:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,493:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,493:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,494:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,494:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,495:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,495:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,496:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,496:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,497:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,497:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,498:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,498:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,498:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,498:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,499:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,499:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,499:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,499:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,500:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,500:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,500:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,500:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,501:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,501:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,501:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,501:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,502:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,502:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,502:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,502:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,502:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,503:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,503:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,503:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,503:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,504:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,504:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,504:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,504:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,505:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,505:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,505:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,505:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,506:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,506:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,506:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:18,506:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:17:51,246:WARNING:start thread:anodize
+2020-05-13 09:17:51,379:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-13 09:20:44,641:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:26:15,073:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:26:19,273:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:26:19,276:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:26:19,277:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:26:19,279:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:26:19,280:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:26:19,281:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:26:19,282:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:26:19,283:WARNING:Not enough parameters for the SQL statement
+2020-05-13 09:26:19,359:ERROR:_AsyncBaseTransport._consume() failed, aborting connection: error=ConnectionResetError(104, 'Connection reset by peer'); sock=<socket.socket fd=11, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.10.248', 43694)>; Caller's stack:
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1041, in _on_socket_readable
+    self._consume()
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 791, in _consume
+    data = self._sigint_safe_recv(self._sock, self._MAX_RECV_BYTES)
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 846, in _sigint_safe_recv
+    return sock.recv(max_bytes)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 1041, in _on_socket_readable
+    self._consume()
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 791, in _consume
+    data = self._sigint_safe_recv(self._sock, self._MAX_RECV_BYTES)
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/utils/io_services_utils.py", line 846, in _sigint_safe_recv
+    return sock.recv(max_bytes)
+ConnectionResetError: [Errno 104] Connection reset by peer
+2020-05-13 09:26:19,361:ERROR:connection_lost: StreamLostError: ("Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')",)
+2020-05-13 09:26:19,367:ERROR:Unexpected connection close detected: StreamLostError: ("Stream connection lost: ConnectionResetError(104, 'Connection reset by peer')",)
+2020-05-13 09:35:30,991:WARNING:start thread:anodize
+2020-05-13 09:35:31,068:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-13 09:44:19,351:WARNING:start thread:anodize
+2020-05-13 09:44:19,401:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-13 09:46:10,800:WARNING:could not convert string to float: 
+2020-05-13 09:46:32,537:WARNING:could not convert string to float: 
+2020-05-13 09:46:32,538:WARNING:could not convert string to float: 
+2020-05-13 09:46:32,538:WARNING:could not convert string to float: 
+2020-05-13 09:46:32,538:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,027:WARNING:start thread:anodize
+2020-05-13 10:34:24,099:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-13 10:34:24,099:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,099:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,099:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,099:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,104:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,104:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,104:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,104:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,104:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,104:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,104:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,104:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,104:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,104:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,104:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,104:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,104:WARNING:could not convert string to float: 
+2020-05-13 10:34:24,197:WARNING:1292 (22007): Incorrect date value: '' for column 'data_date' at row 1
+2020-05-13 10:34:24,198:WARNING:1292 (22007): Incorrect date value: '' for column 'data_date' at row 1
+2020-05-13 10:34:24,215:WARNING:1292 (22007): Incorrect date value: '' for column 'data_date' at row 1
+2020-05-13 10:34:24,216:WARNING:1292 (22007): Incorrect date value: '' for column 'data_date' at row 1
+2020-05-13 10:34:25,148:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,148:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,148:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,159:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,159:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,159:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,169:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,169:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,171:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,171:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,171:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,171:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,171:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,171:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,171:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,171:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,171:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,171:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,172:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,172:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,172:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,172:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,172:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,172:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,172:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,172:WARNING:could not convert string to float: 
+2020-05-13 10:34:25,172:WARNING:could not convert string to float: 
+2020-05-13 10:34:29,386:WARNING:start thread:anodize
+2020-05-13 10:34:29,432:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-13 10:43:56,829:WARNING:start thread:anodize
+2020-05-13 10:43:56,894:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-13 10:45:42,499:WARNING:1292 (22007): Incorrect date value: '0' for column 'data_date' at row 1
+2020-05-13 11:13:17,096:WARNING:start thread:anodize
+2020-05-13 11:13:17,155:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-13 11:38:04,403:WARNING:start thread:anodize
+2020-05-13 11:38:04,453:WARNING:custmer wait for mes---->>>rabbitmq_anodize
+2020-05-13 11:39:32,980:WARNING:recieve illegal anodize data 
+2020-05-13 11:39:36,311:WARNING:recieve illegal anodize data 
+2020-05-13 11:39:37,131:WARNING:recieve illegal anodize data 

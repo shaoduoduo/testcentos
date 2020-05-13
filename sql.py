@@ -442,7 +442,6 @@ def insert_anodize_to_mysql(paralist):#pc  input  every 60 times report once
 
     if anodize_index == 0:#alarm
         sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date,data_time,add1,add2, create_dt_tm) VALUES(%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
-        # lcoation='lpc/0.'+lcoationstr
         try:
             val = (
             anodize_index, paralist["data"]["date"], paralist["data"]["time"], paralist["data"]["status"], paralist["data"]["msg"])
@@ -450,18 +449,35 @@ def insert_anodize_to_mysql(paralist):#pc  input  every 60 times report once
             logdebug.logdeb(err)
             return
 
-    elif anodize_index == 1:
-        pass
-    elif anodize_index == 2:
-        pass
-    elif anodize_index == 3:
-        pass
-    elif anodize_index == 4:
-        pass
-    elif anodize_index == 5:
-        pass
+# cpv vpv csv vsv
+    elif anodize_index == 1 or anodize_index == 2 or anodize_index == 3:
+        sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date,data_time,value0,value1,value2,value3, create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+        try:
+            val = (
+            anodize_index, paralist["data"]["date"], paralist["data"]["time"], float(paralist["data"]["cpv"]), float(paralist["data"]["vpv"]), float(paralist["data"]["csv"]), float(paralist["data"]["vsv"]))
+        except Exception as err:
+            logdebug.logdeb(err)
+            return
+
+    elif anodize_index == 4 or anodize_index == 5 :
+        sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date,data_time,add1,add2,add3,add4, create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+        try:
+            val = (
+            anodize_index, paralist["data"]["date"], paralist["data"]["time"], (paralist["data"]["num"]), (paralist["data"]["code"]), (paralist["data"]["position"]), (paralist["data"]["action"]))
+        except Exception as err:
+            logdebug.logdeb(err)
+            return
     elif anodize_index == 6:
-        pass
+        sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date,data_time,value0,value1,value2,value3,value4,value5,value6,value7,value8,value9,value10,value11,value12,value13,value14, create_dt_tm) " \
+              "VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+        try:
+            val = (
+            anodize_index, paralist["data"]["date"], paralist["data"]["time"],float(paralist["data"]["A1"]),float(paralist["data"]["A3"]),float(paralist["data"]["A5"]),float(paralist["data"]["A7"]),
+            float(paralist["data"]["A9"]),float(paralist["data"]["A11"]),float(paralist["data"]["A13"]),float(paralist["data"]["D1"]),float(paralist["data"]["D3"]),float(paralist["data"]["A16"]),
+            float(paralist["data"]["A18"]),float(paralist["data"]["A20"]),float(paralist["data"]["S1"]),float(paralist["data"]["S2"]),float(paralist["data"]["S3"]))
+        except Exception as err:
+            logdebug.logdeb(err)
+            return
     else:
         return
 

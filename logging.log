@@ -1155,3 +1155,18 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 2020-05-13 11:39:32,980:WARNING:recieve illegal anodize data 
 2020-05-13 11:39:36,311:WARNING:recieve illegal anodize data 
 2020-05-13 11:39:37,131:WARNING:recieve illegal anodize data 
+2020-05-25 10:58:19,648:WARNING:start thread:anodize
+2020-05-25 10:58:22,671:ERROR:Socket failed to connect: <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('10.10.10.248', 59276)>; error=113 (No route to host)
+2020-05-25 10:58:22,671:ERROR:TCP Connection attempt failed: OSError(113, 'No route to host'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.10.10.78', 5672))
+2020-05-25 10:58:22,671:ERROR:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: OSError(113, 'No route to host')
+2020-05-25 10:58:22,672:ERROR:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None.
+2020-05-25 10:58:22,673:ERROR:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-05-25 10:58:22,673:ERROR:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: OSError(113, 'No route to host'); first exception - None
+2020-05-25 10:58:22,673:ERROR:Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/python3Dir/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 450, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+2020-05-25 11:04:09,096:WARNING:start thread:anodize
+2020-05-25 11:06:10,127:WARNING:start thread:anodize
+2020-05-25 11:06:52,965:WARNING:start thread:anodize

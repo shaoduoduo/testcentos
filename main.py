@@ -1,3 +1,7 @@
+import os
+par_dir = os.path.dirname(os.path.abspath(__file__))
+print(par_dir)
+os.chdir(par_dir)
 import sql
 import rabbit_mq.mq_c
 import rabbit_mq.mq_thread
@@ -15,11 +19,14 @@ import qa_file.qa_filewatcher as qa_f
 from MtConnect.readMtThread import  *
 from send_mail_elec import *
 import rabbit_mq.mq_anodize
+
 # from concurrent.futures import ThreadPoolExecutor
 #
 # pool = ThreadPoolExecutor(max_workers=10)
 
 def main():
+
+    # return
 
     sql.connect_to_mysql()
     logdebug.configlog()
@@ -77,7 +84,7 @@ def main():
 
     # mq_arc1.start()
     # mq_arc2.start()
-    mq_anodize.start()
+    # mq_anodize.start()
 
     static_cnt = 0
     while True:

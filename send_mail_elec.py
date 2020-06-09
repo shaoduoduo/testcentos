@@ -11,3 +11,8 @@ def elec_mail():
         logdebug.logdeb(err)
         return
     print(EMAILADDR,"send ok",res)
+
+
+if __name__ == '__main__':
+    sql.connect_to_mysql()
+    elec_mail()

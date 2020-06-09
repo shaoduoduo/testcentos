@@ -349,7 +349,7 @@ def select_elec_from_mysql():
     global mycursor
     # print(len(paralist))"sp_tb_elec_update_inc_val()"
 
-    sql = "SELECT DISTINCT	location,dt_tm,value  FROM  TB_ELEC	WHERE location REGEXP '[1-9][YW]G$' AND  HOUR(tm) =8 AND dt = CURRENT_DATE() AND MINUTE (tm) > 30 ORDER BY  location DESC;"
+    sql = "SELECT DISTINCT	location,dt_tm,value  FROM  TB_ELEC	WHERE location REGEXP '[1-9][Y]G$' AND  HOUR(tm) =8 AND dt = CURRENT_DATE() AND MINUTE (tm) > 30 ORDER BY  location DESC;"
     #sql = "SELECT 	*  FROM  TB_ELEC	WHERE  dt = CURRENT_DATE();"
 
     # mycursor.execute(sql)
@@ -375,7 +375,17 @@ def select_elec_from_mysql():
 
     myresult = mycursor.fetchall()
     returnstr = ""
-
+    TFlag = 0
+    for x in range(30):
+        itemstr = str(x)+'YG'
+        for y in myresult:
+            if itemstr == y[0]:
+                TFlag =1
+                break
+        if  TFlag ==0:
+            tulp = (itemstr, datetime.datetime(2020, 1, 1, 0, 0, 0), 0)
+            myresult.append(tulp)
+        TFlag = 0
     for x in myresult:
         # returnstr =returnstr +''.join(list(x))
 

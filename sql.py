@@ -349,7 +349,7 @@ def select_elec_from_mysql():
     global mycursor
     # print(len(paralist))"sp_tb_elec_update_inc_val()"
 
-    sql = "SELECT DISTINCT	location,dt_tm,value  FROM  TB_ELEC	WHERE location REGEXP '[1-9][Y]G$' AND  HOUR(tm) =8 AND dt = CURRENT_DATE() AND MINUTE (tm) > 30 ORDER BY  location DESC;"
+    sql = "SELECT DISTINCT	location,dt_tm,value  FROM  TB_ELEC	WHERE location REGEXP '[1-9][Y]G$' AND  HOUR(tm) =17 AND dt = CURRENT_DATE() AND MINUTE(tm) > 30 ORDER BY  location DESC;"
     #sql = "SELECT 	*  FROM  TB_ELEC	WHERE  dt = CURRENT_DATE();"
 
     # mycursor.execute(sql)

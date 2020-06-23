@@ -19,7 +19,7 @@ import qa_file.qa_filewatcher as qa_f
 from MtConnect.readMtThread import  *
 from send_mail_elec import *
 import rabbit_mq.mq_anodize
-
+from time_clock import *
 # from concurrent.futures import ThreadPoolExecutor
 #
 # pool = ThreadPoolExecutor(max_workers=10)
@@ -52,10 +52,10 @@ def main():
 
 
 
-    # mq_thread=rabbit_mq.mq_c.mqthread(1,"mq-thread")
-    # mq_thread.setDaemon(True)
-    # mq_pc_lpc =rabbit_mq.mq_thread.mqthread(5,'pc_lpc','rabbitmq_LPC')    #start pc_lpc data sollect
-    # mq_pc_lpc.setDaemon(True)
+    mq_thread=rabbit_mq.mq_c.mqthread(1,"mq-thread")
+    mq_thread.setDaemon(True)
+    mq_pc_lpc =rabbit_mq.mq_thread.mqthread(5,'pc_lpc','rabbitmq_LPC')    #start pc_lpc data sollect
+    mq_pc_lpc.setDaemon(True)
 
 
 
@@ -95,7 +95,8 @@ def main():
         #send mail to fc
         static_cnt +=1
 
-        if static_cnt % (12*24) == 0:#24h
+        # if static_cnt % (12*24) == 0:#24h
+        if True == clock_loop(17,5):
             try :
                 # elec_mail()
                 pass

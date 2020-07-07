@@ -43,7 +43,7 @@ def insert_to_mysql(paralist):  #rabbitmq  opc data
     if float(paralist["value"])==0:
         return
 
-    sql = "INSERT INTO TB_ELEC (location,dt,tm,value,dt_tm,create_dt) VALUES(%s,%s,%s,%s,%s,%s)"
+    sql = "INSERT INTO TB_ELEC (location,dt,tm,value,dt_tm,create_dt) VALUES(%s,%s,%s,%s,%s,%s);"
 
     try:
         val = (paralist["location"],paralist["dt"],paralist["tm"],float(paralist["value"]),paralist["dt_tm"],paralist["create_dt"])
@@ -91,7 +91,7 @@ def insert_pc_manual_to_mysql(paralist):#pc  input
     #            paralist["data3"],paralist["data4"],paralist["data5"],paralist["data6"],paralist["data7"],paralist["data8"],paralist["data9"],paralist["data10"])
     # return
     sql = "INSERT INTO TB_PC_INPUT_MANUAL (`index`,`time`,`date`,add1,add2,add3,add4,data0,data1,data2,data3,data4,data5,data6,data7,data8,data9,data10,create_dt_tm)" \
-          " VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+          " VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
 
     try:
         val = (paralist["index"],paralist["time"],paralist["date"],paralist["add1"],paralist["add2"],paralist["add3"],paralist["add4"],paralist["data0"],paralist["data1"],paralist["data2"],
@@ -139,7 +139,7 @@ def insert_pc_to_mysql(paralist):#pc  input
 
 
     sql = "INSERT INTO TB_PC_INPUT (location,chemical1_result1,chemical2_result1,date1," \
-          "chemical1_result2,chemical2_result2,date2,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+          "chemical1_result2,chemical2_result2,date2,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
 
     try:
         val = (paralist["location"],paralist["Chem1_result1"],paralist["Chem2_result1"],paralist["date1"],
@@ -174,7 +174,7 @@ def insert_Mtconnect_to_mysql(paralist):  #mtconnect
     if (paralist["value"])==None:
         return
 
-    sql = "INSERT INTO TB_PM_MACHINE (location,dt,tm,value,dt_tm,machine,machine_dt_tm,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+    sql = "INSERT INTO TB_PM_MACHINE (location,dt,tm,value,dt_tm,machine,machine_dt_tm,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
 
     try:
         val = (paralist["itemid"],paralist["dt"],paralist["tm"],str(paralist["value"]),\
@@ -222,7 +222,7 @@ def insert_particles_to_mysql(paralist):#pc  input  every 60 times report once
     if float(paralist["value"]) == 0:
         return
 
-    sql = "INSERT INTO TB_PARTICLES (location,dt,tm,value,dt_tm,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s)"
+    sql = "INSERT INTO TB_PARTICLES (location,dt,tm,value,dt_tm,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s);"
 
     locatlist = paralist["location"]
     list = locatlist[1:]
@@ -315,7 +315,7 @@ def insert_qa_to_mysql(paralist):#pc  input
 
     sql = "INSERT INTO TB_QA_INCOMMING (part_no,sequence,client,material,part_name,production_order,indate," \
           "filepath,value_50um,value_200um,create_dt_tm) " \
-          "VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+          "VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
 
     try:
         val = (paralist["part_no"],paralist["sequence"],paralist["client"],paralist["material"],paralist["part_name"],paralist["production_order"],
@@ -407,7 +407,7 @@ def insert_arc_to_mysql(paralist):#pc  input  every 60 times report once
     # print(len(paralist))
 
 
-    sql = "INSERT INTO TB_ST_ARC (device,data_date,data_time,data0,data1,data2,data3,data4,data5,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+    sql = "INSERT INTO TB_ST_ARC (device,data_date,data_time,data0,data1,data2,data3,data4,data5,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
 
     # print(paralist["1"])
     # lcoation='lpc/0.'+lcoationstr
@@ -458,7 +458,7 @@ def insert_anodize_to_mysql(paralist):#pc  input  every 60 times report once
 
 
     if anodize_index == 0:#alarm
-        sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date,data_time,add1,add2, create_dt_tm) VALUES(%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+        sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date,data_time,add1,add2, create_dt_tm) VALUES(%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
         try:
             val = (
             anodize_index, paralist["data"]["date"], paralist["data"]["time"], paralist["data"]["status"], paralist["data"]["msg"])

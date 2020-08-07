@@ -95,7 +95,9 @@ def main():
         #send mail to fc
         static_cnt +=1
 
-        # if static_cnt % (12*24) == 0:#24h
+        if static_cnt % (12*24) == 0:#24h
+            sql.close_to_mysql()
+            sql.connect_to_mysql()
         if True == clock_loop(17,5):
             try :
                 # elec_mail()

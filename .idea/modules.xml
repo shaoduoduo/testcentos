@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../http_server/.idea/http_server.iml" filepath="$PROJECT_DIR$/../http_server/.idea/http_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/../monitor/.idea/monitor.iml" filepath="$PROJECT_DIR$/../monitor/.idea/monitor.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/py.iml" filepath="$PROJECT_DIR$/.idea/py.iml" />
       <module fileurl="file:///python/untitled1/.idea/untitled1.iml" filepath="/python/untitled1/.idea/untitled1.iml" />

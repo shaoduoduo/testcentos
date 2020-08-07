@@ -7,32 +7,47 @@ import threading
 import time
 global mydb
 global mycursor
-global threadLock
+
 part_count = 0
+
+threadLock = threading.Lock()
 
 
 def connect_to_mysql():
     global mydb
     global mycursor
     global threadLock
-    threadLock = threading.Lock()
+    # threadLock = threading.Lock()
 
     host = readconfig.readcon('mysql','host')
     user = readconfig.readcon('mysql','user')
     passwd = readconfig.readcon('mysql','passwd')
     database = readconfig.readcon('mysql','database')
-
+    threadLock.acquire()
     try:
-        mydb = mysql.connector.connect(host=host,user=user,passwd=passwd,database=database)
+        mydb = mysql.connector.connect(host=host,user=user,passwd=passwd,database=database,buffered = True)
     except Exception as error:
         logdebug.logdeb(error)
         return False
     # logdebug.logdeb(mydb)
     mycursor = mydb.cursor()
     mycursor.execute("SHOW DATABASES")
-
+    threadLock.release()
     for x in mycursor:
         print(x)
+
+
+def close_to_mysql():
+    global mydb
+    global mycursor
+    try:
+        threadLock.acquire()
+        mycursor.close()
+        mydb.close()
+        threadLock.release()
+    except Exception as r:
+        logdebug.logdeb(r)
+
 
 def insert_to_mysql(paralist):  #rabbitmq  opc data
 #     paralist must have 6 items
@@ -515,3 +530,10 @@ def insert_anodize_to_mysql(paralist):#pc  input  every 60 times report once
         logdebug.logdeb(error)
     finally:
         threadLock.release()
+
+
+if __name__ == '__main__':
+    connect_to_mysql()
+    close_to_mysql()
+    connect_to_mysql()
+    print(select_elec_from_mysql())

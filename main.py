@@ -32,11 +32,11 @@ def main():
     logdebug.configlog()
     print("start")
 
-    # try:
-    #     pc_f.file_Watch_init()
-    # except Exception as err:
-    #     logdebug.logdeb(err)
-    #     logdebug.logdeb('pc  filewatch fail  !!!!!!!!!!!1')
+    try:
+        pc_f.file_Watch_init()
+    except Exception as err:
+        logdebug.logdeb(err)
+        logdebug.logdeb('pc  filewatch fail  !!!!!!!!!!!1')
 
 
     # try:
@@ -95,9 +95,9 @@ def main():
         #send mail to fc
         static_cnt +=1
 
-        if static_cnt % (12*24) == 0:#24h
-            sql.close_to_mysql()
-            sql.connect_to_mysql()
+        # if static_cnt % (12*24) == 0:#24h
+        #     sql.close_to_mysql()
+        #     sql.connect_to_mysql()
         if True == clock_loop(17,5):
             try :
                 # elec_mail()

@@ -108,7 +108,7 @@ def read_pc_manual_input(fdir):
     # data = df.loc[1].values
     data = df.shape[0]
     # data=df.loc[1].values        #0表示第一行 这里读取数据并不包含表头，要注意哦！
-    print("读取指定行的数据：\n{0}".format(data))
+    # print("读取指定行的数据：\n{0}".format(data))
     # print(df)
     #
     linelist = []
@@ -116,36 +116,16 @@ def read_pc_manual_input(fdir):
         # if pandas.isna(df.loc[x].values[0]):
         #     continue
         # if '-' in str(df.loc[x].values[0]):
-
-        linedict = {}
-        linedict['index'] = df.loc[x].values[0]
-        linedict['time'] = df.loc[x].values[1]
-        linedict['date'] = df.loc[x].values[2]
-        linedict['add1'] = df.loc[x].values[3]
-        linedict['add2'] = df.loc[x].values[4]
-        linedict['add3'] = df.loc[x].values[5]
-        linedict['add4'] = df.loc[x].values[6]
-        linedict['data0'] = df.loc[x].values[7]
-        linedict['data1'] = df.loc[x].values[8]
-        linedict['data2'] = df.loc[x].values[9]
-        linedict['data3'] = df.loc[x].values[10]
-        linedict['data4'] = df.loc[x].values[11]
-        linedict['data5'] = df.loc[x].values[12]
-        linedict['data6'] = df.loc[x].values[13]
-        linedict['data7'] = df.loc[x].values[14]
-        linedict['data8'] = df.loc[x].values[15]
-        linedict['data9'] = df.loc[x].values[16]
-        linedict['data10'] = df.loc[x].values[17]
-        linedict['data11'] = df.loc[x].values[18]
-        linedict['data12'] = df.loc[x].values[19]
-
-
+#读取到 22行：data10
+        linedict = []
+        for j in range(22):
+            linedict.append(df.loc[x].values[j])
         linelist.append(linedict)
 
-    for x in  linelist:
-        for i in x:
-            if pandas.isna(x[i]):
-                x[i] = 0
+    for w in  linelist:
+        for y in range(w.__len__()):
+            if pandas.isna(w[y]):
+                w[y] = 0
     # print(linelist)
     return linelist
 

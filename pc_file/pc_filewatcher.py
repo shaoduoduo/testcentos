@@ -192,10 +192,11 @@ class LoggingEventHandler(FileSystemEventHandler):
 
                 for x in res:
                     sql.insert_pc_manual_to_mysql(x)
+                    pass
                 print('record file ',event.src_path)
-                res = email(EMAILADDR,event.src_path+'    is recording')
-                if res!=0:
-                    print(res)
+                # res = email(EMAILADDR,event.src_path+'    is recording')
+                # if res!=0:
+                #     print(res)
                 filescan.recordfile(event.src_path)
             filescan.__del__()
 
@@ -220,4 +221,5 @@ def file_Watch_init():
     event_handler = LoggingEventHandler()
     observer = PollingObserver()
     observer.schedule(event_handler,path=WATCH_PATH,recursive=True)
+    logdebug.logdeb('start pc file watcher',WATCH_PATH)
     observer.start()

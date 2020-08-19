@@ -93,25 +93,26 @@ def insert_to_mysql(paralist):  #rabbitmq  opc data
 
     # print("insert db ")
 
-def insert_pc_manual_to_mysql(paralist):#pc  input
+def insert_pc_manual_to_mysql(paralist:list):#pc  input
 
 
 #general data collect from pc input 2020/4/15
     global threadLock
     global mydb
     global mycursor
+    if paralist.__len__()!= 22:
+        return None
     # print(len(paralist))"sp_tb_elec_update_inc_val()"
-
     # print(paralist["index"],paralist["time"],paralist["date"],paralist["add1"],paralist["add2"],paralist["add3"],paralist["add4"],paralist["data0"],paralist["data1"],paralist["data2"],
     #            paralist["data3"],paralist["data4"],paralist["data5"],paralist["data6"],paralist["data7"],paralist["data8"],paralist["data9"],paralist["data10"])
     # return
-    sql = "INSERT INTO TB_PC_INPUT_MANUAL (`index`,`time`,`date`,add1,add2,add3,add4,data0,data1,data2,data3,data4,data5,data6,data7,data8,data9,data10,create_dt_tm)" \
-          " VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
+    sql = "INSERT INTO TB_PC_INPUT_MANUAL (`data_index`,`data_time`,`data_date`,add1,add2,add3,add4,lsl1,usl1,lsl2,usl2," \
+          "data0,data1,data2,data3,data4,data5,data6,data7,data8,data9,data10,create_dt_tm)" \
+          " VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
 
     try:
-        val = (paralist["index"],paralist["time"],paralist["date"],paralist["add1"],paralist["add2"],paralist["add3"],paralist["add4"],paralist["data0"],paralist["data1"],paralist["data2"],
-               paralist["data3"],paralist["data4"],paralist["data5"],paralist["data6"],paralist["data7"],paralist["data8"],paralist["data9"],paralist["data10"])
-
+        # val = (paralist[0],paralist[1],paralist[2],)
+        val = tuple(paralist)
 
     # sql = "INSERT INTO TB_PC_INPUT_MANUAL (`index`,`time`,`date`,create_dt_tm)  VALUES(%s,%s,%s,CURRENT_TIMESTAMP())"
     #
@@ -364,7 +365,7 @@ def select_elec_from_mysql():
     global mycursor
     # print(len(paralist))"sp_tb_elec_update_inc_val()"
 
-    sql = "SELECT DISTINCT	location,dt_tm,value  FROM  TB_ELEC	WHERE location REGEXP '[1-9][Y]G$' AND  HOUR(tm) =17 AND dt = CURRENT_DATE() AND MINUTE(tm) > 30 ORDER BY  location DESC;"
+    sql = "SELECT DISTINCT	location,dt_tm,value  FROM  TB_ELEC	WHERE location REGEXP '[1-9][Y]G$' AND  HOUR(tm) =16 AND dt = CURRENT_DATE() AND MINUTE(tm) > 30 ORDER BY  location DESC;"
     #sql = "SELECT 	*  FROM  TB_ELEC	WHERE  dt = CURRENT_DATE();"
 
     # mycursor.execute(sql)

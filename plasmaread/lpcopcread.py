@@ -29,7 +29,6 @@ def wsdl(url, headers, xmlstr):
 
     try:
         rep = requests.post(url, data=data, headers=headers)
-        # rep = requests.post(url, data=data)
     except Exception as error:
         # main.logdebug(error)
         return None
@@ -37,7 +36,7 @@ def wsdl(url, headers, xmlstr):
 
     json_str = xmltojson(rep)
     return json_str
-#test . Timestamp and Quality is demo
+
 def unpackxml(json_str,device):
     # print("开始 解析 lpc数据")
 
@@ -50,22 +49,24 @@ def unpackxml(json_str,device):
     body = body['RItemList']
     body = body['Items']
 
+    bodylen = len(body)
+    bodyalarmdict= {}#保存报警项
+    bodyqualitydict = {}  # 保存报警项
+    bodyvaluedict = {}
+    bodydttmdict = {}
+    bodydict = {}
 
     for i in range(len(body)):
 
         item =body[i]
 
-        # Timestamp=item['@Timestamp']
-
-        Timestamp = '2020-1-1T10:1:1'
-
-
+        Timestamp=item['@Timestamp']
         location = item['@ItemName']#
 
 
 
         Value = item['Value']
-        # xsitype = Value['@xsi:type']
+        xsitype = Value['@xsi:type']
         value = Value['#text']#
         Quality=item['Quality']#
 
@@ -81,24 +82,21 @@ def unpackxml(json_str,device):
         dt,tm =Timestamp.split('T')
         dt_tm=dt+" "+tm
 
-        # if QualityField != 'good':
-        #     continue
-        bodydict = {
-            'value':float(value),
-            'location':location,
-            'dt_tm' :dt_tm,
-            'device' :device,
-        }
-        sql.insert_plasma_to_mysql(bodydict)
-    # bodydict['len'] = bodylen
-    # bodydict['alarm']= bodyalarmdict
-    # bodydict['quality'] = bodyqualitydict
-    # bodydict['value']= bodyvaluedict
-    # bodydict['dttm'] = bodydttmdict
+        bodyalarmdict[i] = location
+        bodyqualitydict[i] = QualityField
+        bodyvaluedict[i] = value
+        bodydttmdict[i] = dt_tm
+
+
+    bodydict['len'] = bodylen
+    bodydict['alarm']= bodyalarmdict
+    bodydict['quality'] = bodyqualitydict
+    bodydict['value']= bodyvaluedict
+    bodydict['dttm'] = bodydttmdict
     # print(bodydict)
 
 
-    # return bodydict
+    return bodydict
 
 class opcwbthread(threading.Thread):
     def __init__(self,threadID,name,location):#location meaning whitch mq is chossed eg. PC_LPC
@@ -113,7 +111,8 @@ class opcwbthread(threading.Thread):
         logdebug.logdeb("start thread:"+self.name)
         while True:
             try:
-                self.unpack(self.location)
+                res = self.unpack(self.location)
+
             except Exception as err:
                 # print('mqthread arc2  err :',err,self.name)
                 time.sleep(60*5)
@@ -127,9 +126,9 @@ class opcwbthread(threading.Thread):
         if (type(res)!= type('str')):
             res = json.dumps(res)
 
-        unpackxml(res,self.location)
+        res = unpackxml(res,self.location)
 
-        # print(res)
+        print(res)
 
     # def callback(self,ch,method,properties,body):
     #     try:

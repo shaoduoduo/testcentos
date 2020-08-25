@@ -421,8 +421,6 @@ def insert_arc_to_mysql(paralist):#pc  input  every 60 times report once
     global mycursor
     global part_count
     # print(len(paralist))
-
-
     sql = "INSERT INTO TB_ST_ARC (device,data_date,data_time,data0,data1,data2,data3,data4,data5,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
 
     # print(paralist["1"])
@@ -514,6 +512,41 @@ def insert_anodize_to_mysql(paralist):#pc  input  every 60 times report once
     else:
         return
 
+    # print(type(val))
+    try:
+        threadLock.acquire()
+        mycursor.execute(sql,val)
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+
+
+    try:
+        threadLock.acquire()
+        mydb.commit()
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+
+
+
+def insert_plasma_to_mysql(paralist):#pc  input  every 60 times report once
+#     paralist must have 6 items
+    global threadLock
+    global mycursor
+    global part_count
+    # print(len(paralist))
+    sql = "INSERT INTO TB_ST_PLASMA (dt_tm,value,device,location,create_dt_tm) VALUES(%s,%s,%s,%s,CURRENT_TIMESTAMP());"
+
+    # print(paralist["1"])
+    # lcoation='lpc/0.'+lcoationstr
+    try:
+        val = (paralist["dt_tm"],paralist["value"],paralist["device"],paralist["location"])
+    except Exception as err:
+        logdebug.logdeb(err)
+        return
     # print(type(val))
     try:
         threadLock.acquire()

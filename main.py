@@ -20,6 +20,8 @@ from MtConnect.readMtThread import  *
 from send_mail_elec import *
 import rabbit_mq.mq_anodize
 from time_clock import *
+from plasma import lpcopcread
+
 # from concurrent.futures import ThreadPoolExecutor
 #
 # pool = ThreadPoolExecutor(max_workers=10)
@@ -32,11 +34,11 @@ def main():
     logdebug.configlog()
     print("start")
 
-    try:
-        pc_f.file_Watch_init()
-    except Exception as err:
-        logdebug.logdeb(err)
-        logdebug.logdeb('pc  filewatch fail  !!!!!!!!!!!1')
+    # try:
+    #     pc_f.file_Watch_init()
+    # except Exception as err:
+    #     logdebug.logdeb(err)
+    #     logdebug.logdeb('pc  filewatch fail  !!!!!!!!!!!1')
 
 
     # try:
@@ -75,6 +77,15 @@ def main():
     mq_anodize = rabbit_mq.mq_anodize.mqthread(7,'anodize','rabbitmq_anodize')
     mq_anodize.setDaemon(True)
 
+    threadplasma1 = lpcopcread.opcwbthread(8,'plasma1','plasma1')
+    threadplasma1.setDaemon(True)
+
+    threadplasma2 = lpcopcread.opcwbthread(9, 'plasma2', 'plasma2')
+    threadplasma2.setDaemon(True)
+
+    # threadplasma1.start()
+    # threadplasma2.start()
+
 
     # Mazak1050.start()
     # mq_thread.start()#opc
@@ -103,7 +114,7 @@ def main():
                 # elec_mail()
                 pass
             except Exception as err:
-                logdebug.logdeb('send mail error'+err)
+                logdebug.logdeb('send mail error',err)
 
 
 

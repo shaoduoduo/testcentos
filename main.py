@@ -83,8 +83,8 @@ def main():
     threadplasma2 = lpcopcread.opcwbthread(9, 'plasma2', 'plasma2')
     threadplasma2.setDaemon(True)
 
-    # threadplasma1.start()
-    # threadplasma2.start()
+    threadplasma1.start()
+    threadplasma2.start()
 
 
     # Mazak1050.start()

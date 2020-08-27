@@ -421,12 +421,14 @@ def insert_arc_to_mysql(paralist):#pc  input  every 60 times report once
     global mycursor
     global part_count
     # print(len(paralist))
-    sql = "INSERT INTO TB_ST_ARC (device,data_date,data_time,data0,data1,data2,data3,data4,data5,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
-
+    if paralist["0"]== 0:
+        return
+    sql = "INSERT INTO TB_ST_ARC (device,data_date,data_time,data_date_time,data0,data1,data2,data3,data4,data5,create_dt_tm) VALUES(%s,%S,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
+    datatm= paralist["date"] +' '+ paralist["time"]
     # print(paralist["1"])
     # lcoation='lpc/0.'+lcoationstr
     try:
-        val = (paralist["device"],paralist["date"],paralist["time"],paralist["0"],paralist["1"],float(paralist["2"]),paralist["3"],paralist["4"],paralist["5"])
+        val = (paralist["device"],paralist["date"],paralist["time"],datatm,paralist["0"],paralist["1"],float(paralist["2"]),paralist["3"],paralist["4"],paralist["5"])
     except Exception as err:
         logdebug.logdeb(err)
         return

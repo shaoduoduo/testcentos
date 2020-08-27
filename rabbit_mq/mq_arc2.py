@@ -40,6 +40,7 @@ class mqthread(threading.Thread):
             return
             # print(dictdata['location'])
         # if self.location == 'rabbitmq_LPC':
+
         dictdata['device'] = 2
         sql.insert_arc_to_mysql(dictdata)
         # sql.insert_lpc_to_mysql(dictdata)

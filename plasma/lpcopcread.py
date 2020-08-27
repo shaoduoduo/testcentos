@@ -20,7 +20,16 @@ def readjson():
     with open('js.json', 'a') as f:
         data = json.load(f)
     return data  # json 格式
+save_dict = {'':0}
+def check_repeat_data(location,timestamp):#检查重复数据，根据时间戳判断
+    if location in save_dict:
+        if save_dict[location] == timestamp:
+            # print('数据重复，不发送',location,timestamp)
+            return False
 
+    save_dict[location] = timestamp
+    # print('第一次出现',location,timestamp)
+    return True
 
 def wsdl(url, headers, xmlstr):
     headers = ast.literal_eval(headers)  # 转为dict格式
@@ -55,9 +64,9 @@ def unpackxml(json_str,device):
 
         item =body[i]
 
-        # Timestamp=item['@Timestamp']
-
-        Timestamp = '2020-1-1T10:1:1'
+        Timestamp=item['@Timestamp']
+        #
+        # Timestamp = '2020-1-1T10:1:1'
 
 
         location = item['@ItemName']#
@@ -81,15 +90,16 @@ def unpackxml(json_str,device):
         dt,tm =Timestamp.split('T')
         dt_tm=dt+" "+tm
 
-        # if QualityField != 'good':
-        #     continue
+        if QualityField != 'good':
+            continue
         bodydict = {
             'value':float(value),
             'location':location,
             'dt_tm' :dt_tm,
             'device' :device,
         }
-        sql.insert_plasma_to_mysql(bodydict)
+        if check_repeat_data(bodydict['location'],bodydict['dt_tm']):
+            sql.insert_plasma_to_mysql(bodydict)
     # bodydict['len'] = bodylen
     # bodydict['alarm']= bodyalarmdict
     # bodydict['quality'] = bodyqualitydict

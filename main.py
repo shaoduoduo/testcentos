@@ -21,7 +21,7 @@ from send_mail_elec import *
 import rabbit_mq.mq_anodize
 from time_clock import *
 from plasma import lpcopcread
-
+from pc_particle import web_pc
 # from concurrent.futures import ThreadPoolExecutor
 #
 # pool = ThreadPoolExecutor(max_workers=10)
@@ -83,8 +83,11 @@ def main():
     threadplasma2 = lpcopcread.opcwbthread(9, 'plasma2', 'plasma2')
     threadplasma2.setDaemon(True)
 
-    threadplasma1.start()
-    threadplasma2.start()
+    thread_pc_particle = web_pc.pc_particle_thread(10,'pc_particle','pc_particle')
+    thread_pc_particle.setDaemon(True)
+
+    # threadplasma1.start()
+    # threadplasma2.start()
 
 
     # Mazak1050.start()
@@ -97,12 +100,13 @@ def main():
     # mq_arc2.start()
     # mq_anodize.start()
 
+    thread_pc_particle.start()
     static_cnt = 0
     while True:
 
         #print("main loop",threading.activeCount(),datetime.now())
         print(threading.enumerate())
-        time.sleep(60*5)
+        time.sleep(60*10)
         #send mail to fc
         static_cnt +=1
 

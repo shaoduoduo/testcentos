@@ -128,7 +128,7 @@ class opcwbthread(threading.Thread):
                 # print('mqthread arc2  err :',err,self.name)
                 time.sleep(60*5)
             finally:
-                time.sleep(5)
+                time.sleep(1)
     def unpack(self,device):
 
         res = wsdl(self.url,self.headers,self.wsdl_xml)

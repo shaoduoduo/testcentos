@@ -3,7 +3,7 @@ from email.mime.text import MIMEText
 from email.utils import formataddr
 from email.header  import Header
 my_sender = '3527058060@qq.com'
-my_pass = 'brokujtptimpdbai'
+my_pass = 'fgngzswobypadbec'
 # brokujtptimpdbai
 # iowktlzbsksodace
 # my_user = 'gyshao@insscn.com'

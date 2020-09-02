@@ -5,16 +5,7 @@ import csv
 
 
 
-save_dict = {'':0}
-def check_repeat_data(location,timestamp):#检查重复数据，根据时间戳判断
-    if location in save_dict:
-        if save_dict[location] == timestamp:
-            # print('数据重复，不发送',location,timestamp)
-            return False
 
-    save_dict[location] = timestamp
-    print('第一次出现',location,timestamp)
-    return True
 #这个文件用来保存进exel
 def write(paralist):
 

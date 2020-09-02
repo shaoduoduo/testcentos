@@ -365,7 +365,7 @@ def select_elec_from_mysql():
     global mycursor
     # print(len(paralist))"sp_tb_elec_update_inc_val()"
 
-    sql = "SELECT DISTINCT	location,dt_tm,value  FROM  TB_ELEC	WHERE location REGEXP '[1-9][Y]G$' AND  HOUR(tm) =16 AND dt = CURRENT_DATE() AND MINUTE(tm) > 30 ORDER BY  location DESC;"
+    sql = "SELECT DISTINCT	location,dt_tm,value  FROM  TB_ELEC	WHERE location REGEXP '[1-9][Y]G$' AND  HOUR(tm) =16 AND dt = CURRENT_DATE() AND MINUTE(tm) > 30 ORDER BY  id DESC;"
     #sql = "SELECT 	*  FROM  TB_ELEC	WHERE  dt = CURRENT_DATE();"
 
     # mycursor.execute(sql)
@@ -567,6 +567,44 @@ def insert_plasma_to_mysql(paralist):#pc  input  every 60 times report once
     finally:
         threadLock.release()
 
+#pc 从清洗部门主控电脑读取在线颗粒
+def insert_pc_particles_to_mysql(paralist):#pc  input  every 60 times report once
+#     paralist must have 6 items
+    global threadLock
+    global mycursor
+    global part_count
+    # print(len(paralist))
+
+    if float(paralist["value"]) == 0:
+        return
+
+    sql = "INSERT INTO TB_PARTICLES (location,dt,tm,value,dt_tm,create_dt_tm) VALUES(%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
+
+    try:
+
+        val = (paralist["location"],paralist["dt"],paralist["tm"],float(paralist["value"]),paralist["dt_tm"])
+    except Exception as err:
+        logdebug.logdeb(err)
+        return
+    # print(type(val))
+    try:
+        threadLock.acquire()
+        mycursor.execute(sql,val)
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+
+
+    try:
+        threadLock.acquire()
+        mydb.commit()
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+        # if(paralist["location"] == 'TS2_2'):
+        #     print('insert PARTICLES',datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 
 if __name__ == '__main__':
     connect_to_mysql()

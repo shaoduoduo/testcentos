@@ -50,32 +50,18 @@ def wsdl(url, headers, xmlstr):
 # ['112/1.0']
 #TS1_2,2
 def reg_location(loc):
-
-    rr = 'ion (.*)/Ag'
+#'LMS/Inputs/Location 202/0.3um/Data'
+    rr  = 'Location 20[1-2]/(.*)Data'
+    # rr = 'ion (.*)/Ag'
     res = re.findall(rr, loc)
-    res = res[0].split('/')
-    temp  = res[1]
-    if temp  == '0.1':
-        te = '1'
-    elif temp  == '0.15':
-        te = '2'
-    elif temp == '0.2':
-        te = '3'
-    elif temp == '0.25':
-        te = '4'
-    elif temp == '0.3':
-        te = '5'
-    elif temp == '0.5':
-        te = '6'
-    elif temp == '1.0':
-        te = '7'
-    elif temp == '5.0':
-        te = '8'
-    else:
+    if res == [] :
         return
 
-    location_int  = int(res[0])-101
-    location = 'TS1_'+te+','+str(location_int)
+
+    res = res[0]+'LPC'
+    # res = res[0].split('/')
+
+    location = res
 
     return location
 #test . location and Quality is demo
@@ -144,7 +130,7 @@ def unpackxml(json_str,device):
 
     # return bodydict
 
-class pc_particle_thread(threading.Thread):
+class pc_lpc_thread(threading.Thread):
     def __init__(self,threadID,name,location):#location meaning whitch mq is chossed eg. PC_LPC
         threading.Thread.__init__(self)
         self.threadID =threadID

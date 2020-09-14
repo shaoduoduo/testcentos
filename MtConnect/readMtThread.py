@@ -148,7 +148,7 @@ class readMtThread(threading.Thread):
                     pass
             except Exception as err:
                 # print(err)
-                print(self.name,'--->关机状态，无法创建连接',datetime.now())
+                # print(self.name,'--->关机状态，无法创建连接',datetime.now())
                 time.sleep(60*10)
             finally:
                 time.sleep(60)

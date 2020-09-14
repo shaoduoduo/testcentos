@@ -28,7 +28,7 @@ class mqthread(threading.Thread):
                 self.mq_init()
                 break
             except Exception as err:
-                print('mqthread  anodize  init err :',err,self.name)
+                # print('mqthread  anodize  init err :',err,self.name)
                 time.sleep(60*10)
             finally:
                 time.sleep(5)

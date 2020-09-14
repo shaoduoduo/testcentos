@@ -4,7 +4,7 @@ import datetime
 def clock_loop(hour_in,min_in):
     current = datetime.datetime.now()
     # print(type(current.hour))
-    if(current.hour==hour_in and current.minute<min_in):
+    if(current.hour==hour_in and current.minute==min_in):
         return True
     return False
 

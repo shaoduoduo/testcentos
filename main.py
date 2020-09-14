@@ -22,6 +22,7 @@ import rabbit_mq.mq_anodize
 from time_clock import *
 from plasma import lpcopcread
 from pc_particle import web_pc
+from pc_particle import web_pc_lpc
 # from concurrent.futures import ThreadPoolExecutor
 #
 # pool = ThreadPoolExecutor(max_workers=10)
@@ -56,8 +57,8 @@ def main():
 
     mq_thread=rabbit_mq.mq_c.mqthread(1,"mq-thread")
     mq_thread.setDaemon(True)
-    mq_pc_lpc =rabbit_mq.mq_thread.mqthread(5,'pc_lpc','rabbitmq_LPC')    #start pc_lpc data sollect
-    mq_pc_lpc.setDaemon(True)
+    # mq_pc_lpc =rabbit_mq.mq_thread.mqthread(5,'pc_lpc','rabbitmq_LPC')    #start pc_lpc data sollect
+    # mq_pc_lpc.setDaemon(True)
 
 
 
@@ -86,6 +87,11 @@ def main():
     thread_pc_particle = web_pc.pc_particle_thread(10,'pc_particle','pc_particle')
     thread_pc_particle.setDaemon(True)
 
+
+    thread_pc_lpc = web_pc_lpc.pc_lpc_thread(11,'pc_lpc','pc_lpc')
+    thread_pc_lpc.setDaemon(True)
+
+
     # threadplasma1.start()
     # threadplasma2.start()
 
@@ -101,19 +107,20 @@ def main():
     # mq_anodize.start()
 
     thread_pc_particle.start()
+    thread_pc_lpc.start()
     static_cnt = 0
     while True:
 
         #print("main loop",threading.activeCount(),datetime.now())
-        print(threading.enumerate())
-        time.sleep(60*10)
+        # print(threading.enumerate())
+        time.sleep(60)
         #send mail to fc
         static_cnt +=1
 
         # if static_cnt % (12*24) == 0:#24h
         #     sql.close_to_mysql()
         #     sql.connect_to_mysql()
-        if True == clock_loop(17,5):
+        if True == clock_loop(17,1):
             try :
                 # elec_mail()
                 pass

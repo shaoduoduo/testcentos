@@ -23,6 +23,7 @@ from time_clock import *
 from plasma import lpcopcread
 from pc_particle import web_pc
 from pc_particle import web_pc_lpc
+from opcwebread import fcopc
 # from concurrent.futures import ThreadPoolExecutor
 #
 # pool = ThreadPoolExecutor(max_workers=10)
@@ -54,9 +55,9 @@ def main():
     mazak530_1url = readconfig.readcon("MtConnect", "mazak530_1url")
 
 
-
-    mq_thread=rabbit_mq.mq_c.mqthread(1,"mq-thread")
-    mq_thread.setDaemon(True)
+    #
+    # mq_thread=rabbit_mq.mq_c.mqthread(1,"mq-thread")
+    # mq_thread.setDaemon(True)
     # mq_pc_lpc =rabbit_mq.mq_thread.mqthread(5,'pc_lpc','rabbitmq_LPC')    #start pc_lpc data sollect
     # mq_pc_lpc.setDaemon(True)
 
@@ -92,6 +93,8 @@ def main():
     thread_pc_lpc.setDaemon(True)
 
 
+    thread_fc_opc= fcopc.fc_opc_thread(12,'fc_opc','fc_opc')
+    thread_fc_opc.setDaemon(True)
     # threadplasma1.start()
     # threadplasma2.start()
 
@@ -106,8 +109,9 @@ def main():
     # mq_arc2.start()
     # mq_anodize.start()
 
-    thread_pc_particle.start()
-    thread_pc_lpc.start()
+    # thread_pc_particle.start()
+    # thread_pc_lpc.start()
+    thread_fc_opc.start()
     static_cnt = 0
     while True:
 

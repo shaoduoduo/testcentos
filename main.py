@@ -23,7 +23,7 @@ from time_clock import *
 from plasma import lpcopcread
 from pc_particle import web_pc
 from pc_particle import web_pc_lpc
-from opcwebread import fcopc
+from opcwebread import fcopc,particleopc
 # from concurrent.futures import ThreadPoolExecutor
 #
 # pool = ThreadPoolExecutor(max_workers=10)
@@ -95,6 +95,9 @@ def main():
 
     thread_fc_opc= fcopc.fc_opc_thread(12,'fc_opc','fc_opc')
     thread_fc_opc.setDaemon(True)
+
+    thread_particle_opc= particleopc.particleopc(13,'particle_opc','particle_opc')
+    thread_particle_opc.setDaemon(True)
     # threadplasma1.start()
     # threadplasma2.start()
 
@@ -111,7 +114,8 @@ def main():
 
     # thread_pc_particle.start()
     # thread_pc_lpc.start()
-    thread_fc_opc.start()
+    # thread_fc_opc.start()
+    thread_particle_opc.start()
     static_cnt = 0
     while True:
 

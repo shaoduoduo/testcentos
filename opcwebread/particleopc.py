@@ -57,12 +57,9 @@ def reg_location(loc):
     if res == [] :
         return
 
-
     location = res[0]
     # res = res[0].split('/')
-
     # location = res
-
     return location
 #test . location and Quality is demo
 def unpackxml(json_str,device):

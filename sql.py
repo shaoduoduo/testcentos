@@ -357,7 +357,6 @@ def insert_qa_to_mysql(paralist):#pc  input
     finally:
         threadLock.release()
 
-
 def select_elec_from_mysql():
     #     paralist must have 6 items
     global threadLock
@@ -421,7 +420,7 @@ def insert_arc_to_mysql(paralist):#pc  input  every 60 times report once
     global mycursor
     global part_count
     # print(len(paralist))
-    if paralist["0"]== 0:
+    if paralist["5"] != 2:
         return
     sql = "INSERT INTO TB_ST_ARC (device,data_date,data_time,data_date_time,data0,data1,data2,data3,data4,data5,create_dt_tm) VALUES(%s,%S,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
     datatm= paralist["date"] +' '+ paralist["time"]
@@ -531,8 +530,6 @@ def insert_anodize_to_mysql(paralist):#pc  input  every 60 times report once
         logdebug.logdeb(error)
     finally:
         threadLock.release()
-
-
 
 def insert_plasma_to_mysql(paralist):#pc  input  every 60 times report once
 #     paralist must have 6 items

@@ -108,8 +108,8 @@ def main():
     # mazak530_1.start()
     # mq_pc_lpc.start()#lpc
 
-    # mq_arc1.start()
-    # mq_arc2.start()
+    mq_arc1.start()
+    mq_arc2.start()
     # mq_anodize.start()
 
     # thread_pc_particle.start()

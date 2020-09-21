@@ -74,7 +74,7 @@ def reg_location(loc):
     else:
         return
 
-    location_int  = int(res[0])-101
+    location_int  = int(res[0])-100
     location = 'TS1_'+te+','+str(location_int)
 
     return location

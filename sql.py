@@ -572,8 +572,8 @@ def insert_pc_particles_to_mysql(paralist):#pc  input  every 60 times report onc
     global part_count
     # print(len(paralist))
 
-    if float(paralist["value"]) == 0:
-        return
+    # if float(paralist["value"]) == 0:
+    #     return
 
     sql = "INSERT INTO TB_PARTICLES (location,dt,tm,value,dt_tm,create_dt_tm) VALUES(%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
 

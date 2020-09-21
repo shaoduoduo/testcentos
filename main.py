@@ -112,9 +112,9 @@ def main():
     mq_arc2.start()
     # mq_anodize.start()
 
-    # thread_pc_particle.start()
-    # thread_pc_lpc.start()
-    # thread_fc_opc.start()
+    thread_pc_particle.start()
+    thread_pc_lpc.start()
+    thread_fc_opc.start()
     thread_particle_opc.start()
     static_cnt = 0
     while True:
@@ -130,7 +130,7 @@ def main():
         #     sql.connect_to_mysql()
         if True == clock_loop(17,1):
             try :
-                # elec_mail()
+                elec_mail()
                 pass
             except Exception as err:
                 logdebug.logdeb('send mail error',err)

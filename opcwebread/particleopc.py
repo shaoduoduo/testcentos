@@ -65,6 +65,28 @@ def reg_location(loc):
 def unpackxml(json_str,device):
     # print("开始 解析 lpc数据")
 
+    patt = re.compile(r'"@ItemName": "ITTest.TS1_W", "Value": {"@xsi:type": "xsd:float", "#text": "\d+.000000"}, "Quality": {"@QualityField": "[a-z]+"}')
+    # patt = re.compile(restr)
+    ret = re.findall(patt,json_str)
+
+    TS1_W_locat = 0
+    if (ret):
+        # print(ret)
+        patts = re.compile(r'\d+.000000')
+        rets = re.findall(patts,ret[0])
+        if (rets):
+            # print(rets)
+            TS1_W = float(rets[0])
+            TS1_W_locat= int(TS1_W)
+        else:
+            print("CDAN2 数据无法解析")
+            return None
+
+
+        if 'good' not in ret[0]:
+            TS1_W_locat = 100
+
+
 
     d = json.loads(json_str)
     body = d['soap:Envelope']
@@ -86,7 +108,10 @@ def unpackxml(json_str,device):
 
         location = item['@ItemName']#
         location = reg_location(location)
-
+        if location=='TS1_W':  #这条目不做处理
+            continue
+        if 'TS1_' in location:
+            location = location+','+str(TS1_W_locat)
 
         Value = item['Value']
         # xsitype = Value['@xsi:type']
@@ -107,8 +132,8 @@ def unpackxml(json_str,device):
 
         if QualityField != 'good':
             continue
-        if float(value) == 0:
-            continue
+        # if float(value) == 0:
+        #     continue
         bodydict = {
             'value':float(value),
             'location':location,

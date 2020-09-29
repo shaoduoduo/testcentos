@@ -422,7 +422,7 @@ def insert_arc_to_mysql(paralist):#pc  input  every 60 times report once
     # print(len(paralist))
     if paralist["5"] != 2:
         return
-    sql = "INSERT INTO TB_ST_ARC (device,data_date,data_time,data_date_time,data0,data1,data2,data3,data4,data5,create_dt_tm) VALUES(%s,%S,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
+    sql = "INSERT INTO TB_ST_ARC (device,data_date,data_time,data_date_time,data0,data1,data2,data3,data4,data5,create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
     datatm= paralist["date"] +' '+ paralist["time"]
     # print(paralist["1"])
     # lcoation='lpc/0.'+lcoationstr
@@ -472,39 +472,42 @@ def insert_anodize_to_mysql(paralist):#pc  input  every 60 times report once
             paralist["data"][x] = '0'
 
 
+    data_date_time = paralist["data"]["date"] + ' ' + paralist["data"]["time"]
+
+
     if anodize_index == 0:#alarm
-        sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date,data_time,add1,add2, create_dt_tm) VALUES(%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
+        sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date_time,data_date,data_time,add1,add2, create_dt_tm) VALUES(%s,%s,%s,%s,%s,CURRENT_TIMESTAMP());"
         try:
             val = (
-            anodize_index, paralist["data"]["date"], paralist["data"]["time"], paralist["data"]["status"], paralist["data"]["msg"])
+            anodize_index,data_date_time, paralist["data"]["date"], paralist["data"]["time"], paralist["data"]["status"], paralist["data"]["msg"])
         except Exception as err:
             logdebug.logdeb(err)
             return
 
 # cpv vpv csv vsv
     elif anodize_index == 1 or anodize_index == 2 or anodize_index == 3:
-        sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date,data_time,value0,value1,value2,value3, create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+        sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date_time,data_date,data_time,value0,value1,value2,value3, create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
         try:
             val = (
-            anodize_index, paralist["data"]["date"], paralist["data"]["time"], float(paralist["data"]["cpv"]), float(paralist["data"]["vpv"]), float(paralist["data"]["csv"]), float(paralist["data"]["vsv"]))
+            anodize_index,data_date_time, paralist["data"]["date"], paralist["data"]["time"], float(paralist["data"]["cpv"]), float(paralist["data"]["vpv"]), float(paralist["data"]["csv"]), float(paralist["data"]["vsv"]))
         except Exception as err:
             logdebug.logdeb(err)
             return
 
     elif anodize_index == 4 or anodize_index == 5 :
-        sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date,data_time,add1,add2,add3,add4, create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+        sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date_time,data_date,data_time,add1,add2,add3,add4, create_dt_tm) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
         try:
             val = (
-            anodize_index, paralist["data"]["date"], paralist["data"]["time"], (paralist["data"]["num"]), (paralist["data"]["code"]), (paralist["data"]["position"]), (paralist["data"]["action"]))
+            anodize_index, data_date_time,paralist["data"]["date"], paralist["data"]["time"], (paralist["data"]["num"]), (paralist["data"]["code"]), (paralist["data"]["position"]), (paralist["data"]["action"]))
         except Exception as err:
             logdebug.logdeb(err)
             return
     elif anodize_index == 6:
-        sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date,data_time,value0,value1,value2,value3,value4,value5,value6,value7,value8,value9,value10,value11,value12,value13,value14, create_dt_tm) " \
-              "VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
+        sql = "INSERT INTO TB_ST_ANODIZE (data_index,data_date_time,data_date,data_time,value0,value1,value2,value3,value4,value5,value6,value7,value8,value9,value10,value11,value12,value13,value14, create_dt_tm) " \
+              "VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP())"
         try:
             val = (
-            anodize_index, paralist["data"]["date"], paralist["data"]["time"],float(paralist["data"]["A1"]),float(paralist["data"]["A3"]),float(paralist["data"]["A5"]),float(paralist["data"]["A7"]),
+            anodize_index,data_date_time, paralist["data"]["date"], paralist["data"]["time"],float(paralist["data"]["A1"]),float(paralist["data"]["A3"]),float(paralist["data"]["A5"]),float(paralist["data"]["A7"]),
             float(paralist["data"]["A9"]),float(paralist["data"]["A11"]),float(paralist["data"]["A13"]),float(paralist["data"]["D1"]),float(paralist["data"]["D3"]),float(paralist["data"]["A16"]),
             float(paralist["data"]["A18"]),float(paralist["data"]["A20"]),float(paralist["data"]["S1"]),float(paralist["data"]["S2"]),float(paralist["data"]["S3"]))
         except Exception as err:
@@ -592,6 +595,92 @@ def insert_pc_particles_to_mysql(paralist):#pc  input  every 60 times report onc
     finally:
         threadLock.release()
 
+
+    try:
+        threadLock.acquire()
+        mydb.commit()
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+        # if(paralist["location"] == 'TS2_2'):
+        #     print('insert PARTICLES',datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+
+def insert_qa_spc_thickness_to_mysql(paralist):#pc  input
+#     paralist must have 6 items
+    global threadLock
+    global mydb
+    global mycursor
+# print(len(paralist))
+
+# if float(paralist["value"]) == 0:
+#     return
+
+    sql = "INSERT INTO TB_QA_THICKNESS (part_id,occur_date,thickness,line,create_dt_tm) VALUES(%s,%s,%s,%s,CURRENT_TIMESTAMP());"
+
+
+# 'part_id':
+# 'data_value':
+# 'occur_dt':
+# 'line': i[6]
+
+    try:
+        val = (paralist["part_id"], paralist["occur_dt"], float(paralist["data_value"]), paralist["line"])
+    except Exception as err:
+        logdebug.logdeb(err)
+        return
+    # print(type(val))
+    try:
+        threadLock.acquire()
+        mycursor.execute(sql, val)
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+
+    try:
+        threadLock.acquire()
+        mydb.commit()
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
+        # if(paralist["location"] == 'TS2_2'):
+        #     print('insert PARTICLES',datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+
+
+
+def insert_qa_spc_roughness_to_mysql(paralist):#pc  input
+#     paralist must have 6 items
+    global threadLock
+    global mydb
+    global mycursor
+# print(len(paralist))
+
+# if float(paralist["value"]) == 0:
+#     return
+
+    sql = "INSERT INTO TB_QA_ROUGHNESS (part_id,occur_date,data_value,line,create_dt_tm) VALUES(%s,%s,%s,%s,CURRENT_TIMESTAMP());"
+
+
+# 'part_id':
+# 'data_value':
+# 'occur_dt':
+# 'line': i[6]
+
+    try:
+        val = (paralist["part_id"], paralist["occur_dt"], float(paralist["data_value"]), paralist["line"])
+    except Exception as err:
+        logdebug.logdeb(err)
+        return
+    # print(type(val))
+    try:
+        threadLock.acquire()
+        mycursor.execute(sql, val)
+    except Exception as error:
+        logdebug.logdeb(error)
+    finally:
+        threadLock.release()
 
     try:
         threadLock.acquire()

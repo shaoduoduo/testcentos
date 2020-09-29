@@ -43,12 +43,12 @@ def main():
     #     logdebug.logdeb('pc  filewatch fail  !!!!!!!!!!!1')
 
 
-    # try:
-    #     qa_f.file_Watch_init()
-    # except Exception as err:
-    #     logdebug.logdeb(err)
-    #     logdebug.logdeb('qa  filewatch fail  !!!!!!!!!!!1')
-    #
+    try:
+        qa_f.file_Watch_init()
+    except Exception as err:
+        logdebug.logdeb(err)
+        logdebug.logdeb('qa  filewatch fail  !!!!!!!!!!!1')
+
 
     mazak1050url = readconfig.readcon("MtConnect","mazak1050url")
     mazak530_0url = readconfig.readcon("MtConnect", "mazak530_0url")
@@ -84,38 +84,43 @@ def main():
 
     threadplasma2 = lpcopcread.opcwbthread(9, 'plasma2', 'plasma2')
     threadplasma2.setDaemon(True)
-
+    #pc online particle
     thread_pc_particle = web_pc.pc_particle_thread(10,'pc_particle','pc_particle')
     thread_pc_particle.setDaemon(True)
 
-
+    #pc lpc
     thread_pc_lpc = web_pc_lpc.pc_lpc_thread(11,'pc_lpc','pc_lpc')
     thread_pc_lpc.setDaemon(True)
 
-
+    #fc  opc elec
     thread_fc_opc= fcopc.fc_opc_thread(12,'fc_opc','fc_opc')
     thread_fc_opc.setDaemon(True)
-
+    #fc particles
     thread_particle_opc= particleopc.particleopc(13,'particle_opc','particle_opc')
+
+
+
     thread_particle_opc.setDaemon(True)
+    # mq_pc_lpc.start()#lpc
+    # mq_thread.start()#opc
+    #
     # threadplasma1.start()
     # threadplasma2.start()
-
-
     # Mazak1050.start()
-    # mq_thread.start()#opc
+
     # mazak530_0.start()
     # mazak530_1.start()
-    # mq_pc_lpc.start()#lpc
 
-    mq_arc1.start()
-    mq_arc2.start()
+    # mq_arc1.start()
+    # mq_arc2.start()
     # mq_anodize.start()
 
-    thread_pc_particle.start()
-    thread_pc_lpc.start()
-    thread_fc_opc.start()
-    thread_particle_opc.start()
+    # thread_pc_particle.start()
+    # thread_pc_lpc.start()
+    # thread_fc_opc.start()
+    # thread_particle_opc.start()
+
+
     static_cnt = 0
     while True:
 

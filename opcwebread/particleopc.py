@@ -62,7 +62,7 @@ def reg_location(loc):
     # location = res
     return location
 #test . location and Quality is demo
-def unpackxml(json_str,device):
+def unpackxml(json_str):
     # print("开始 解析 lpc数据")
 
     patt = re.compile(r'"@ItemName": "ITTest.TS1_W", "Value": {"@xsi:type": "xsd:float", "#text": "\d+.000000"}, "Quality": {"@QualityField": "[a-z]+"}')
@@ -70,6 +70,7 @@ def unpackxml(json_str,device):
     ret = re.findall(patt,json_str)
 
     TS1_W_locat = 0
+    TS1_WQuality = 'bad'
     if (ret):
         # print(ret)
         patts = re.compile(r'\d+.000000')
@@ -83,9 +84,8 @@ def unpackxml(json_str,device):
             return None
 
 
-        if 'good' not in ret[0]:
-            TS1_W_locat = 100
-
+        if 'good'  in ret[0]:
+            TS1_WQuality = 'good'
 
 
     d = json.loads(json_str)
@@ -111,6 +111,8 @@ def unpackxml(json_str,device):
         if location=='TS1_W':  #这条目不做处理
             continue
         if 'TS1_' in location:
+            if TS1_WQuality == 'bad': #bad data
+                continue
             location = location+','+str(TS1_W_locat)
 
         Value = item['Value']
@@ -182,7 +184,7 @@ class particleopc(threading.Thread):
         if (type(res)!= type('str')):
             res = json.dumps(res)
 
-        unpackxml(res,self.location)
+        unpackxml(res)
         # print(res)
         # print(res)
 

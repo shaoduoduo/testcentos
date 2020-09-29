@@ -221,5 +221,5 @@ def file_Watch_init():
     event_handler = LoggingEventHandler()
     observer = PollingObserver()
     observer.schedule(event_handler,path=WATCH_PATH,recursive=True)
-    logdebug.logdeb('start pc file watcher',WATCH_PATH)
+    # logdebug.logdeb('start pc file watcher',WATCH_PATH)
     observer.start()
